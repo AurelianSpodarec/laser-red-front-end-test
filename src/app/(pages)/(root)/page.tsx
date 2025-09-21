@@ -1,17 +1,18 @@
 import Container from "@/components/Container";
 import Grid from "@/components/Grid";
+import Image from "@/components/Image";
 import ImageContainer from "@/components/ImageContainer";
 import Row from "@/components/Row";
 import Section from "@/components/Section";
 import Link from "next/link";
 
-function CardBase({ item }) {
+function CardBase({ item }: any) {
   // size
   return (
     <div className="border border-white rounded-lg p-8 flex flex-col bg-[#062C34] max-w-[440px]">
       <div className="mb-[80px]">
         {/* mb-120px */}
-        <img src={item.icon} />
+        <img src={item.icon} alt="" />
       </div>
       <div className="mt-auto ">
         <h3 className="text-[26px] mb-[16px] tracking-[-1.20] font-bold font-heading">{item.title}</h3>
@@ -43,8 +44,8 @@ function WebRoot() {
   return (
     <>
       <Section id="hero" className="p-2.5 pb-[110px]">
-        <div className="bg-[#062329]">
-          <Row className="flex-col md:flex-row rounded-lg" alignItems="end">
+        <div className="bg-[#062329] rounded-lg">
+          <Row className="flex-col md:flex-row" alignItems="end">
             <div className="w-1/2">
               <div className="mt-auto p-10">
                 <h1 className="font-display font-bold text-h1 leading-[78px] leading-none tracking-[-3.9px] text-white">A <span className="text-gradient">new world</span> of solutions.</h1>
@@ -53,7 +54,7 @@ function WebRoot() {
               </div>
             </div>
             <div className="w-1/2">
-              <img className="rounded-tr-lg rounded-br-lg" src="/images/hero-desktop.jpg" />
+              <Image className="rounded-tr-lg rounded-br-lg" src="/images/hero-desktop.jpg" />
             </div>
           </Row>
         </div>
@@ -66,7 +67,7 @@ function WebRoot() {
             className="flex-col md:flex-row gap-28"
           >
             <div className="w-3/5">
-              <img src="/images/lady-computer.jpg" className="rounded-xl h-[480px] w-full object-cover" />
+              <Image src="/images/lady-computer.jpg" className="rounded-xl h-[480px] w-full object-cover" />
             </div>
             <div className="w-2/5">
               <h2 className="font-display font-bold text-[42px] leading-[1.10em] mb-6">Sed ut nisi quis felis varius molestie.</h2>
@@ -121,10 +122,11 @@ function WebRoot() {
 
       <Section id="testimonial" className="pb-[60px]">
         <Container>
-
           <figure className="relative gradient rounded-lg h-[510px]">
-            <div style={{ backgroundImage: "url('/images/pattern.png')" }} className="bg-center bg-size-[200%] flex flex-col md:flex-row gap-16 h-full">
-
+            <div
+              style={{ backgroundImage: "url('/images/pattern.png')" }}
+              className="bg-center bg-size-[200%] flex flex-col md:flex-row gap-16 h-full"
+            >
               <div className="flex flex-col h-full p-12">
                 <blockquote>
                   <p className="font-bold text-[42px] tracking-[-2.1px] text-[#02252C]">
@@ -132,20 +134,24 @@ function WebRoot() {
                     Vestibulum nec semper nulla. Aliquam at interdum lacus.”
                   </p>
                 </blockquote>
-                <div className="text-[#02252C] mt-auto">
-                  <span className="text-[16px] font-bold">Andrew Andrews</span>
-                  <p>Marketing Manager</p>
-                </div>
+                <figcaption className="text-[#02252C] mt-auto">
+                  <cite className="block text-[16px] font-bold not-italic">Andrew Andrews</cite>
+                  <span className="block">Marketing Manager</span>
+                </figcaption>
               </div>
 
-              <figcaption className="p-2.5">
-                <img className="h-full w-auto object-cover min-w-[350px]" src="/images/testimonial.jpg" alt="Portrait of Andrew Andrews" />
-              </figcaption>
+              <div className="p-2.5">
+                <img
+                  className="h-full w-auto object-cover min-w-[350px]"
+                  src="/images/testimonial.jpg"
+                  alt="Portrait of Andrew Andrews"
+                />
+              </div>
             </div>
           </figure>
-
         </Container>
       </Section>
+
 
       <Section className="pb-[190px]">
         <Container>
@@ -253,7 +259,7 @@ function WebRoot() {
               </div>
             </div>
             <div className="w-1/2">
-              <img src="/images/stats-image-computer.jpg" className="w-full h-full" />
+              <Image src="/images/stats-image-computer.jpg" className="w-full h-full" />
             </div>
           </Row>
 
@@ -268,11 +274,11 @@ function WebRoot() {
             <div className="w-1/2">
               <div className="flex flex-row gap-8">
                 <div>
-                  <img src="/images/woman.jpg" />
+                  <Image src="/images/woman.jpg" />
                 </div>
                 <div className="flex flex-col gap-8">
                   <div>
-                    <img src="/images/man.jpg" />
+                    <Image src="/images/man.jpg" />
                   </div>
                   <div>
                     <StatCard item={{
@@ -293,39 +299,6 @@ function WebRoot() {
 
         </Container>
       </Section>
-
-      {/* <footer className="bg-[#07272E] p-2.5">
-        <div className=" bg-[#02252C] py-[100px] rounded-lg">
-          <Container>
-            <div className="flex mb-[190px] justify-between">
-
-              <div>
-                <div className="mb-8">
-                  <a className="text-[50px] font-semibold block" href="tel:">01234 123456</a>
-                  <a className="text-[50px] font-semibold block" href="mailto:">hello@vega.co.uk</a>
-                </div>
-                <p className="text-[#DADAE2] text-[26px] mb-12">Solution Way, Lincoln, Lincolnshire, LN1 VGA</p>
-                <a href="/contact" className="bg-[#00CBEC] py-2.5 text-[16px] font-semibold rounded-full inline-block px-8 text-[#111] ">Get in touch</a>
-              </div>
-
-              <nav className="flex flex-col">
-                <Link href="">Solutions</Link>
-                <Link href="">Industries</Link>
-                <Link href="">Technology</Link>
-                <Link href="">Resources</Link>
-                <Link href="">Company</Link>
-                <Link href="">Careers</Link>
-                <Link href="">Resoruces</Link>
-              </nav>
-            </div>
-
-            <div className="flex justify-between">
-              <span className="text-sm">© 2025 Vega Limited - Registered in England: Company Reg. No. 1234567 - Privacy Notice - Cookie Notice - Terms of Service</span>
-              <span><img src="/images/laser-logo.svg" /></span>
-            </div>
-          </Container>
-        </div>
-      </footer> */}
     </>
   );
 }

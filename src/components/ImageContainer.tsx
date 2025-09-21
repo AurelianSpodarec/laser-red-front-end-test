@@ -1,4 +1,5 @@
 import React, { ReactNode } from 'react';
+import Image from './Image';
 
 type OverlayPosition = 'center' | 'top-left' | 'bottom-right';
 
@@ -28,11 +29,7 @@ function ImageContainer({
   return (
     <div className={`relative ${className}`}>
       {src && (
-        <img
-          src={src}
-          alt={alt}
-          className="w-full rounded-xl object-cover"
-        />
+        <Image src={src} alt={alt} className="w-full rounded-xl object-cover" />
       )}
 
       {overlay && (
