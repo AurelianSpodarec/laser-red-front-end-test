@@ -1,0 +1,99 @@
+/* ============================================================================
+ * # Base
+ * ============================================================================ */
+
+@theme {
+  /* ============================================================================ 
+   * Primitives 
+   * ============================================================================ */
+  --font-onset: "Onset", sans-serif;
+  --font-dm-sans: "DM Sans", serif;
+
+  /* Gray (neutral light → dark) */
+  /* --gray-50:  #ffffff;
+  --gray-100: #f9f9fa;
+  --gray-200: #f3f3f3;
+  --gray-300: #e9e9ed;
+  --gray-400: #dadbe2;
+  --gray-500: #b8bac1;
+  --gray-600: #8e9199;
+  --gray-700: #5f636a;
+  --gray-800: #2f3239;
+  --gray-900: #1a1c23;
+  --gray-950: #11111f; */
+
+  /* Teal (deep backgrounds) */
+  /* --teal-50:  #eaf7f9;
+  --teal-100: #c9e7eb;
+  --teal-200: #97cfd6;
+  --teal-300: #61aeb8;
+  --teal-400: #2c7f89;
+  --teal-500: #185861;
+  --teal-600: #103e47;
+  --teal-700: #0b2f36;
+  --teal-800: #07272e;
+  --teal-900: #02252c;
+  --teal-950: #01181d; */
+
+  /* Cyan (aqua brand) */
+  /* --cyan-50:  #e6fbfe;
+  --cyan-100: #bff5fb;
+  --cyan-200: #8aebf6;
+  --cyan-300: #52ddef;
+  --cyan-400: #3bcbec;
+  --cyan-500: #00cbec;
+  --cyan-600: #00a9c8;
+  --cyan-700: #0087a1;
+  --cyan-800: #066c82;
+  --cyan-900: #0b5668;
+  --cyan-950: #093a47; */
+
+  /* Emerald (green-teal) */
+  /* --emerald-50:  #e6fdf7;
+  --emerald-100: #baf8e8;
+  --emerald-200: #83eed5;
+  --emerald-300: #4ddfbf;
+  --emerald-400: #30cb98;
+  --emerald-500: #00cb98;
+  --emerald-600: #00a87f;
+  --emerald-700: #008766;
+  --emerald-800: #056a52;
+  --emerald-900: #0a5441;
+  --emerald-950: #07362b; */
+
+  /* Violet (purple accent) */
+  /* --violet-50:  #f7f4fd;
+  --violet-100: #ece3fa;
+  --violet-200: #dccff6;
+  --violet-300: #c3aaf0;
+  --violet-400: #a27be5;
+  --violet-500: #8a5ed6;
+  --violet-600: #7347bb;
+  --violet-700: #5c3696;
+  --violet-800: #482c72;
+  --violet-900: #38245a;
+  --violet-950: #24163a; */
+
+  --text-h1: clamp(40px, 5vw + 1rem, 78px);
+  --text-h2: clamp(28px, 4vw + 0.8rem, 42px);
+  --text-h3: clamp(20px, 3vw + 0.6rem, 32px);
+  --text-body: clamp(12px, 2.5vw, 16px);
+  --text-ui: clamp(14px, 2.5vw, 18px);
+}
+
+@theme {
+  /* ============================================================================ 
+   * Semantics 
+   * ============================================================================ */
+
+  --font-display: var(--font-onset);
+  /* h1, h2, hero sections */
+  --font-heading: var(--font-onset);
+  /* h3–h6, UI headings */
+  --font-body: var(--font-dm-sans);
+  /* paragraphs, default text */
+  --font-ui: var(--font-dm-sans);
+  /* buttons, inputs, labels */
+  --font-mono: ui-monospace, monospace;
+  /* code, technical UI */
+}
