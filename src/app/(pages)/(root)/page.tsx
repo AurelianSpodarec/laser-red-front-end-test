@@ -1,3 +1,6 @@
+import Container from "@/components/Container";
+import ImageContainer from "@/components/ImageContainer";
+import Section from "@/components/Section";
 import Link from "next/link";
 
 function CardBase({ item }) {
@@ -29,10 +32,13 @@ function StatCard({ item }: any) {
   )
 }
 
+
+
+
 function WebRoot() {
   return (
     <>
-      <section id="hero" className="p-2.5 bg-[#07272E] pb-[110px]">
+      <Section id="hero" className="p-2.5 pb-[110px]">
         <div className="flex flex-col md:flex-row bg-[#062329] rounded-lg">
           <div className="w-1/2 flex">
             <div className="mt-auto p-10">
@@ -45,10 +51,10 @@ function WebRoot() {
             <img className="rounded-tr-lg rounded-br-lg" src="/images/hero-desktop.jpg" />
           </div>
         </div>
-      </section>
+      </Section>
 
-      <section className="bg-[#07272E] pb-[130px]">
-        <div className="container mx-auto max-w-[1400px]">
+      <Section className="pb-[130px]">
+        <Container>
           <div className="flex flex-col md:flex-row  items-center gap-28">
             <div className="w-3/5">
               <img src="/images/lady-computer.jpg" className="rounded-xl h-[480px] w-full object-cover" />
@@ -59,11 +65,12 @@ function WebRoot() {
               <p>Sed finibus dui sit amet turpis vehicula, at tincidunt urna sollicitudin. Integer justo quam, faucibus nec metus a, bibendum venenatis arcu. Integer interdum sapien tellus, vel imperdiet elit gravida non. Sed et placerat neque, at pellentesque eros.</p>
             </div>
           </div>
-        </div>
-      </section>
+        </Container>
+      </Section>
 
-      <section className="bg-[#07272E] pb-[130px]">
-        <div className="container mx-auto max-w-[1400px]">
+      <Section className="pb-[130px]">
+        <Container>
+
           <div className="grid grid-cols-4 gap-8">
             <CardBase
               item={{
@@ -98,12 +105,14 @@ function WebRoot() {
               }}
             />
           </div>
-        </div>
-      </section>
+
+        </Container>
+      </Section>
 
 
-      <section className="bg-[#07272E] pb-[60px]">
-        <div className="container mx-auto max-w-[1400px]">
+      <Section className="pb-[60px]">
+        <Container>
+
           <figure className="relative gradient rounded-lg h-[510px]">
             <div style={{ backgroundImage: "url('/images/pattern.png')" }} className="bg-center bg-size-[200%] flex flex-row gap-16 h-full">
 
@@ -126,25 +135,27 @@ function WebRoot() {
             </div>
           </figure>
 
-        </div>
-      </section>
+        </Container>
+      </Section>
 
-      <section className="bg-[#07272E] pb-[190px]">
-        <div className="container mx-auto max-w-[1400px]">
+      <Section className="pb-[190px]">
+        <Container>
 
-
-          <div className="flex flex-col md:flex-row  items-center gap-28">
+          <div className="flex flex-col md:flex-row items-center gap-28">
             <div className="w-1/2">
-              <div className="h-full relative">
-                <img src="/images/stat-image.jpg" className="rounded-xl w-full object-cover" />
-                <div className="absolute inset-0 flex flex-col items-center justify-center text-center">
-                  <StatCard item={{
+              <ImageContainer
+                src="/images/stat-image.jpg"
+                overlay
+                overlayPosition="center"
+              >
+                <StatCard
+                  item={{
                     metric: "175%",
                     title: "Proin pulvinar metus.",
-                    desc: "Hendrerit semper quis auctor lacus."
-                  }} />
-                </div>
-              </div>
+                    desc: "Hendrerit semper quis auctor lacus.",
+                  }}
+                />
+              </ImageContainer>
             </div>
             <div className="w-1/2">
               <h2 className="font-display text-h2">Ut nec nunc tincidunt, mattis leo nec.</h2>
@@ -154,37 +165,37 @@ function WebRoot() {
             </div>
           </div>
 
+        </Container>
+      </Section>
 
-
-        </div>
-      </section>
-
-      <section className="bg-[#07272E] p-2.5">
-        <div className="gradient py-[95px] rounded-lg">
-          <div className="container mx-auto max-w-[1400px]">
+      <Section className="p-2.5 pb-0">
+        <div className="gradient py-[95px] rounded-tl-lg rounded-tr-lg">
+          <Container className="container mx-auto max-w-[1400px]">
             <span className="font-bold text-[120px] leading-[115px] tracking-[-4.2px] font-onest inline-block text-[#062C34]">Experience the Vega advantage</span>
             <Link href="#" className="inline-block text-[#062C34] text-[42px] font-bold">Book a demonstration</Link>
-          </div>
+          </Container>
         </div>
-      </section>
+      </Section>
 
-      <section className="py-[190px]" style={{ backgroundImage: 'url("/images/man-datacenter.jpg")' }}>
-        <div className="container mx-auto max-w-[1400px]">
-          <div className="flex justify-end">
-            <CardBase item={{
-              icon: "/images/icons/icon-5.svg",
-              title: "Integer justo quam, faucibus nec metus",
-              desc: "Ut a erat dolor. Nullam tortor diam, pretium vel massa non, volutpat condimentum nisi.",
-              link: "Contact our team"
-            }} />
-          </div>
+      <Section className="px-2.5">
+        <div style={{ backgroundImage: 'url("/images/man-datacenter.jpg")' }} className="rounded-bl-lg rounded-br-lg">
+          <Container className="container mx-auto max-w-[1400px] py-[190px] ">
+            <div className="flex justify-end p-2.5">
+              <CardBase item={{
+                icon: "/images/icons/icon-5.svg",
+                title: "Integer justo quam, faucibus nec metus",
+                desc: "Ut a erat dolor. Nullam tortor diam, pretium vel massa non, volutpat condimentum nisi.",
+                link: "Contact our team"
+              }} />
+            </div>
+          </Container>
         </div>
-      </section>
+      </Section>
 
       <section className="bg-[#02252C] py-[95px]">
-        <div className="container mx-auto max-w-[1400px]">
+        <Container>
 
-          <div className="flex gap-36">
+          <div className="flex items-center gap-36">
             <div className="w-1/2">
               <div className="grid grid-cols-2 gap-8">
                 <CardBase item={{
@@ -206,11 +217,11 @@ function WebRoot() {
             </div>
           </div>
 
-        </div>
+        </Container>
       </section>
 
-      <section className="bg-[#07272E] py-[75px]">
-        <div className="container mx-auto max-w-[1400px]">
+      <Section className="py-[75px]">
+        <Container>
 
           <div className="flex">
             <div className="w-1/2">
@@ -234,12 +245,12 @@ function WebRoot() {
             </div>
           </div>
 
-        </div>
-      </section>
+        </Container>
+      </Section>
 
 
-      <section className="bg-[#07272E] pb-[120px]">
-        <div className="container mx-auto max-w-[1400px]">
+      <Section className="pb-[120px]">
+        <Container>
 
           <div className="flex items-center gap-28">
             <div className="w-1/2">
@@ -268,12 +279,12 @@ function WebRoot() {
             </div>
           </div>
 
-        </div>
-      </section>
+        </Container>
+      </Section>
 
       <footer className="bg-[#07272E] p-2.5">
         <div className=" bg-[#02252C] py-[100px] rounded-lg">
-          <div className="container mx-auto max-w-[1400px]">
+          <Container>
             <div className="flex mb-[190px] justify-between">
 
               <div>
@@ -300,7 +311,7 @@ function WebRoot() {
               <span className="text-sm">© 2025 Vega Limited - Registered in England: Company Reg. No. 1234567 - Privacy Notice - Cookie Notice - Terms of Service</span>
               <span><img src="/images/laser-logo.svg" /></span>
             </div>
-          </div>
+          </Container>
         </div>
       </footer>
     </>

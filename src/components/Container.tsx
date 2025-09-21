@@ -3,28 +3,17 @@ import { ReactNode } from 'react';
 interface IContainerProps {
   id?: string;
   style?: object;
-  size?: string;
   className?: string;
   children: ReactNode;
 }
 
-function Container({ id, style, size, className, children }: IContainerProps) {
-  const options: any = {
-    fluid: 'max-w-none',
-    sm: 'max-w-sm',
-    base: 'max-w-base',
-    xs: 'max-w-xs',
-    md: 'max-w-md',
-    lg: 'max-w-lg',
-    xl: 'max-w-xl',
-    '2xl': 'max-w-2xl',
-  };
+function Container({ id, style, className, children }: IContainerProps) {
 
   return (
     <div
       id={id}
       style={style}
-      className={`container mx-auto px-4 md:px-8 lg:px-16 ${size ? `${options[size]}` : `${options["fluid"]}`} ${className}`}
+      className={`container mx-auto max-w-[1400px] ${className}`}
     >
       {children}
     </div>
