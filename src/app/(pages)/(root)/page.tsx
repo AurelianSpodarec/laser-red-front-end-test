@@ -1,5 +1,7 @@
 import Container from "@/components/Container";
+import Grid from "@/components/Grid";
 import ImageContainer from "@/components/ImageContainer";
+import Row from "@/components/Row";
 import Section from "@/components/Section";
 import Link from "next/link";
 
@@ -32,6 +34,8 @@ function StatCard({ item }: any) {
   )
 }
 
+// Have background div that has all bg colors maybe, kind of like API for backgrounds maybe, so it can be used in section, but also footer, and a div etc
+// coz right now if somee wants to use bg from section youd need to change that to footer and a div and thas a bit awkward unless we change the tag for sectoin 
 
 
 
@@ -39,23 +43,28 @@ function WebRoot() {
   return (
     <>
       <Section id="hero" className="p-2.5 pb-[110px]">
-        <div className="flex flex-col md:flex-row bg-[#062329] rounded-lg">
-          <div className="w-1/2 flex">
-            <div className="mt-auto p-10">
-              <h1 className="font-display font-bold text-h1 leading-[78px] leading-none tracking-[-3.9px] text-white">A <span className="text-gradient">new world</span> of solutions.</h1>
-              <p className="text-white py-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-              <Link href="#" className="inline-block font-semibold rounded-full text-[#111] text-[18px] gradient py-2 px-6">Book a demo</Link>
+        <div className="bg-[#062329]">
+          <Row className="flex-col md:flex-row rounded-lg" alignItems="end">
+            <div className="w-1/2">
+              <div className="mt-auto p-10">
+                <h1 className="font-display font-bold text-h1 leading-[78px] leading-none tracking-[-3.9px] text-white">A <span className="text-gradient">new world</span> of solutions.</h1>
+                <p className="text-white py-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                <Link href="#" className="inline-block font-semibold rounded-full text-[#111] text-[18px] gradient py-2 px-6">Book a demo</Link>
+              </div>
             </div>
-          </div>
-          <div className="w-1/2">
-            <img className="rounded-tr-lg rounded-br-lg" src="/images/hero-desktop.jpg" />
-          </div>
+            <div className="w-1/2">
+              <img className="rounded-tr-lg rounded-br-lg" src="/images/hero-desktop.jpg" />
+            </div>
+          </Row>
         </div>
       </Section>
 
       <Section className="pb-[130px]">
         <Container>
-          <div className="flex flex-col md:flex-row  items-center gap-28">
+          <Row
+            alignItems="center"
+            className="flex-col md:flex-row gap-28"
+          >
             <div className="w-3/5">
               <img src="/images/lady-computer.jpg" className="rounded-xl h-[480px] w-full object-cover" />
             </div>
@@ -64,14 +73,14 @@ function WebRoot() {
               <p>Cras fermentum risus ac interdum euismod. Aliquam dui neque, convallis eu pharetra porta, condimentum in quam. Donec dictum lacus ac lectus cursus eleifend. Aliquam vulputate ipsum eu tincidunt dictum. Aliquam pretium sollicitudin quam, convallis porttitor risus vehicula sed.</p>
               <p>Sed finibus dui sit amet turpis vehicula, at tincidunt urna sollicitudin. Integer justo quam, faucibus nec metus a, bibendum venenatis arcu. Integer interdum sapien tellus, vel imperdiet elit gravida non. Sed et placerat neque, at pellentesque eros.</p>
             </div>
-          </div>
+          </Row>
         </Container>
       </Section>
 
       <Section className="pb-[130px]">
         <Container>
 
-          <div className="grid grid-cols-4 gap-8">
+          <Grid className="grid-cols1 md:grid-cols-4 gap-8">
             <CardBase
               item={{
                 icon: "/images/icons/icon-4.svg",
@@ -104,17 +113,17 @@ function WebRoot() {
                 link: "Learn more"
               }}
             />
-          </div>
+          </Grid>
 
         </Container>
       </Section>
 
 
-      <Section className="pb-[60px]">
+      <Section id="testimonial" className="pb-[60px]">
         <Container>
 
           <figure className="relative gradient rounded-lg h-[510px]">
-            <div style={{ backgroundImage: "url('/images/pattern.png')" }} className="bg-center bg-size-[200%] flex flex-row gap-16 h-full">
+            <div style={{ backgroundImage: "url('/images/pattern.png')" }} className="bg-center bg-size-[200%] flex flex-col md:flex-row gap-16 h-full">
 
               <div className="flex flex-col h-full p-12">
                 <blockquote>
@@ -141,7 +150,10 @@ function WebRoot() {
       <Section className="pb-[190px]">
         <Container>
 
-          <div className="flex flex-col md:flex-row items-center gap-28">
+          <Row
+            className="gap-28 md:flex-row items-center"
+            direction="column"
+          >
             <div className="w-1/2">
               <ImageContainer
                 src="/images/stat-image.jpg"
@@ -163,15 +175,15 @@ function WebRoot() {
               <p>Vivamus laoreet eget dolor sed sodales. Etiam molestie laoreet augue, vitae molestie quam pretium at. Donec maximus diam in dolor convallis cursus. Donec imperdiet vulputate nunc, et viverra metus sagittis ut. Aenean imperdiet convallis sodales. Ut enim leo, hendrerit sit amet tempor nec, auctor eget eros. Proin vitae tellus diam. In laoreet, tellus quis lacinia interdum, ligula mauris aliquet massa, et rhoncus mi dui eget velit.</p>
               <Link href="#" className="inline-block font-semibold rounded-full text-[#111] text-[18px] gradient py-2 px-6">View Case Study</Link>
             </div>
-          </div>
+          </Row>
 
         </Container>
       </Section>
 
       <Section className="p-2.5 pb-0">
         <div className="gradient py-[95px] rounded-tl-lg rounded-tr-lg">
-          <Container className="container mx-auto max-w-[1400px]">
-            <span className="font-bold text-[120px] leading-[115px] tracking-[-4.2px] font-onest inline-block text-[#062C34]">Experience the Vega advantage</span>
+          <Container>
+            <span className="font-bold text-[50px] lg:text-[120px] leading-[115px] tracking-[-4.2px] font-onest inline-block text-[#062C34]">Experience the Vega advantage</span>
             <Link href="#" className="inline-block text-[#062C34] text-[42px] font-bold">Book a demonstration</Link>
           </Container>
         </div>
@@ -192,10 +204,10 @@ function WebRoot() {
         </div>
       </Section>
 
-      <section className="bg-[#02252C] py-[95px]">
+      <Section background="secondary" className="py-[95px]">
         <Container>
 
-          <div className="flex items-center gap-36">
+          <Row alignItems="center" className="gap-36">
             <div className="w-1/2">
               <div className="grid grid-cols-2 gap-8">
                 <CardBase item={{
@@ -215,15 +227,15 @@ function WebRoot() {
               <p>Vestibulum quam felis, bibendum sed tempor vel, cursus eu dolor. Aliquam luctus velit in aliquam tempus. Suspendisse vitae dignissim mi. Mauris luctus quam ut tellus facilisis feugiat.</p>
               <Link href="" className="inline-block py-2.5 text-[16px] font-semibold rounded-full px-8 gradient text-[#111]">View our services</Link>
             </div>
-          </div>
+          </Row>
 
         </Container>
-      </section>
+      </Section>
 
       <Section className="py-[75px]">
         <Container>
 
-          <div className="flex">
+          <Row>
             <div className="w-1/2">
               <h2 className="font-display text-h2">Nunc scelerisque elementum dui efficitur</h2>
               <p>Sed at nulla nulla. Duis et ultricies felis. Nulla non tortor nec tellus fermentum fringilla. Pellentesque aliquam sed elit ac commodo.</p>
@@ -243,7 +255,7 @@ function WebRoot() {
             <div className="w-1/2">
               <img src="/images/stats-image-computer.jpg" className="w-full h-full" />
             </div>
-          </div>
+          </Row>
 
         </Container>
       </Section>
@@ -252,7 +264,7 @@ function WebRoot() {
       <Section className="pb-[120px]">
         <Container>
 
-          <div className="flex items-center gap-28">
+          <Row alignItems="center" className="gap-28">
             <div className="w-1/2">
               <div className="flex flex-row gap-8">
                 <div>
@@ -277,12 +289,12 @@ function WebRoot() {
               <p>Suspendisse vitae dignissim mi. Mauris luctus quam ut tellus facilisis feugiat. Nullam pulvinar ante nec eros euismod egestas. Nunc non massa sit amet metus condimentum varius ac eget libero. Vestibulum nec semper nulla. Aliquam at interdum lacus.</p>
               <button className="py-2.5 text-[16px] font-semibold rounded-full px-8 gradient text-[#111]">Learn more</button>
             </div>
-          </div>
+          </Row>
 
         </Container>
       </Section>
 
-      <footer className="bg-[#07272E] p-2.5">
+      {/* <footer className="bg-[#07272E] p-2.5">
         <div className=" bg-[#02252C] py-[100px] rounded-lg">
           <Container>
             <div className="flex mb-[190px] justify-between">
@@ -313,7 +325,7 @@ function WebRoot() {
             </div>
           </Container>
         </div>
-      </footer>
+      </footer> */}
     </>
   );
 }

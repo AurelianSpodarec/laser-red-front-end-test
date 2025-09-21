@@ -5,9 +5,15 @@ interface ISectionProps extends React.HTMLAttributes<HTMLElement> {
   className?: string;
   style?: React.CSSProperties;
   children?: ReactNode;
+  background?: "primary" | "secondary";
 }
 
-function Section({ id, className, style, children }: ISectionProps) {
+function Section({ id, className, style, background = "primary", children }: ISectionProps) {
+
+  const backgroundVariants = {
+    primary: "bg-[#07272E]",
+    secondary: "bg-[#02252C] ",
+  }
 
   const spacing = {
     clean: "",
@@ -15,7 +21,7 @@ function Section({ id, className, style, children }: ISectionProps) {
   };
 
   return (
-    <section id={id} className={`${className}  bg-[#07272E]`} style={style}>
+    <section id={id} className={`${className} ${backgroundVariants[background]} `} style={style}>
       {children}
     </section>
   )
