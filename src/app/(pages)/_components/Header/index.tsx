@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function WebHeader() {
   return (
-    <header className="fixed top-0 w-full flex items-center h-[90px] px-[50px] mt-4">
+    <header className="fixed top-0 w-full flex items-center h-[90px] px-[50px] mt-4 z-50">
       <Link href="/" className="mr-16">
         <img src="/images/vega-logo.png" alt="Vega - Go to homepage" />
       </Link>
