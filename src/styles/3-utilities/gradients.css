@@ -1,0 +1,43 @@
+/* ============================================================================
+ * # Gradients - Composable, semantic, and scalable
+ * ============================================================================ */
+
+/* --------------------------
+   Gradient Tokens
+   -------------------------- */
+.gradient-primary {
+  background-image: var(--gradient-primary);
+}
+
+/* --------------------------
+   Shared Utilities
+   -------------------------- */
+.gradient-size {
+  background-size: 400% 400%;
+}
+
+.gradient-animated {
+  animation: gradient var(--gradient-duration, 10s) ease-in-out infinite;
+}
+
+.gradient-text {
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* --------------------------
+   Keyframes
+   -------------------------- */
+@keyframes gradient {
+  0% {
+    background-position: 0 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0 50%;
+  }
+}

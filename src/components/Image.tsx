@@ -10,7 +10,7 @@ function Image({ src, alt = "", className = "", ...props }: ImageProps) {
     <img
       src={src}
       alt={alt || ""}
-      className={`${className} rounded-lg`}
+      className={`${className} rounded`}
       {...props}
     />
   );

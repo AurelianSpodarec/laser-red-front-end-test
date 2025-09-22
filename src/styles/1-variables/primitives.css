@@ -1,20 +1,23 @@
-/* ============================================================================
- * # Base
- * ============================================================================ */
-
- p {
-  margin-bottom: 32px;
- }
-
 /* ============================================================================ 
-  * Primitives 
-  * ============================================================================ */
+  * # Primitives 
+  * ============================================================================ 
+  
+  Table of Contents
+  - Fonts
+  - Colors
+  - Text
+
+*/
+
 @theme {
+
+  /* # Fonts 
+   * ============================================================================*/
   --font-onset: "Onset", sans-serif;
   --font-dm-sans: "DM Sans", serif;
 
-  /* Colors 
-   * ==============================================================================*/
+  /* # Colors - https://uicolors.app/generate
+   * ============================================================================*/
   --color-scooter-50: #ebfeff;
   --color-scooter-100: #cefbff;
   --color-scooter-200: #a2f6ff;
@@ -51,28 +54,12 @@
   --color-lilac-bush-900: #552c86;
   --color-lilac-bush-950: #351b5a;
 
+  /* # Text
+ * ============================================================================*/
   --text-h1: clamp(40px, 5vw + 1rem, 78px);
   --text-h2: clamp(28px, 4vw + 0.8rem, 42px);
   --text-h3: clamp(20px, 3vw + 0.6rem, 32px);
   --text-body: clamp(12px, 2.5vw, 16px);
   --text-ui: clamp(14px, 2.5vw, 18px);
-}
 
-/* ============================================================================ 
- * Semantics 
- * ============================================================================ */
-@theme {
-  --color-primary: var(--color-scooter-500);
-  --color-secondary: var(--color-caribbean-green-500);
-
-  --font-display: var(--font-onset);
-  /* h1, h2, hero sections */
-  --font-heading: var(--font-onset);
-  /* h3–h6, UI headings */
-  --font-body: var(--font-dm-sans);
-  /* paragraphs, default text */
-  --font-ui: var(--font-dm-sans);
-  /* buttons, inputs, labels */
-  --font-mono: ui-monospace, monospace;
-  /* code, technical UI */
 }

@@ -13,6 +13,7 @@ import Link from "next/link";
 // Have background div that has all bg colors maybe, kind of like API for backgrounds maybe, so it can be used in section, but also footer, and a div etc
 // coz right now if somee wants to use bg from section youd need to change that to footer and a div and thas a bit awkward unless we change the tag for sectoin 
 
+
 function WebRoot() {
   return (
     <>
@@ -56,11 +57,11 @@ function WebRoot() {
       <Section className="md:pb-[130px]">
         <Container>
 
-          <Grid className="grid-cols1 md:grid-cols-4 gap-8">
+          <Grid className="grid-cols-1 md:grid-cols-4 gap-8">
             <CardBase
               item={{
                 icon: "/images/icons/icon-4.svg",
-                title: " ROI in 18-24 Months",
+                title: "ROI in 18-24 Months",
                 desc: "Aliquam luctus velit in aliquam tempus.",
                 link: "Learn more"
               }}
