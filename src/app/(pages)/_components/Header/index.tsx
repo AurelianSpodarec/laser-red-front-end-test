@@ -1,5 +1,6 @@
 'use client'
 
+import { ButtonWrap } from "@/components/Button/ButtonWrap";
 import Link from "next/link";
 
 function WebHeader() {
@@ -22,7 +23,10 @@ function WebHeader() {
         >
           Search
         </button>
-        <Link href="#" className="py-2.5 text-[16px] font-semibold rounded-full px-8 gradient text-[#111] ">Contact</Link>
+        {/* <Link href="#" className="py-2.5 text-[16px] font-semibold rounded-full px-8 gradient text-[#111] ">Contact</Link> */}
+        <ButtonWrap asChild variant="gradient">
+          <Link href="#">Contact</Link>
+        </ButtonWrap>
       </div>
     </header>
   );

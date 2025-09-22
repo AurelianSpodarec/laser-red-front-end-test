@@ -12,6 +12,7 @@ export const buttonVariants = cva(
       variant: {
         primary: "",
         secondary: "",
+        gradient: "",
       },
       kind: {
         text: "bg-transparent border-transparent hover:bg-transparent",
@@ -91,6 +92,38 @@ export const buttonVariants = cva(
           bg-button-secondary-outlined-background hover:bg-button-secondary-outlined-background-hover 
           text-button-secondary-outlined-foreground hover:text-button-secondary-outlined-foreground-hover
           border-button-secondary-outlined-border hover:border-button-secondary-outlined-border-hover
+        `,
+      },
+      // ======================================
+      // Gradient
+      // ======================================
+      {
+        kind: "text",
+        variant: "gradient",
+        className: `
+          gradient-primary gradient-size gradient-text
+          bg-button-gradient-text-background hover:bg-button-gradient-text-background-hover 
+          text-button-gradient-text-foreground hover:text-button-gradient-text-foreground-hover
+          border-button-gradient-text-border hover:border-button-gradient-text-border-hover
+        `,
+      },
+      {
+        kind: "solid",
+        variant: "gradient",
+        className: `
+          gradient-primary gradient-size gradient-animated
+          bg-button-gradient-solid-background hover:bg-button-gradient-solid-background-hover 
+          text-button-gradient-solid-foreground hover:text-button-gradient-solid-foreground-hover
+          border-button-gradient-solid-border hover:border-button-gradient-solid-border-hover
+        `,
+      },
+      {
+        kind: "outlined",
+        variant: "gradient",
+        className: `
+          bg-button-gradient-outlined-background hover:bg-button-gradient-outlined-background-hover 
+          text-button-gradient-outlined-foreground hover:text-button-gradient-outlined-foreground-hover
+          border-button-gradient-outlined-border hover:border-button-gradient-outlined-border-hover
         `,
       },
     ],

@@ -52,6 +52,28 @@
 
 
   /* ==============================
+     # Gradient
+  ============================== */
+
+  /* -- Text -- */
+  --color-button-gradient-text-foreground: "";
+  --color-button-gradient-text-background: "";
+  --color-button-gradient-text-background-hover: "";
+  --border-color-button-gradient-text-border: "";
+
+  /* -- Solid -- */
+  --color-button-gradient-solid-foreground: #11111F;
+  --color-button-gradient-solid-background: "";
+  --color-button-gradient-solid-background-hover: "";
+  --border-color-button-gradient-solid-border: transparent;
+
+  /* -- Outlined -- */
+  --color-button-gradient-outlined-foreground: var(--color-gradient);
+  --color-button-gradient-outlined-background: "";
+  --color-button-gradient-outlined-background-hover: "";
+  --border-color-button-gradient-outlined-border: "";
+
+  /* ==============================
      Button Sizes
   ============================== */
   --spacing-button-xs-x: --spacing(3.5);
