@@ -1,6 +1,13 @@
 /* ============================================================================ 
 * Semantics 
 * ============================================================================ */
+/* 
+  Font Display: h1, h2, Hero Sections
+  Font Headings: UI Headings
+  Font Body: Paragraphs, inputs,labels
+  Font UI:inputs,labels
+*/
+
 @theme {
   --radius: var(--radius-lg);
 
@@ -8,17 +15,9 @@
   --color-secondary: var(--color-caribbean-green-500);
 
   --font-display: var(--font-onset);
-  /* h1, h2, hero sections */
   --font-heading: var(--font-onset);
-  /* h3–h6, UI headings */
   --font-body: var(--font-dm-sans);
-  /* paragraphs, default text */
   --font-ui: var(--font-dm-sans);
-  /* buttons, inputs, labels */
-  --font-mono: ui-monospace, monospace;
-  /* code, technical UI */
-
 
   --gradient-primary: linear-gradient(90deg, #00c48d 0%, #00c4e9 50%, #9c7dde 100%);
-
 }

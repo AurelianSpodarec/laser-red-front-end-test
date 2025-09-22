@@ -2,16 +2,14 @@
  * # Gradients - Composable, semantic, and scalable
  * ============================================================================ */
 
-/* --------------------------
-   Gradient Tokens
-   -------------------------- */
+/*  Gradient Tokens
+   ---------------------------------------------------------------------------- */
 .gradient-primary {
   background-image: var(--gradient-primary);
 }
 
-/* --------------------------
-   Shared Utilities
-   -------------------------- */
+/* Shared Utilities
+   ---------------------------------------------------------------------------- */
 .gradient-size {
   background-size: 400% 400%;
 }
@@ -25,9 +23,8 @@
   -webkit-text-fill-color: transparent;
 }
 
-/* --------------------------
-   Keyframes
-   -------------------------- */
+/* Keyframes
+   ---------------------------------------------------------------------------- */
 @keyframes gradient {
   0% {
     background-position: 0 50%;
