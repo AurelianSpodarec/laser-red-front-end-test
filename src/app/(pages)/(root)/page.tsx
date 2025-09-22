@@ -6,7 +6,7 @@ import Section4 from "./_sections/Section4";
 import SectionCTA from "./_sections/CTA";
 import SectionCTA2 from "./_sections/CTA2";
 import SectionServicesTeaser from "./_sections/ServicesTeaser";
-import SectionAbout from "./_sections/SectionStats";
+import SectionAbout from "./_sections/SectionAbout";
 import SectionStats from "./_sections/SectionStats";
 
 function WebRoot() {

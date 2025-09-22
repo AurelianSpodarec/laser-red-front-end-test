@@ -22,13 +22,11 @@ function SectionAbout() {
                   <Image src="/images/man.jpg" />
                 </div>
                 <div className="w-1/2">
-                  <StatCard
-                    item={{
-                      metric: "30+",
-                      title: "Duis fringilla congue",
-                      desc: "Sed at nulla nulla"
-                    }}
-                  />
+                  <StatCard item={{
+                    metric: "30+",
+                    title: "Duis fringilla congue",
+                    desc: "Sed at nulla nulla"
+                  }} />
                 </div>
               </div>
             </div>
