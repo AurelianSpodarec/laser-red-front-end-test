@@ -15,9 +15,9 @@ function Row({
   alignItems = 'start',
   className = '',
 }: RowProps) {
-  const flexDirection = direction === 'row' ? 'flex-row' : 'flex-col';
+  // const flexDirection = direction === 'row' ? 'flex-row' : 'flex-col';
   return (
-    <div className={`flex ${flexDirection} items-${alignItems} gap-[${gap}px] ${className}`}>
+    <div className={`flex  items-${alignItems} gap-[${gap}px] ${className}`}>
       {children}
     </div>
   );

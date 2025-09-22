@@ -1,6 +1,7 @@
 import React from "react"
 import Link from "next/link"
 import Image from "./Image"
+import { ButtonWrap } from "./Button/ButtonWrap"
 
 interface ICardItem {
   icon: string
@@ -23,7 +24,10 @@ function CardBase({ item }: { item: ICardItem }) {
         {item.desc &&
           <p className="text-[16px] tracking-[0.16px] mb-[50px]">{item.desc}</p>
         }
-        <Link href="">{item.link}</Link>
+        {/* <Link href="">{item.link}</Link> */}
+        <ButtonWrap variant="primary">
+          <Link href="#">{item.link}</Link>
+        </ButtonWrap>
       </div>
     </div>
   )

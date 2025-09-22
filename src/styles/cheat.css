@@ -86,6 +86,30 @@
   --color-button-primary-outlined-background-hover: hsl(240 4.8% 95.9%);
   --border-color-button-primary-outlined-border: hsl(240 5.9% 90%);
 
+
+  /* ==============================
+     Secondary Buttons
+  ============================== */
+
+  /* -- Text Variant -- */
+  --color-button-secondary-text-foreground: var(--color-secondary);
+  --color-button-secondary-text-background: hsl(0 0% 100%);
+  --color-button-secondary-text-background-hover: hsla(0 0% 0% / 0.3);
+  --border-color-button-secondary-text-border: hsl(0 0% 100%);
+
+  /* -- Solid Variant -- */
+  --color-button-secondary-solid-foreground: #11111F;
+  --color-button-secondary-solid-background: var(--color-secondary);
+  --color-button-secondary-solid-background-hover: var(--color-secondary);
+  --border-color-button-secondary-solid-border: var(--color-secondary);
+
+  /* -- Outlined Variant -- */
+  --color-button-secondary-outlined-foreground: var(--color-secondary);
+  --color-button-secondary-outlined-background: #fff;
+  --color-button-secondary-outlined-background-hover: hsl(240 4.8% 95.9%);
+  --border-color-button-secondary-outlined-border: hsl(240 5.9% 90%);
+
+
   /* ==============================
      Button Sizes
   ============================== */
