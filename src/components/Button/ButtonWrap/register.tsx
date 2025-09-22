@@ -1,8 +1,6 @@
-'use client'
-
-import React from "react";
-import { Button, ButtonProps } from ".";
 import { cn } from "@/lib/utils";
+import { Button, ButtonProps } from "..";
+import { JSX } from "react";
 
 function IconArrow() {
   return (
@@ -33,31 +31,20 @@ function IconArrow() {
 }
 
 
-const buttonTypes: Record<string, (props: ButtonProps) => JSX.Element> = {
-  arrow: (props: ButtonProps) => (
+function VariantButtonArrow(props: ButtonProps) {
+  return (
     <Button
       {...props}
       rightElement={
-        <span className={cn("", props.className)}>
+        <span className="transition-transform duration-200">
           {props.rightElement ?? <IconArrow />}
         </span>
       }
-      className={cn("group font-bold text-[18px]  ", props.className)}
+      className={cn("group font-bold text-[18px]", props.className)}
     />
-  ),
-};
-
-export type ButtonWrapProps = ButtonProps & {
-  variantType?: keyof typeof buttonTypes;
-};
-
-export function ButtonWrap({ variantType = "arrow", ...props }: ButtonWrapProps) {
-  const ButtonComponent = buttonTypes[variantType];
-
-  if (!ButtonComponent) {
-    console.warn(`[ButtonWrap] Unknown variantType: ${variantType}`);
-    return <Button {...props} />;
-  }
-
-  return <ButtonComponent {...props} />;
+  );
 }
+
+export const buttonTypes: Record<string, (props: ButtonProps) => JSX.Element> = {
+  arrow: VariantButtonArrow,
+};
