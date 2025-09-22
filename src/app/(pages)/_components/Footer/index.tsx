@@ -4,7 +4,7 @@ import Link from "next/link";
 function WebFooter() {
   return (
     <footer className="bg-[#07272E] p-2.5">
-      <div className=" bg-[#02252C] py-[100px] rounded-lg">
+      <div className=" bg-[#02252C] py-[100px] rounded">
         <Container>
           <div className="flex mb-[190px] justify-between">
 

@@ -1,5 +1,6 @@
-import { Button } from "@/components/Button";
+import Link from "next/link";
 import { ButtonWrap } from "@/components/Button/ButtonWrap";
+
 import CardBase from "@/components/CardBase";
 import Container from "@/components/Container";
 import Grid from "@/components/Grid";
@@ -8,32 +9,29 @@ import ImageContainer from "@/components/ImageContainer";
 import Row from "@/components/Row";
 import Section from "@/components/Section";
 import StatCard from "@/components/StatCard";
-import Link from "next/link";
 
-// Have background div that has all bg colors maybe, kind of like API for backgrounds maybe, so it can be used in section, but also footer, and a div etc
-// coz right now if somee wants to use bg from section youd need to change that to footer and a div and thas a bit awkward unless we change the tag for sectoin 
 
 
 function WebRoot() {
   return (
     <>
-      <Section id="hero" className="p-2.5 md:pb-[110px]">
-        <div className="bg-[#062329] rounded-lg">
-          <Row className="flex-col md:flex-row" alignItems="end">
-            <div className="w-full md:w-1/2">
-              <div className="mt-auto p-10">
-                <h1 className="font-display font-bold text-h1 leading-[78px] leading-none tracking-[-3.9px] text-white mb-10">A <span className="text-gradient">new world</span> of solutions.</h1>
-                <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                <ButtonWrap asChild>
-                  <Link href="/about">Book a demo</Link>
-                </ButtonWrap>
-              </div>
+      <Section id="hero" className="md:pb-[110px]" layeredBackground="primary">
+        <Row className="flex-col md:flex-row" alignItems="end">
+          <div className="w-full md:w-1/2">
+
+            <div className="mt-auto p-10">
+              <h1 className="font-display font-bold text-h1 leading-[78px] leading-none tracking-[-3.9px] text-white mb-10">A <span className="text-gradient">new world</span> of solutions.</h1>
+              <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+              <ButtonWrap asChild>
+                <Link href="/about">Book a demo</Link>
+              </ButtonWrap>
             </div>
-            <div className="w-full md:w-1/2">
-              <Image className="rounded-tr-lg rounded-br-lg" src="/images/hero-desktop.jpg" />
-            </div>
-          </Row>
-        </div>
+            
+          </div>
+          <div className="w-full md:w-1/2">
+            <Image className="rounded-tr-lg rounded-br-lg rounded-none" src="/images/hero-desktop.jpg" />
+          </div>
+        </Row>
       </Section>
 
       <Section className="md:pb-[130px] p-2.5">
@@ -98,7 +96,7 @@ function WebRoot() {
 
       <Section id="testimonial" className="md:pb-[60px] p-2.5">
         <Container>
-          <figure className="relative gradient rounded-lg md:h-[510px]">
+          <figure className="relative gradient-primary gradient-size gradient-animated rounded-lg md:h-[510px]">
             <div
               style={{ backgroundImage: "url('/images/pattern.png')" }}
               className="bg-center bg-size-[200%] flex flex-col md:flex-row gap-16 h-full"
@@ -165,7 +163,7 @@ function WebRoot() {
       </Section>
 
       <Section className="p-2.5 pb-0">
-        <div className="gradient py-[95px] rounded-tl-lg rounded-tr-lg">
+        <div className="gradient-primary gradient-size gradient-animated py-[95px] rounded-tl-lg rounded-tr-lg">
           <Container>
             <span className="font-bold text-[50px] lg:text-[120px] leading-[115px] tracking-[-4.2px] font-onest inline-block text-[#062C34]">Experience the Vega advantage</span>
             <Link href="#" className="inline-block text-[#062C34] text-[42px] font-bold">Book a demonstration</Link>

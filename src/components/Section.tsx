@@ -6,25 +6,41 @@ interface ISectionProps extends React.HTMLAttributes<HTMLElement> {
   style?: React.CSSProperties;
   children?: ReactNode;
   background?: "primary" | "secondary";
+  layeredBackground?: "primary";
 }
 
-function Section({ id, className, style, background = "primary", children }: ISectionProps) {
-
-  const backgroundVariants = {
+function Section({
+  id,
+  className = "",
+  style,
+  children,
+  background = "primary",
+  layeredBackground,
+}: ISectionProps) {
+  const backgroundVariants: Record<string, string> = {
     primary: "bg-[#07272E]",
-    secondary: "bg-[#02252C] ",
-  }
+    secondary: "bg-[#02252C]",
+  };
 
-  const spacing = {
-    clean: "",
-
+  const layeredBackgroundVariants: Record<string, string> = {
+    primary: "bg-[#062329]",
   };
 
   return (
-    <section id={id} className={`${className} ${backgroundVariants[background]} `} style={style}>
-      {children}
+    <section
+      id={id}
+      className={`${className} ${backgroundVariants[background]} ${layeredBackground ? "p-2.5" : ""}`}
+      style={style}
+    >
+      {layeredBackground ? (
+        <div className={`${layeredBackgroundVariants[layeredBackground]} rounded`}>
+          {children}
+        </div>
+      ) : (
+        children
+      )}
     </section>
-  )
+  );
 }
 
-export default Section;
+export default Section

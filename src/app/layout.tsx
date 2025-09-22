@@ -8,8 +8,8 @@ import WebFooter from "./(pages)/_components/Footer";
 import { DM_Sans, Onest } from "next/font/google";
 
 export const metadata: Metadata = {
-  title: "Next.js Dashboard with TailwindCSS",
-  description: "Created with best practices in mind",
+  title: "Vega",
+  description: "",
 };
 
 export const dmSans = DM_Sans({
@@ -34,7 +34,7 @@ function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
         <main>
           {children}
         </main>
-        {/* <WebFooter /> */}
+        <WebFooter />
       </body>
     </html>
   );
