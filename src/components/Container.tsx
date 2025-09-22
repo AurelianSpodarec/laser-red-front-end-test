@@ -8,7 +8,6 @@ interface IContainerProps {
 }
 
 function Container({ id, style, className, children }: IContainerProps) {
-
   return (
     <div
       id={id}

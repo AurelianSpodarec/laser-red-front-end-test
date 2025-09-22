@@ -2,6 +2,10 @@
  * # Cheat - Hot fixed and quick code; needs cleaning up before: ___ date
  * ============================================================================ */
 
+
+/* Goodstuff: https://uicolors.app/generate/00CBEC */
+
+
 .gradient {
   animation: gradient 10s ease-in-out infinite;
   background-size: 400% 400%;
@@ -40,3 +44,79 @@
     background-position: 0 50%;
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** ============================================================================
+// Themes Button
+// ========================================================================== */
+
+@theme static {
+  --radius-button-radius: var(--radius-4xl);
+
+  /* ==============================
+     Primary Buttons
+  ============================== */
+
+  /* -- Text Variant -- */
+  --color-button-primary-text-foreground: var(--color-primary);
+  --color-button-primary-text-background: hsl(0 0% 100%);
+  --color-button-primary-text-background-hover: hsla(0 0% 0% / 0.3);
+  --border-color-button-primary-text-border: hsl(0 0% 100%);
+
+  /* -- Solid Variant -- */
+  --color-button-primary-solid-foreground: #11111F;
+  --color-button-primary-solid-background: var(--color-primary);
+  --color-button-primary-solid-background-hover: var(--color-primary);
+  --border-color-button-primary-solid-border: var(--color-primary);
+
+  /* -- Outlined Variant -- */
+  --color-button-primary-outlined-foreground: var(--color-primary);
+  --color-button-primary-outlined-background: #fff;
+  --color-button-primary-outlined-background-hover: hsl(240 4.8% 95.9%);
+  --border-color-button-primary-outlined-border: hsl(240 5.9% 90%);
+
+  /* ==============================
+     Button Sizes
+  ============================== */
+  --spacing-button-xs-x: --spacing(3.5);
+  --text-button-xs-size: var(--text-xs);
+
+  --spacing-button-sm-x: --spacing(4.5);
+  --text-button-sm-size: var(--text-sm);
+
+  --spacing-button-md-x: --spacing(5.5);
+  --text-button-md-size: var(--text-md);
+
+  --spacing-button-lg-x: --spacing(6.5);
+  --text-button-lg-size: var(--text-lg);
+
+  --spacing-button-xl-x: --spacing(7.5);
+  --text-button-xl-size: var(--text-xl);
+}
+
+
+
+/* Primary Background
+    ----------------------------------------------------*/
+/* --color-button-primary-background: var(--color-primary);
+  --color-button-primary-background-hover: red;
+  --color-button-primary-background-active: red;
+  --color-button-primary-background-active-hover: red; */
+
+/* Primary SOLID Foreground 
+    ----------------------------------------------------*/
+/* --color-button-primary-solid-foreground: #fafafa;
+  --color-button-primary-solid-foregrgound-hover: red;
+  --color-button-primary-solid-foreground-active: red;
+  --color-button-primary-solid-foreground-active-hover: red; */

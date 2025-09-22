@@ -1,43 +1,19 @@
+import { Button } from "@/components/Button";
+import { ButtonWrap } from "@/components/Button/ButtonWrap";
+import CardBase from "@/components/CardBase";
 import Container from "@/components/Container";
 import Grid from "@/components/Grid";
 import Image from "@/components/Image";
 import ImageContainer from "@/components/ImageContainer";
 import Row from "@/components/Row";
 import Section from "@/components/Section";
+import StatCard from "@/components/StatCard";
 import Link from "next/link";
 
-function CardBase({ item }: any) {
-  // size
-  return (
-    <div className="border border-white rounded-lg p-8 flex flex-col bg-[#062C34] max-w-[440px]">
-      <div className="mb-[80px]">
-        {/* mb-120px */}
-        <img src={item.icon} alt="" />
-      </div>
-      <div className="mt-auto ">
-        <h3 className="text-[26px] mb-[16px] tracking-[-1.20] font-bold font-heading">{item.title}</h3>
-        <p className="text-[16px] tracking-[0.16px] mb-[50px]">{item.desc}</p>
-        <Link href="">{item.link}</Link>
-      </div>
-    </div>
-  )
-}
 
-function StatCard({ item }: any) {
-  return (
-    <div className="bg-[#00CBEC] rounded-lg p-8 text-left text-[#111] w-full max-w-[300px]">
-      <span className="text-[83px] text-[#11111] tracking-[-4.15] leading-none block mb-[70px]">{item.metric}</span>
-      <div className="mt-auto flex flex-col">
-        <span className="font-bold">{item.title}</span>
-        <span>{item.desc}</span>
-      </div>
-    </div>
-  )
-}
 
 // Have background div that has all bg colors maybe, kind of like API for backgrounds maybe, so it can be used in section, but also footer, and a div etc
 // coz right now if somee wants to use bg from section youd need to change that to footer and a div and thas a bit awkward unless we change the tag for sectoin 
-
 
 
 function WebRoot() {
@@ -50,7 +26,9 @@ function WebRoot() {
               <div className="mt-auto p-10">
                 <h1 className="font-display font-bold text-h1 leading-[78px] leading-none tracking-[-3.9px] text-white">A <span className="text-gradient">new world</span> of solutions.</h1>
                 <p className="text-white py-10">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                <Link href="#" className="inline-block font-semibold rounded-full text-[#111] text-[18px] gradient py-2 px-6">Book a demo</Link>
+                <ButtonWrap asChild>
+                  <Link href="/about">Book a demo</Link>
+                </ButtonWrap>
               </div>
             </div>
             <div className="w-1/2">
@@ -159,6 +137,7 @@ function WebRoot() {
           <Row
             className="gap-28 md:flex-row items-center"
             direction="column"
+            alignItems="center"
           >
             <div className="w-1/2">
               <ImageContainer
