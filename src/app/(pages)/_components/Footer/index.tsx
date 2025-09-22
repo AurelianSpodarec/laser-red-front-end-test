@@ -8,7 +8,6 @@ function WebFooter() {
   return (
     <Section
       tag="footer"
-      className="bg-[#07272E] p-2.5"
       layeredBackground="primary"
       layeredClassName="py-[100px]"
     >
