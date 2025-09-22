@@ -11,9 +11,9 @@
 
   /* -- Text -- */
   --color-button-primary-text-foreground: var(--color-primary);
-  --color-button-primary-text-background: hsl(0 0% 100%);
-  --color-button-primary-text-background-hover: hsla(0 0% 0% / 0.3);
-  --border-color-button-primary-text-border: hsl(0 0% 100%);
+  --color-button-primary-text-background: transparent;
+  --color-button-primary-text-background-hover: "";
+  --border-color-button-primary-text-border: transparent;
 
   /* -- Solid -- */
   --color-button-primary-solid-foreground: #11111F;

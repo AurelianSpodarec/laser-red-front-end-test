@@ -17,14 +17,14 @@ function IconArrow() {
         y="5.7"
         width="0"
         height="1.7"
-        className="fill-black transition-all duration-75 ease-out group-hover:w-[5]"
+        className="transition-all duration-75 ease-out group-hover:w-[5]"
       />
 
       {/* Arrowhead */}
       <path
         d="M12.827,9.886,8.469,5.4,9.618,4.222l6.32,6.5-6.32,6.5L8.469,16.04l4.358-4.482H2.72V9.886Z"
         transform="translate(-3  -4.222)"
-        className="fill-black transition-all duration-75 ease-out group-hover:translate-x-[5px]"
+        className="transition-all duration-75 ease-out group-hover:translate-x-[5px]"
       />
     </svg>
   );

@@ -11,7 +11,8 @@
 
 @theme {
 
-  /* tracking */
+  /* # Tracking/Letter Spacing 
+   * ------------------------------------------------------------------------*/
 
   /* # Fonts 
    * ------------------------------------------------------------------------*/
@@ -53,15 +54,6 @@
   --h2-medium-max-letter-spacing: -2.1px;
   --h2-medium-weight: 600;
   --h2-medium-fluid-factor: 5vw;
-
-
-  /* H2 Medium Variant
-  --h2-medium-size: 42px;
-  --h2-medium-line-height: 46px;
-  --h2-medium-letter-spacing: -2.1px;
-  --h2-medium-weight: 700;
- */
-
 
   /* # Colors - https://uicolors.app/generate
    * ------------------------------------------------------------------------*/

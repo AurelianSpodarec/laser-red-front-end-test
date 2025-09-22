@@ -20,6 +20,7 @@ export const buttonVariants = cva(
         outlined: "bg-transparent",
       },
       size: {
+        none: "",
         xs: "text-(length:--text-button-xs-size) px-button-xs-x h-[30px] ",
         sm: "text-(length:--text-button-sm-size) px-button-sm-x h-[36px]",
         md: "text-(length:--text-button-md-size) px-button-md-x h-[42px]",

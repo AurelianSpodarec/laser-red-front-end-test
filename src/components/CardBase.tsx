@@ -7,7 +7,7 @@ export interface ICardItem {
   icon: string
   title: string
   desc?: string
-  link: string
+  button: {}
 }
 
 function CardBase({ item }: { item: ICardItem }) {
@@ -17,17 +17,22 @@ function CardBase({ item }: { item: ICardItem }) {
         {/* mb-120 */}
         <Image src={item.icon} alt="" />
       </div>
-      <div className="mt-auto">
-        <h3 className="text-[26px] mb-[16px] tracking-[-1.20] font-bold font-heading">
-          {item.title}
-        </h3>
-        {item.desc &&
-          <p className="text-[16px] tracking-[0.16px] mb-[50px]">{item.desc}</p>
-        }
-        {/* <Link href="">{item.link}</Link> */}
-        <ButtonWrap variant="primary">
-          <Link href="#">{item.link}</Link>
-        </ButtonWrap>
+      <div className="flex flex-col flex-1">
+        <div>
+          {item.title &&
+            <h3 className="text-[26px] mb-[16px] tracking-[-1.20] font-bold font-heading">{item.title}</h3>
+          }
+
+          {item.desc &&
+            <p className="text-[16px] tracking-[0.16px] mb-[50px]">{item.desc}</p>
+          }
+        </div>
+
+        <div className="mt-auto">
+          {item.button &&
+            <ButtonWrap {...item.button} />
+          }
+        </div>
       </div>
     </div>
   )
