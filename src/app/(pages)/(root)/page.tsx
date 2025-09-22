@@ -10,8 +10,6 @@ import Row from "@/components/Row";
 import Section from "@/components/Section";
 import StatCard from "@/components/StatCard";
 
-
-
 function WebRoot() {
   return (
     <>
@@ -20,13 +18,13 @@ function WebRoot() {
           <div className="w-full md:w-1/2">
 
             <div className="mt-auto p-10">
-              <h1 className="font-display font-bold text-h1 leading-[78px] leading-none tracking-[-3.9px] text-white mb-10">A <span className="text-gradient">new world</span> of solutions.</h1>
+              <h1 className="text-h1 mb-10">A <span className="gradient-primary gradient-size gradient-animated gradient-text">new world</span> of solutions.</h1>
               <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
               <ButtonWrap asChild>
                 <Link href="/about">Book a demo</Link>
               </ButtonWrap>
             </div>
-            
+
           </div>
           <div className="w-full md:w-1/2">
             <Image className="rounded-tr-lg rounded-br-lg rounded-none" src="/images/hero-desktop.jpg" />
@@ -150,7 +148,7 @@ function WebRoot() {
               </ImageContainer>
             </div>
             <div className="w-full md:w-1/2">
-              <h2 className="font-display text-h2 mb-4 leading-[46px] tracking-[-2.1] font-bold">Ut nec nunc tincidunt, mattis leo nec.</h2>
+              <h2 className="text-h2-md">Ut nec nunc tincidunt, mattis leo nec.</h2>
               <p>Etiam facilisis tortor nec porttitor vestibulum. Donec nec urna ac est suscipit mattis. Nam pharetra felis libero, eget consequat dui faucibus in.</p>
               <p>Vivamus laoreet eget dolor sed sodales. Etiam molestie laoreet augue, vitae molestie quam pretium at. Donec maximus diam in dolor convallis cursus. Donec imperdiet vulputate nunc, et viverra metus sagittis ut. Aenean imperdiet convallis sodales. Ut enim leo, hendrerit sit amet tempor nec, auctor eget eros. Proin vitae tellus diam. In laoreet, tellus quis lacinia interdum, ligula mauris aliquet massa, et rhoncus mi dui eget velit.</p>
               <ButtonWrap variant="primary">
@@ -205,7 +203,7 @@ function WebRoot() {
               </div>
             </div>
             <div className="w-full md:w-1/2">
-              <h2 className="font-display text-h2">Ut enim leo, hendrerit sit amet tempor nec</h2>
+              <h2 className="text-h2-lg">Ut enim leo, hendrerit sit amet tempor nec</h2>
               <p>Vestibulum quam felis, bibendum sed tempor vel, cursus eu dolor. Aliquam luctus velit in aliquam tempus. Suspendisse vitae dignissim mi. Mauris luctus quam ut tellus facilisis feugiat.</p>
               <ButtonWrap variant="secondary">
                 <Link href="#">View Our Services</Link>
@@ -221,7 +219,7 @@ function WebRoot() {
 
           <Row className="flex-col-reverse md:flex-row gap-44" alignItems="center">
             <div className="w-full md:w-1/2">
-              <h2 className="font-display text-h2">Nunc scelerisque elementum dui efficitur</h2>
+              <h2 className="text-h2-md">Nunc scelerisque elementum dui efficitur</h2>
               <p>Sed at nulla nulla. Duis et ultricies felis. Nulla non tortor nec tellus fermentum fringilla. Pellentesque aliquam sed elit ac commodo.</p>
               <div className="grid grid-cols-2 gap-6">
                 <StatCard item={{
@@ -269,7 +267,7 @@ function WebRoot() {
               </div>
             </div>
             <div className="w-full md:w-1/2">
-              <h2 className="font-display text-h2">Aliquam luctus velit?</h2>
+              <h2 className="text-h2-md">Aliquam luctus velit?</h2>
               <p>Suspendisse vitae dignissim mi. Mauris luctus quam ut tellus facilisis feugiat. Nullam pulvinar ante nec eros euismod egestas. Nunc non massa sit amet metus condimentum varius ac eget libero. Vestibulum nec semper nulla. Aliquam at interdum lacus.</p>
               <ButtonWrap>
                 <Link href="#">Learn more</Link>

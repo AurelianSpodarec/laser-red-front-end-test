@@ -11,10 +11,48 @@
 
 @theme {
 
+  /* tracking */
+
   /* # Fonts 
    * ------------------------------------------------------------------------*/
   --font-onset: "Onset", sans-serif;
   --font-dm-sans: "DM Sans", serif;
+
+  --h1-min-size: 50px;
+  --h1-max-size: 78px;
+  --h1-min-line-height: 50px;
+  --h1-max-line-height: 78px;
+  --h1-min-letter-spacing: -1.25px;
+  --h1-max-letter-spacing: -3.9px;
+  --h1-weight: 700;
+  --h1-fluid-factor: 5vw;
+
+  --h2-large-min-size: 32px;
+  --h2-large-max-size: 50px;
+  --h2-large-min-line-height: 36px;
+  --h2-large-max-line-height: 54px;
+  --h2-large-min-letter-spacing: 0px;
+  --h2-large-max-letter-spacing: -2.5px;
+  --h2-large-weight: 600;
+  --h2-large-fluid-factor: 5vw;
+
+  --h2-medium-min-size: 28px;
+  --h2-medium-max-size: 42px;
+  --h2-medium-min-line-height: 34px;
+  --h2-medium-max-line-height: 46px;
+  --h2-medium-min-letter-spacing: 0px;
+  --h2-medium-max-letter-spacing: -2.1px;
+  --h2-medium-weight: 600;
+  --h2-medium-fluid-factor: 5vw;
+
+
+  /* H2 Medium Variant
+  --h2-medium-size: 42px;
+  --h2-medium-line-height: 46px;
+  --h2-medium-letter-spacing: -2.1px;
+  --h2-medium-weight: 700;
+ */
+
 
   /* # Colors - https://uicolors.app/generate
    * ------------------------------------------------------------------------*/

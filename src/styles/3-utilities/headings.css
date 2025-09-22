@@ -1,0 +1,78 @@
+/* ============================================================================
+ * # Headings
+ * ============================================================================ */
+
+/* H1
+   ---------------------------------------------------------------------------- */
+
+.text-h1 {
+  font-family: var(--font-onset);
+  font-style: normal;
+  font-weight: var(--h1-weight);
+  font-size: clamp(
+    var(--h1-min-size),
+    var(--h1-fluid-factor),
+    var(--h1-max-size)
+  );
+  line-height: clamp(
+    var(--h1-min-line-height),
+    calc(var(--h1-fluid-factor) * 1),
+    var(--h1-max-line-height)
+  );
+  letter-spacing: var(--h1-min-letter-spacing);
+
+  @variant md {
+    letter-spacing: var(--h1-max-letter-spacing);
+  }
+}
+
+/* H2
+   ---------------------------------------------------------------------------- */
+
+/* Large */
+.text-h2-lg {
+  font-family: var(--font-onset);
+  font-style: normal;
+  font-weight: var(--h2-large-weight);
+  font-size: clamp(
+    var(--h2-large-min-size),
+    var(--h2-large-fluid-factor),
+    var(--h2-large-max-size)
+  );
+  line-height: clamp(
+    var(--h2-large-min-line-height),
+    calc(var(--h2-large-fluid-factor) * 1.08),
+    var(--h2-large-max-line-height)
+  );
+  letter-spacing: var(--h2-large-min-letter-spacing);
+
+  @variant md {
+    letter-spacing: var(--h2-large-max-letter-spacing);
+  }
+
+  margin-bottom: 20px;
+}
+
+/* Medium */
+.text-h2-md {
+  font-family: var(--font-onset);
+  font-style: normal;
+  font-weight: var(--h2-medium-weight);
+  font-size: clamp(
+    var(--h2-medium-min-size),
+    var(--h2-medium-fluid-factor),
+    var(--h2-medium-max-size)
+  );
+  line-height: clamp(
+    var(--h2-medium-min-line-height),
+    calc(var(--h2-medium-fluid-factor) * 1.095),
+    var(--h2-medium-max-line-height)
+  );
+  letter-spacing: var(--h2-medium-min-letter-spacing);
+
+  @variant md {
+    letter-spacing: var(--h2-medium-max-letter-spacing);
+  }
+
+  margin-bottom: 20px;
+}

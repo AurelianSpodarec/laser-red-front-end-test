@@ -8,7 +8,7 @@ interface ISectionProps extends React.HTMLAttributes<HTMLElement> {
   children?: ReactNode;
   background?: "primary" | "secondary";
   layeredBackground?: "primary";
-  tag: "section" | "footer";
+  tag?: "section" | "footer";
 }
 
 function Section({
