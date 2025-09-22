@@ -3,7 +3,7 @@ import Link from "next/link"
 import Image from "./Image"
 import { ButtonWrap } from "./Button/ButtonWrap"
 
-interface ICardItem {
+export interface ICardItem {
   icon: string
   title: string
   desc?: string

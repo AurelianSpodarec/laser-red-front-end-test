@@ -1,6 +1,29 @@
 /* ============================================================================
  * # Headings
  * ============================================================================ */
+ 
+/* H0
+   ---------------------------------------------------------------------------- */
+.text-h0 {
+  font-family: var(--font-onset);
+  font-style: normal;
+  font-weight: var(--h0-weight);
+  font-size: clamp(
+    var(--h0-min-size),
+    var(--h0-fluid-factor),
+    var(--h0-max-size)
+  );
+  line-height: clamp(
+    var(--h0-min-line-height),
+    calc(var(--h0-fluid-factor) * 0.958),
+    var(--h0-max-line-height)
+  );
+  letter-spacing: var(--h0-min-letter-spacing);
+
+  @variant md {
+    letter-spacing: var(--h0-max-letter-spacing);
+  }
+}
 
 /* H1
    ---------------------------------------------------------------------------- */

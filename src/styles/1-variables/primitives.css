@@ -18,6 +18,15 @@
   --font-onset: "Onset", sans-serif;
   --font-dm-sans: "DM Sans", serif;
 
+  --h0-min-size: 50px;
+  --h0-max-size: 120px;
+  --h0-min-line-height: 50px;
+  --h0-max-line-height: 115px;
+  --h0-min-letter-spacing: -1.25px;
+  --h0-max-letter-spacing: -4.2px;
+  --h0-weight: 700;
+  --h0-fluid-factor: 8vw;
+
   --h1-min-size: 50px;
   --h1-max-size: 78px;
   --h1-min-line-height: 50px;
@@ -99,5 +108,11 @@
   --text-h3: clamp(20px, 3vw + 0.6rem, 32px);
   --text-body: clamp(12px, 2.5vw, 16px);
   --text-ui: clamp(14px, 2.5vw, 18px);
+
+  --spacing-section-sm: clamp(30px, 8vw, 60px);
+  --spacing-section-md: clamp(60px, 12vw, 90px);
+  --spacing-section-lg: clamp(60px, 12vw, 110px);
+  --spacing-section-xl: clamp(90px, 16vw, 130px);
+  --spacing-section-2xl: clamp(130px, 20vw, 190px);
 
 }

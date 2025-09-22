@@ -10,6 +10,7 @@ function WebFooter() {
       tag="footer"
       layeredBackground="primary"
       layeredClassName="py-[100px]"
+      spacing="none"
     >
       <Container>
         <div className="flex justify-between mb-[190px]">
