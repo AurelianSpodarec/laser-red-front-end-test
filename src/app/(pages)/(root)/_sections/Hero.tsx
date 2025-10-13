@@ -9,8 +9,8 @@ function SectionHero() {
     <Section id="hero" layeredBackground="primary" spacing="none">
       <Row className="flex-col md:flex-row" alignItems="end">
 
-        <div className="w-full md:w-1/2">
-          <div className="mt-auto p-14">
+        <div className="w-full md:w-1/2 mt-[150px]">
+          <div className="mt-auto p-6 lg:p-14">
             <h1 className="text-h1 mb-10">A <span className="gradient-primary gradient-size gradient-animated gradient-text">new world</span> of solutions.</h1>
             <p className="text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             <ButtonWrap asChild>
@@ -20,7 +20,7 @@ function SectionHero() {
         </div>
 
         <div className="w-full md:w-1/2">
-          <Image className="rounded-tr-lg rounded-br-lg rounded-none" src="/images/hero-desktop.jpg" />
+          <Image className="rounded-br-lg rounded-bl-lg lg:rounded-tr-lg lg:rounded-br-lg rounded-none" src="/images/hero-desktop.jpg" />
         </div>
 
       </Row>

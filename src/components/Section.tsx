@@ -95,15 +95,11 @@ function Section({
   return (
     <Tag
       id={id}
-      className={`${className} ${backgroundVariants[background]} ${getSpacingClasses(
-        spacing
-      )} ${layeredBackground ? "p-2.5" : ""}`}
+      className={`${className} ${backgroundVariants[background]} ${getSpacingClasses(spacing)} ${layeredBackground ? "p-4 lg:p-2.5" : ""}`}
       style={style}
     >
       {layeredBackground ? (
-        <div
-          className={`${layeredClassName} ${layeredBackgroundVariants[layeredBackground]} rounded`}
-        >
+        <div className={`${layeredClassName} ${layeredBackgroundVariants[layeredBackground]} rounded`}>
           {children}
         </div>
       ) : (
