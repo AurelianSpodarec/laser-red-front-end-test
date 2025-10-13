@@ -30,11 +30,11 @@ function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body className={`antialiased font-dm-sans text-white ${dmSans.variable} ${onset.variable}`}>
-        <WebHeader />
+        {/* <WebHeader /> */}
         <main>
           {children}
         </main>
-        <WebFooter />
+        {/* <WebFooter /> */}
       </body>
     </html>
   );

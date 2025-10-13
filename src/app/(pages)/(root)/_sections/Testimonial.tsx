@@ -4,13 +4,13 @@ import Section from "@/components/Section";
 
 function SectionTestimonial() {
   return (
-    <Section id="testimonial" spacing={{ top: "sm", bottom: "none" }} className="p-2.5">
+    <Section id="testimonial" spacing={{ top: "sm", bottom: "none" }}>
       <Container>
 
         <figure className="relative gradient-primary gradient-size gradient-animated rounded-lg md:h-[510px]">
-          <div style={{ backgroundImage: "url('/images/pattern.png')" }} className="bg-center bg-size-[200%] flex flex-col md:flex-row gap-16 h-full">
+          <div style={{ backgroundImage: "url('/images/pattern.png')" }} className="bg-center bg-size-[200%] flex flex-col md:flex-row lg:gap-16 h-full">
 
-            <div className="flex flex-col h-full p-12">
+            <div className="flex flex-col h-full p-12 gap-28 lg:gap-0">
               <blockquote>
                 <p className="text-h2-md text-[#02252C]">
                   “unc non massa sit amet metus condimentum varius ac eget libero.
@@ -23,9 +23,9 @@ function SectionTestimonial() {
               </figcaption>
             </div>
 
-            <div className="p-2.5">
+            <div className="p-4 lg:p-2.5">
               <Image
-                className="h-full w-full md:w-auto object-cover md:min-w-[350px]"
+                className="w-full md:w-auto object-cover h-[260px] md:h-full md:min-w-[350px]"
                 src="/images/testimonial.jpg"
                 alt="Portrait of Andrew Andrews"
               />

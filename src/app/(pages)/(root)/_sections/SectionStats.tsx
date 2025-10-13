@@ -8,12 +8,12 @@ function SectionStats() {
   return (
     <Section spacing="lg">
       <Container>
-        <Row className="flex-col-reverse md:flex-row gap-44" alignItems="center">
+        <Row className="flex-col-reverse md:flex-row gap-12 lg:gap-44" alignItems="center">
 
           <div className="w-full md:w-1/2">
             <h2 className="text-h2-md">Nunc scelerisque elementum dui efficitur</h2>
             <p>Sed at nulla nulla. Duis et ultricies felis. Nulla non tortor nec tellus fermentum fringilla. Pellentesque aliquam sed elit ac commodo.</p>
-            <div className="grid grid-cols-2 gap-6">
+            <div className="grid grid-cols-2 gap-4 lg:gap-6">
               <StatCard
                 item={{
                   metric: "99%",
@@ -32,7 +32,7 @@ function SectionStats() {
           </div>
 
           <div className="w-full md:w-1/2">
-            <Image src="/images/stats-image-computer.jpg" className="h-[650px] w-full object-cover" />
+            <Image src="/images/stats-image-computer.jpg" className="lg:h-[650px] w-full object-cover" />
           </div>
 
         </Row>

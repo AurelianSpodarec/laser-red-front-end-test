@@ -12,8 +12,8 @@ export interface ICardItem {
 
 function CardBase({ item }: { item: ICardItem }) {
   return (
-    <div className="border border-white rounded-lg p-8 flex flex-col bg-[#062C34] max-w-[440px]">
-      <div className="mb-[80px]">
+    <div className="border-2 border-white rounded-lg p-8 flex flex-col bg-[#062C34] max-w-[440px]">
+      <div className="mb-[40px] md:mb-[80px]">
         {/* mb-120 */}
         <Image src={item.icon} alt="" />
       </div>

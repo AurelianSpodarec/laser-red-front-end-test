@@ -10,29 +10,47 @@ function SectionAbout() {
   return (
     <Section spacing={{ top: "none", bottom: "xl" }}>
       <Container>
-        <Row alignItems="center" className="flex-col md:flex-row md:gap-28">
+        <Row alignItems="center" className="flex-col grid-cols-2 md:flex-row md:gap-28 lg:h-[500px]">
 
-          <div className="w-full md:w-1/2">
-            <div className="flex flex-col md:flex-row gap-8">
+          <div className="w-full mb-16 lg:mb-0">
+            <div className="flex flex-col md:flex-row gap-8 min-h-[500px]">
+
               <div>
-                <Image src="/images/woman.jpg" />
+                <Image
+                  src="/images/woman.jpg"
+                  alt="Woman"
+                  width={600}
+                  height={800}
+                  className="w-full h-full object-cover rounded-2xl"
+                />
               </div>
-              <div className="flex flex-row md:flex-col gap-8">
-                <div className="w-1/2">
-                  <Image src="/images/man.jpg" />
+
+              <div className="flex lg:flex-col gap-8">
+                <div className="flex-1">
+                  <Image
+                    src="/images/man.jpg"
+                    alt="Man"
+                    width={600}
+                    height={400}
+                    className="w-full h-full object-cover rounded-2xl"
+                  />
                 </div>
-                <div className="w-1/2">
-                  <StatCard item={{
-                    metric: "30+",
-                    title: "Duis fringilla congue",
-                    desc: "Sed at nulla nulla"
-                  }} />
+                <div className="flex-1">
+                  <StatCard
+                    className="h-full"
+                    item={{
+                      metric: "30+",
+                      title: "Duis fringilla congue",
+                      desc: "Sed at nulla nulla",
+                    }}
+                  />
                 </div>
               </div>
+
             </div>
           </div>
 
-          <div className="w-full md:w-1/2">
+          <div className="w-full">
             <h2 className="text-h2-md">Aliquam luctus velit?</h2>
             <p>Suspendisse vitae dignissim mi. Mauris luctus quam ut tellus facilisis feugiat. Nullam pulvinar ante nec eros euismod egestas. Nunc non massa sit amet metus condimentum varius ac eget libero. Vestibulum nec semper nulla. Aliquam at interdum lacus.</p>
             <ButtonWrap>

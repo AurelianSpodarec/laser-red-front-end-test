@@ -1,0 +1,11 @@
+/* ============================================================================ 
+  * # Testimonial 
+  * ============================================================================ */
+
+@theme static {
+  --text-testimonial-font-size: @text-h2-lg;
+
+  @variant md {
+    --text-testimonial-font-size: @text-h2-md;
+  }
+}
