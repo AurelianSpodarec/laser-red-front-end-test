@@ -34,7 +34,7 @@ function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
         <main>
           {children}
         </main>
-        {/* <WebFooter /> */}
+        <WebFooter />
       </body>
     </html>
   );
