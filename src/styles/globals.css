@@ -6,10 +6,10 @@
 /* ============================================================================
  * 1-base
  * ============================================================================ */
-@import "./1-variables/primitives.css";
-@import "./1-variables/semantics.css";
+@import "./1-tokens/primitives.css";
+@import "./1-tokens/semantics.css";
 
-@import "./1-variables/components/button.css";
+@import "./1-tokens/components/button.css";
 
 /* ============================================================================
  * 2-base
