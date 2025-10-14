@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import "@/styles/globals.css";
+import "@/styles/styles.css";
 import { dmSans, onset } from "@/styles/1-tokens/fonts";
 
 import WebHeader from "./(pages)/_components/Header";
