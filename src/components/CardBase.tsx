@@ -1,5 +1,4 @@
 import React from "react"
-import Link from "next/link"
 import Image from "./atoms/Image"
 import { ButtonWrap } from "./atoms/Button/ButtonWrap"
 
@@ -7,7 +6,10 @@ export interface ICardItem {
   icon: string
   title: string
   desc?: string
-  button: {}
+  button: {
+    label: string;
+    url: string;
+  }
 }
 
 function CardBase({ item }: { item: ICardItem }) {
