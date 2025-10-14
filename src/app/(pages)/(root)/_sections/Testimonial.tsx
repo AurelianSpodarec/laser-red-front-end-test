@@ -8,7 +8,7 @@ function SectionTestimonial() {
       <Container>
 
         <figure className="relative gradient-primary gradient-size gradient-animated rounded-lg md:h-[510px]">
-          <div style={{ backgroundImage: "url('/images/pattern.png')" }} className="bg-center bg-size-[200%] flex flex-col md:flex-row lg:gap-16 h-full">
+          <div style={{ backgroundImage: "url('/graphics/pattern.png')" }} className="bg-center bg-size-[200%] flex flex-col md:flex-row lg:gap-16 h-full">
 
             <div className="flex flex-col h-full p-12 gap-28 lg:gap-0">
               <blockquote>

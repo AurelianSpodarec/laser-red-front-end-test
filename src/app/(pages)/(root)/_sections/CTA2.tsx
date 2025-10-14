@@ -10,7 +10,7 @@ function SectionCTA2() {
         <Container className="container mx-auto max-w-[1400px] h-[900px] lg-h-auto lg:py-[190px] flex lg:block">
           <div className="flex justify-end p-4 pb-8 lg:p-2.5 mt-auto">
             <CardBase item={{
-              icon: "/images/icons/icon-5.svg",
+              icon: "/icons/icon-5.svg",
               title: "Integer justo quam, faucibus nec metus",
               desc: "Ut a erat dolor. Nullam tortor diam, pretium vel massa non, volutpat condimentum nisi.",
               button: {

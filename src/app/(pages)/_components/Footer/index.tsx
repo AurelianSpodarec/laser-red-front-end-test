@@ -44,7 +44,7 @@ function WebFooter() {
             <span className="hidden lg:inline">-</span><Link href="">Privacy Notice</Link> - <Link href="">Cookie Notice</Link> - <Link href="">Terms of Service</Link>
           </div>
           <div>
-            <img src="/images/laser-logo.svg" alt="Website by Laser Red" />
+            <img src="/icons/logo-laser.svg" alt="Website by Laser Red" />
           </div>
         </div>
       </Container>

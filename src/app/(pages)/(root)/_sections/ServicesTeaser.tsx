@@ -15,7 +15,7 @@ function SectionServicesTeaser() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <CardBase
                 item={{
-                  icon: "/images/icons/icon-1.svg",
+                  icon: "/icons/icon-1.svg",
                   title: "Duis fringilla congue turpis",
                   button: {
                     label: "Learn more",
@@ -25,7 +25,7 @@ function SectionServicesTeaser() {
               />
               <CardBase
                 item={{
-                  icon: "/images/icons/icon-7.svg",
+                  icon: "/icons/icon-7.svg",
                   title: "Nunc scelerisque elementum",
                   button: {
                     label: "Learn more",

@@ -5,7 +5,7 @@ import Section from "@/components/Section";
 
 export const dataCards: ICardItem[] = [
   {
-    icon: "/images/icons/icon-4.svg",
+    icon: "/icons/icon-4.svg",
     title: "ROI in 18-24 Months",
     desc: "Aliquam luctus velit in aliquam tempus.",
     button: {
@@ -16,7 +16,7 @@ export const dataCards: ICardItem[] = [
     }
   },
   {
-    icon: "/images/icons/icon-2.svg",
+    icon: "/icons/icon-2.svg",
     title: "UK Build",
     desc: "Suspendisse vitae dignissim mi.",
     button: {
@@ -27,7 +27,7 @@ export const dataCards: ICardItem[] = [
     }
   },
   {
-    icon: "/images/icons/icon-3.svg",
+    icon: "/icons/icon-3.svg",
     title: "Competitive Edge",
     desc: "Mauris luctus quam ut tellus facilisis feugiat.",
     button: {
@@ -38,7 +38,7 @@ export const dataCards: ICardItem[] = [
     }
   },
   {
-    icon: "/images/icons/icon-6.svg",
+    icon: "/icons/icon-6.svg",
     title: "Increase Efficiency",
     desc: "Nullam pulvinar ante nec eros euismod egestas.",
     button: {
