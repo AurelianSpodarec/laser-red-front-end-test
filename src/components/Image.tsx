@@ -1,3 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
+// Using native <img> intentionally — this react code is framework-agnostic
+
 import React from "react";
 
 type ImageProps = React.ImgHTMLAttributes<HTMLImageElement> & {
