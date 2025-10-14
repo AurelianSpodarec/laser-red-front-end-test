@@ -5,7 +5,7 @@ import { configBrand } from "@/config/brand";
 
 import Section from "@/components/layout/Section";
 import Container from "@/components/layout/Container";
-import { ButtonWrap } from "@/components/Button/ButtonWrap";
+import { ButtonWrap } from "@/components/atoms/Button/ButtonWrap";
 
 function WebFooter() {
   return (

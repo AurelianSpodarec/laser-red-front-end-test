@@ -8,7 +8,7 @@ import MobileDrawer from "./Mobile";
 import MenuItem from "./MenuItem";
 
 import HamburgerButton from "./Mobile/HamburgerButton";
-import { ButtonWrap } from "@/components/Button/ButtonWrap";
+import { ButtonWrap } from "@/components/atoms/Button/ButtonWrap";
 import Overlay from "./Mobile/Overlay";
 
 function WebHeader() {

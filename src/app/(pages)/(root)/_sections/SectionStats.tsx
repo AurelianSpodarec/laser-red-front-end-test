@@ -2,7 +2,7 @@ import Container from "@/components/layout/Container";
 import Image from "@/components/atoms/Image";
 import Row from "@/components/layout/Row";
 import Section from "@/components/layout/Section";
-import StatCard from "@/components/StatCard";
+import StatCard from "@/components/CardStat";
 
 function SectionStats() {
   return (

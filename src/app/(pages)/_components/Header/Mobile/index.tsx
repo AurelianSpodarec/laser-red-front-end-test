@@ -6,7 +6,7 @@ import Link from "next/link";
 import dataMenu from "../dataMenu";
 import MenuItem from "../MenuItem";
 
-import { ButtonWrap } from "@/components/Button/ButtonWrap";
+import { ButtonWrap } from "@/components/atoms/Button/ButtonWrap";
 
 function MobileDrawer({ open, onClick }: { open: boolean, onClick: () => void }) {
 

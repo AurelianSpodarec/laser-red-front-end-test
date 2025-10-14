@@ -1,11 +1,11 @@
 import Link from "next/link";
 
-import { ButtonWrap } from "@/components/Button/ButtonWrap";
+import { ButtonWrap } from "@/components/atoms/Button/ButtonWrap";
 import Container from "@/components/layout/Container";
 import ImageContainer from "@/components/ImageContainer";
 import Row from "@/components/layout/Row";
 import Section from "@/components/layout/Section";
-import StatCard from "@/components/StatCard";
+import StatCard from "@/components/CardStat";
 
 function Section4() {
   return (
