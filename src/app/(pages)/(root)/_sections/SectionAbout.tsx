@@ -11,10 +11,10 @@ function SectionAbout() {
   return (
     <Section spacing={{ top: "none", bottom: "xl" }}>
       <Container>
-        <Row alignItems="center" className="flex-col grid-cols-2 md:flex-row md:gap-28 lg:h-[500px]">
+        <Row alignItems="center" className="flex-col grid-cols-2 lg:flex-row lg:gap-28 lg:h-[500px]">
 
           <div className="w-full mb-16 lg:mb-0">
-            <div className="flex flex-col md:flex-row gap-8 min-h-[500px]">
+            <div className="flex flex-col lg:flex-row gap-8 min-h-[500px]">
 
               <div>
                 <Image

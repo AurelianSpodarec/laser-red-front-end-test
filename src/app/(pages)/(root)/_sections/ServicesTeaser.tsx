@@ -9,10 +9,10 @@ function SectionServicesTeaser() {
   return (
     <Section background="secondary" spacing="lg">
       <Container>
-        <Row alignItems="center" className="flex-col md:flex-row gap-12 md:gap-36">
+        <Row alignItems="center" className="flex-col lg:flex-row gap-12 lg:gap-36">
 
-          <div className="w-full md:w-1/2">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div className="w-full lg:w-1/2">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <CardBase
                 item={{
                   icon: "/icons/icon-1.svg",
@@ -36,7 +36,7 @@ function SectionServicesTeaser() {
             </div>
           </div>
 
-          <div className="w-full md:w-1/2">
+          <div className="w-full lg:w-1/2">
             <div className="p-4">
               <h2 className="text-h2-lg">Ut enim leo, hendrerit sit amet tempor nec</h2>
               <p>Vestibulum quam felis, bibendum sed tempor vel, cursus eu dolor. Aliquam luctus velit in aliquam tempus. Suspendisse vitae dignissim mi. Mauris luctus quam ut tellus facilisis feugiat.</p>

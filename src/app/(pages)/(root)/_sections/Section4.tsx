@@ -11,9 +11,9 @@ function Section4() {
   return (
     <Section spacing={{ top: "sm", bottom: "2xl" }}>
       <Container>
-        <Row className="gap-12 md:gap-44 flex-col md:flex-row items-center" alignItems="center">
+        <Row className="gap-12 md:gap-24 lg:gap-44 flex-col lg:flex-row items-center" alignItems="center">
 
-          <div className="w-full md:w-1/2">
+          <div className="w-full lg:w-1/2">
             <ImageContainer
               src="/images/it-professional-data-center-tablet_20251014.jpg"
               overlay
@@ -29,7 +29,7 @@ function Section4() {
             </ImageContainer>
           </div>
 
-          <div className="w-full md:w-1/2">
+          <div className="w-full lg:w-1/2">
             <div className="px-4.5">
 
               <h2 className="text-h2-md">Ut nec nunc tincidunt, mattis leo nec.</h2>
