@@ -109,6 +109,26 @@ This approach:
 - Reduces cognitive load — if you forget the specific variant (e.g., “blog”), you can type the shared prefix (`card`) and quickly find what you need.
 - Makes scanning the file tree easier and more predictable.
 
+## TypeScript Naming Convention
+
+To improve **IDE discoverability** and reduce **cognitive load**, every TypeScript `type` or `interface` is prefixed with an **`I`** — regardless of whether it’s declared as a `type` or an `interface`.
+
+### Why this helps
+
+- You don’t always remember whether a shape was defined as a `type` or an `interface`.
+- There’s no strict rule on when to use one over the other.
+- A consistent prefix (`I`) makes it easier to **search**, **autocomplete**, and **recognize** these structures in your codebase.
+
+### Example
+
+```ts
+type IOverlayPosition = "center" | "top-left" | "bottom-right";
+
+interface IImageContainerProps {
+  // ...
+}
+```
+
 ## Getting Started
 
 Follow these steps to set up the project locally.
