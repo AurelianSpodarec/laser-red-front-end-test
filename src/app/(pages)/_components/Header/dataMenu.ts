@@ -7,24 +7,24 @@ export interface IMenuItem {
 
 const dataMenu: IMenuItem[] = [
   {
+    name: "Solutions",
+    link: WebsiteRoutes.SOLUTIONS
+  },
+  {
+    name: "Software",
+    link: WebsiteRoutes.SOFTWARE
+  },
+  {
     name: "Services",
     link: WebsiteRoutes.SERVICES
   },
   {
-    name: "About",
-    link: WebsiteRoutes.ABOUT
+    name: "Case Studies",
+    link: WebsiteRoutes.CASE_STUDIES
   },
   {
-    name: "Process",
-    link: WebsiteRoutes.PROCESS
-  },
-  {
-    name: "Projects",
-    link: WebsiteRoutes.WORK
-  },
-  {
-    name: "Get In Touch",
-    link: WebsiteRoutes.CONTACT
+    name: "Company",
+    link: WebsiteRoutes.COMPANY
   }
 ]
 

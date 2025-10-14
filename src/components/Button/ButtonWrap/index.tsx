@@ -21,7 +21,7 @@ export function ButtonWrap({ variantType = "arrow", href, children, ...props }: 
   if (href) {
     return (
       <ButtonComponent asChild {...props}>
-        <Link href={href}>{children ?? props.label}</Link>
+        <Link href={href} tabIndex={-1}>{children ?? props.label}</Link>
       </ButtonComponent>
     );
   }

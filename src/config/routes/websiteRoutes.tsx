@@ -10,6 +10,8 @@ export enum WebsiteRoutes {
   RESOURCES = "#",
   COMPANY = "#",
   CAREERS = "#",
+  SOFTWARE = "#",
+  SERVICES = "#",
 
   PRIVACY = "#",
   COOKIES = "#",
