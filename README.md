@@ -6,7 +6,7 @@
 
 This project was developed as a **Gutenberg WordPress front-end technical test for Laser Red** ([laser.red](https://laser.red)).
 
-## Why Not Direclty in Gutenberg?
+## Why Not Directly in Gutenberg?
 
 Every system should first be developed in isolation before being implemented in the WordPress backend to minimize mistakes, reduce friction, and avoid unnecessary rework.
 
@@ -21,7 +21,9 @@ The focus of this project is to build a scalable and modular system that can be 
 
 Test files can be found in the root folder ["/source"](https://github.com/AurelianSpodarec/laser-vega-front-end/tree/main/source).
 
-Some minor design details have been adjusted due to the nature and constraints of technical tests in general. Without the opportunity to clarify certain aspects with a designer, I made reasonable assumptions on spacing and layout to keep the project functional and coherent.
+Some minor design details have been adjusted due to the nature and constraints of technical tests in general.
+
+Without the opportunity to clarify certain aspects with a designer, I made reasonable assumptions on spacing and layout to keep the project functional and coherent.
 
 **Example:**  
 Section **spacing values** (top/bottom) in the design included 120px, 115px, 105px, and 95px. Ideally, a system would be defined to simplify this. For maintainability, 115px and 120px could be merged into 120px, and 105px and 95px into 100px. The visual difference is subtle and barely noticeable, but it makes the codebase much more consistent, maintainable, and efficient.
