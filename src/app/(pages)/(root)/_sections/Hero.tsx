@@ -21,7 +21,7 @@ function SectionHero() {
         </div>
 
         <div className="w-full md:w-1/2">
-          <Image className="rounded-br-lg rounded-bl-lg lg:rounded-tr-lg lg:rounded-br-lg rounded-none" src="/images/team-brainstorming-whiteboard_20251014.jpg" />
+          <Image src="/images/team-brainstorming-whiteboard_20251014.jpg" alt="" className="rounded-br-lg rounded-bl-lg lg:rounded-tr-lg lg:rounded-br-lg rounded-none" />
         </div>
 
       </Row>
