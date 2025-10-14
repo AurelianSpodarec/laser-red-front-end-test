@@ -1,38 +1,54 @@
 'use client'
 
-import { useState } from "react";
+import { useEffect } from "react";
 import Link from "next/link";
 
-import { WebsiteRoutes } from "@/config/routes";
+import dataMenu from "../dataMenu";
+import MenuItem from "../MenuItem";
 
-import Drawer from "./_components/Drawer";
-import Overlay from "./_components/Overlay";
+import { ButtonWrap } from "@/components/Button/ButtonWrap";
 
-import useLockBodyScroll from "@/hooks/useLockBodyScroll";
+function MobileDrawer({ open, onClick }: { open: boolean, onClick: () => void }) {
 
-function HeaderMobile() {
-  const [open, setOpen] = useState(false);
-  useLockBodyScroll(open);
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth >= 1024 && open) {
+        onClick();
+      }
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, [open, onClick]);
+
+  useEffect(() => {
+    document.body.style.overflow = open ? "hidden" : "";
+    return () => {
+      document.body.style.overflow = "";
+    };
+  }, [open]);
 
   return (
-    <>
-      <div className="flex justify-between items-center p-4 lg:hidden h-full w-full">
-        <Link href={WebsiteRoutes.ROOT} className="font-semibold">
-          Aurelian Spodarec
-        </Link>
-
-        <button
-          className="px-3 py-1 rounded-md bg-primary text-primary-foreground"
-          onClick={() => setOpen(true)}
-        >
-          Menu
-        </button>
-
+    <div
+      className={`fixed inset-0 z-30 flex flex-col bg-[#07272e] h-full w-full md:w-[400px] sm:right-0 sm:left-auto
+        transform transition-transform duration-300 lg:duration-0 ease-in-out
+        ${open ? "translate-x-0" : "translate-x-full"}`}
+    >
+      <div className="flex flex-col flex-1 overflow-hidden pt-30 px-8">
+        <nav className="flex-1 overflow-y-scroll flex flex-col text-center space-y-6 py-4">
+          {dataMenu.map((item) => (
+            <MenuItem key={item.link} item={item} onClick={onClick} />
+          ))}
+        </nav>
       </div>
-      <Overlay open={open} onClick={() => setOpen(false)} />
-      <Drawer open={open} onClose={() => setOpen(false)} />
-    </>
+
+      <div className="p-8 bg-[#07272e] border-t border-[#0a3841]">
+        <ButtonWrap asChild variant="gradient" block>
+          <Link href="#">Contact</Link>
+        </ButtonWrap>
+      </div>
+    </div>
   );
 }
 
-export default HeaderMobile
+export default MobileDrawer

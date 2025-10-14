@@ -55,7 +55,7 @@ function Section3() {
     <Section spacing="none">
       <Container>
 
-        <Grid className="grid-cols-1 md:grid-cols-4 gap-8">
+        <Grid className="grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
           {dataCards.map((item, index) => (
             <CardBase key={index} item={item} />
           ))}

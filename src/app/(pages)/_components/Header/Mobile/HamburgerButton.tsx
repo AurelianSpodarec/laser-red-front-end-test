@@ -1,3 +1,5 @@
+'use client'
+
 interface IHamburgerButtonProps {
   open: boolean;
   setOpen: React.Dispatch<React.SetStateAction<boolean>>;
@@ -8,7 +10,7 @@ function HamburgerButton({ open, setOpen }: IHamburgerButtonProps) {
     <button
       type="button"
       onClick={() => setOpen(!open)}
-      className="relative size-6 cursor-pointer flex-none select-none"
+      className="relative size-6 cursor-pointer flex-none select-none lg:hidden"
       aria-label={open ? "Close menu" : "Open menu"}
     >
       <div className="relative h-full w-full">
