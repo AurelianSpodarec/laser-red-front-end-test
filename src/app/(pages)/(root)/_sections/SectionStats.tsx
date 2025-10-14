@@ -32,7 +32,7 @@ function SectionStats() {
           </div>
 
           <div className="w-full md:w-1/2">
-            <Image src="/images/stats-image-computer.jpg" className="lg:h-[650px] w-full object-cover" />
+            <Image src="/images/it-team-server-room_20251014.jpg" className="lg:h-[650px] w-full object-cover" />
           </div>
 
         </Row>

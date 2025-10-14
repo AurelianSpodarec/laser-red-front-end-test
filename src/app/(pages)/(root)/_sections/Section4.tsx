@@ -15,7 +15,7 @@ function Section4() {
 
           <div className="w-full md:w-1/2">
             <ImageContainer
-              src="/images/stat-image.jpg"
+              src="/images/it-professional-data-center-tablet_20251014.jpg"
               overlay
               overlayPosition="center"
             >

@@ -26,7 +26,7 @@ function SectionTestimonial() {
             <div className="p-4 lg:p-2.5">
               <Image
                 className="w-full md:w-auto object-cover h-[260px] md:h-full md:min-w-[350px]"
-                src="/images/testimonial.jpg"
+                src="/images/tech-expert-digital-interface_20251014.jpg"
                 alt="Portrait of Andrew Andrews"
               />
             </div>

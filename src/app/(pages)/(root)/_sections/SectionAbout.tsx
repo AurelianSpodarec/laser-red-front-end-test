@@ -18,7 +18,7 @@ function SectionAbout() {
 
               <div>
                 <Image
-                  src="/images/woman.jpg"
+                  src="/images/tech-professional-server-room_20251014.jpg"
                   alt="Woman"
                   width={600}
                   height={800}
@@ -29,7 +29,7 @@ function SectionAbout() {
               <div className="flex lg:flex-col gap-8">
                 <div className="flex-1">
                   <Image
-                    src="/images/man.jpg"
+                    src="/images/it-specialist-data-center_20251014.jpg"
                     alt="Man"
                     width={600}
                     height={400}

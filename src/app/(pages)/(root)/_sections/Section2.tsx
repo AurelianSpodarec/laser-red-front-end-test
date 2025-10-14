@@ -10,7 +10,7 @@ function Section2() {
         <Row alignItems="center" className="flex-col md:flex-row gap-4 md:gap-28">
 
           <div className="w-full md:w-3/5">
-            <Image src="/images/lady-computer.jpg" className="rounded-xl md:h-[480px] w-full object-cover" />
+            <Image src="/images/office-worker-at-computer_20251014.jpg" className="rounded-xl md:h-[480px] w-full object-cover" />
           </div>
 
           <div className="w-full md:w-2/5">
