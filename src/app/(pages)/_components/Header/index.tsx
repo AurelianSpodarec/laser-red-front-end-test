@@ -10,6 +10,7 @@ import MenuItem from "./MenuItem";
 import HamburgerButton from "./Mobile/HamburgerButton";
 import { ButtonWrap } from "@/components/atoms/Button/ButtonWrap";
 import Overlay from "./Mobile/Overlay";
+import Image from "@/components/atoms/Image";
 
 function WebHeader() {
   const [open, setOpen] = useState(false);
@@ -19,7 +20,7 @@ function WebHeader() {
       <header className="absolute top-0 w-full flex items-center h-[90px] px-10 lg:px-12 mt-4 z-50">
 
         <Link href="/" className="mr-8 lg:mr-16 w-[140px] lg:w-[170px]">
-          <img src="/icons/logo-vega.png" alt="" />
+          <Image src="/icons/logo-vega.png" alt="" rounded={false} />
         </Link>
 
         <nav className="hidden lg:flex items-center space-x-8" aria-label="Main navigation">

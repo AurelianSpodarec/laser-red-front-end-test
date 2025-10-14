@@ -6,6 +6,7 @@ import { configBrand } from "@/config/brand";
 import Section from "@/components/layout/Section";
 import Container from "@/components/layout/Container";
 import { ButtonWrap } from "@/components/atoms/Button/ButtonWrap";
+import Image from "@/components/atoms/Image";
 
 function WebFooter() {
   return (
@@ -47,7 +48,7 @@ function WebFooter() {
             <span className="hidden lg:inline"> - </span><Link href={WebsiteRoutes.PRIVACY}>Privacy Notice</Link> - <Link href={WebsiteRoutes.COOKIES}>Cookie Notice</Link> - <Link href={WebsiteRoutes.TOS}>Terms of Service</Link>
           </div>
           <div>
-            <img src="/icons/logo-laser.svg" title="Website by Laser Red" alt="" />
+            <Image src="/icons/logo-laser.svg" title="Website by Laser Red" alt="" rounded={false} />
           </div>
         </div>
       </Container>
