@@ -6,10 +6,16 @@
 /* ============================================================================
  * 1-tokens
  * ============================================================================ */
-@import "./1-tokens/primitives.css";
-@import "./1-tokens/semantics.css";
 
-@import "./1-tokens/components/button.css";
+ /* Theme Mode: Light */
+@import "./1-tokens/theme-light/primitives/colors.css";
+@import "./1-tokens/theme-light/primitives/spacing.css";
+@import "./1-tokens/theme-light/primitives/typography.css";
+
+@import "./1-tokens/theme-light/semantics.css";
+
+/* Components */
+@import "./1-tokens/theme-light/components/button.css";
 
 /* ============================================================================
  * 2-base

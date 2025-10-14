@@ -1,0 +1,11 @@
+/* ============================================================================ 
+  * # Primitives: Spacing
+  * =========================================================================== */
+
+@theme {
+  --spacing-section-sm: clamp(30px, 8vw, 60px);
+  --spacing-section-md: clamp(60px, 12vw, 90px);
+  --spacing-section-lg: clamp(60px, 12vw, 110px);
+  --spacing-section-xl: clamp(90px, 16vw, 130px);
+  --spacing-section-2xl: clamp(130px, 20vw, 190px);
+}

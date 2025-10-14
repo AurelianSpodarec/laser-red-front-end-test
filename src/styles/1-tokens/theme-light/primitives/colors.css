@@ -1,0 +1,41 @@
+/* ============================================================================ 
+  * # Primitives: Colors - https://uicolors.app/generate
+  * =========================================================================== */
+
+@theme {
+  --color-scooter-50: #ebfeff;
+  --color-scooter-100: #cefbff;
+  --color-scooter-200: #a2f6ff;
+  --color-scooter-300: #63ecfd;
+  --color-scooter-400: #1cd8f4;
+  --color-scooter-500: #00cbec;
+  --color-scooter-600: #0395b7;
+  --color-scooter-700: #0a7794;
+  --color-scooter-800: #126078;
+  --color-scooter-900: #144f65;
+  --color-scooter-950: #063446;
+
+  --color-caribbean-green-50: #eafff7;
+  --color-caribbean-green-100: #cdfee9;
+  --color-caribbean-green-200: #a0fad8;
+  --color-caribbean-green-300: #63f2c4;
+  --color-caribbean-green-400: #25e2ac;
+  --color-caribbean-green-500: #00cb98;
+  --color-caribbean-green-600: #00a47b;
+  --color-caribbean-green-700: #008366;
+  --color-caribbean-green-800: #006752;
+  --color-caribbean-green-900: #005545;
+  --color-caribbean-green-950: #003028;
+
+  --color-lilac-bush-50: #f7f5fd;
+  --color-lilac-bush-100: #f0ecfb;
+  --color-lilac-bush-200: #e2dbf9;
+  --color-lilac-bush-300: #ccbef4;
+  --color-lilac-bush-400: #b399ec;
+  --color-lilac-bush-500: #a27be5;
+  --color-lilac-bush-600: #8a50d7;
+  --color-lilac-bush-700: #7a3ec3;
+  --color-lilac-bush-800: #6634a3;
+  --color-lilac-bush-900: #552c86;
+  --color-lilac-bush-950: #351b5a;
+}
