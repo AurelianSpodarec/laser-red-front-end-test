@@ -13,7 +13,7 @@ function WebFooter() {
       spacing="none"
     >
       <Container>
-        <div className="flex justify-between mb-[190px]">
+        <div className="flex flex-col lg:flex-row justify-between mb-[190px]">
 
           <div>
             <div className="mb-8">
@@ -37,9 +37,15 @@ function WebFooter() {
           </nav>
         </div>
 
-        <div className="flex justify-between">
-          <span className="text-sm">&copy; {new Date().getFullYear()} Vega Limited - Registered in England: Company Reg. No. 1234567 - Privacy Notice - Cookie Notice - Terms of Service</span>
-          <span><img src="/images/laser-logo.svg" /></span>
+        <div className="flex flex-col lg:flex-row justify-between">
+          <div className="text-sm">
+            <span className="block">&copy; {new Date().getFullYear()} Vega Limited</span>
+            <span className="hidden lg:inline">-</span><span className="block">Registered in England: Company Reg. No. 1234567</span>
+            <span className="hidden lg:inline">-</span><Link href="">Privacy Notice</Link> - <Link href="">Cookie Notice</Link> - <Link href="">Terms of Service</Link>
+          </div>
+          <div>
+            <img src="/images/laser-logo.svg" alt="Website by Laser Red" />
+          </div>
         </div>
       </Container>
     </Section>

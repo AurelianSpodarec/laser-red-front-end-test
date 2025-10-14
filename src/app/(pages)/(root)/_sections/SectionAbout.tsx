@@ -1,10 +1,11 @@
+import Link from "next/link";
+
 import { ButtonWrap } from "@/components/Button/ButtonWrap";
 import Container from "@/components/Container";
 import Image from "@/components/Image";
 import Row from "@/components/Row";
 import Section from "@/components/Section";
 import StatCard from "@/components/StatCard";
-import Link from "next/link";
 
 function SectionAbout() {
   return (

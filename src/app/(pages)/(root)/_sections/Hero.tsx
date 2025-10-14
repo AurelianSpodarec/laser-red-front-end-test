@@ -1,4 +1,5 @@
 import Link from "next/link";
+
 import Row from "@/components/Row";
 import Section from "@/components/Section";
 import Image from "@/components/Image";
