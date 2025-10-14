@@ -6,7 +6,7 @@ import StatCard from "@/components/molecules/CardStat";
 
 function SectionStats() {
   return (
-    <Section spacing="lg">
+    <Section id="section-stats" spacing="lg">
       <Container>
         <Row className="flex-col-reverse lg:flex-row gap-12 lg:gap-44" alignItems="center">
 

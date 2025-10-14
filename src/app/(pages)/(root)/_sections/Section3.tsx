@@ -52,7 +52,7 @@ export const dataCards: ICardItem[] = [
 
 function Section3() {
   return (
-    <Section spacing="none">
+    <Section id="section3" spacing="none">
       <Container>
 
         <Grid className="grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">

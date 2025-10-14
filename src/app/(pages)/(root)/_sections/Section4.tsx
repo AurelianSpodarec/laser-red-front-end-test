@@ -11,7 +11,7 @@ import ImageContainer from "@/components/molecules/ImageContainer";
 
 function Section4() {
   return (
-    <Section spacing={{ top: "sm", bottom: "2xl" }}>
+    <Section id="section4" spacing={{ top: "sm", bottom: "2xl" }}>
       <Container>
         <Row className="gap-12 md:gap-24 lg:gap-44 flex-col lg:flex-row items-center" alignItems="center">
 

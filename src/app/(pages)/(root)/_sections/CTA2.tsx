@@ -4,10 +4,10 @@ import Section from "@/components/_layout/Section";
 
 function SectionCTA2() {
   return (
-    <Section spacing="none">
+    <Section id="cta2" spacing="none">
       <div style={{ backgroundImage: 'url("/images/it-technician-server-maintenance_20251014.jpg")' }} className="rounded-bl-lg rounded-br-lg">
 
-        <Container className="container mx-auto max-w-[1400px] h-[900px] lg-h-auto lg:py-[190px] flex lg:block">
+        <Container className="h-[900px] lg-h-auto lg:py-[190px] flex lg:block">
           <div className="flex justify-end p-4 pb-8 lg:p-2.5 mt-auto">
             <CardBase item={{
               icon: "/icons/icon-5.svg",

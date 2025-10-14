@@ -9,7 +9,7 @@ import StatCard from "@/components/molecules/CardStat";
 
 function SectionAbout() {
   return (
-    <Section spacing={{ top: "none", bottom: "xl" }}>
+    <Section id="section-about" spacing={{ top: "none", bottom: "xl" }}>
       <Container>
         <Row alignItems="center" className="flex-col grid-cols-2 lg:flex-row lg:gap-28 lg:h-[500px]">
 

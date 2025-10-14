@@ -4,7 +4,7 @@ import Section from "@/components/_layout/Section";
 
 function SectionCTA() {
   return (
-    <Section spacing={{ bottom: "none" }}>
+    <Section id="cta" spacing={{ bottom: "none" }}>
       <div className="gradient-primary gradient-size gradient-animated py-10 lg:py-[110px] rounded-tl-lg rounded-tr-lg">
         <Container>
           <div className="px-10">

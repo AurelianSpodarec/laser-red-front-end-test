@@ -5,7 +5,7 @@ import Section from "@/components/_layout/Section";
 
 function Section2() {
   return (
-    <Section spacing="xl">
+    <Section id="section2" spacing="xl">
       <Container>
         <Row alignItems="center" className="flex-col lg:flex-row gap-4 md:gap-24 lg:gap-28">
 
