@@ -1,12 +1,6 @@
 /* ============================================================================ 
 * Semantics 
 * ============================================================================ */
-/* 
-  Font Display: h1, h2, Hero Sections
-  Font Headings: UI Headings
-  Font Body: Paragraphs, inputs,labels
-  Font UI:inputs,labels
-*/
 
 @theme {
   --radius: var(--radius-lg);
