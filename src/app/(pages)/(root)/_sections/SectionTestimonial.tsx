@@ -1,7 +1,7 @@
-import Container from "@/components/layout/Container";
-import Section from "@/components/layout/Section";
+import Container from "@/components/_layout/Container";
+import Section from "@/components/_layout/Section";
 
-import SingleTestimonial from "@/components/SingleTestimonial";
+import SingleTestimonial from "@/components/organisms/SingleTestimonial";
 
 function SectionTestimonial() {
   return (

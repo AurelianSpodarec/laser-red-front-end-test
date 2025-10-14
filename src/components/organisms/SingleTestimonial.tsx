@@ -1,9 +1,4 @@
-import Image from "./atoms/Image";
-
-type IImageProps = {
-  src: string;
-  alt?: string;
-};
+import Image, { IImageProps } from "../atoms/Image";
 
 type ISingleTestimonialProps = {
   quote: string;

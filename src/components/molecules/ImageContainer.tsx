@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import Image from './atoms/Image';
+import Image from '../atoms/Image';
 
 type IOverlayPosition = 'center' | 'top-left' | 'bottom-right';
 

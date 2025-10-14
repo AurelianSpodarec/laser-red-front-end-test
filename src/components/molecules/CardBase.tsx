@@ -1,6 +1,6 @@
 import React from "react"
-import Image from "./atoms/Image"
-import { ButtonWrap } from "./atoms/Button/ButtonWrap"
+import Image from "../atoms/Image"
+import { ButtonWrap } from "../atoms/Button/ButtonWrap"
 
 export interface ICardItem {
   icon: string

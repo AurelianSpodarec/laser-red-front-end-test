@@ -3,8 +3,8 @@ import Link from "next/link";
 import { WebsiteRoutes } from "@/config/routes";
 import { configBrand } from "@/config/brand";
 
-import Section from "@/components/layout/Section";
-import Container from "@/components/layout/Container";
+import Section from "@/components/_layout/Section";
+import Container from "@/components/_layout/Container";
 import { ButtonWrap } from "@/components/atoms/Button/ButtonWrap";
 import Image from "@/components/atoms/Image";
 

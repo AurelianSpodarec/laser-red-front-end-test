@@ -1,6 +1,6 @@
-import CardBase from "@/components/CardBase";
-import Container from "@/components/layout/Container";
-import Section from "@/components/layout/Section";
+import CardBase from "@/components/molecules/CardBase";
+import Container from "@/components/_layout/Container";
+import Section from "@/components/_layout/Section";
 
 function SectionCTA2() {
   return (

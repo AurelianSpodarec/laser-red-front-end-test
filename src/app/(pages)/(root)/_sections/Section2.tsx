@@ -1,7 +1,7 @@
-import Container from "@/components/layout/Container";
+import Container from "@/components/_layout/Container";
 import Image from "@/components/atoms/Image";
-import Row from "@/components/layout/Row";
-import Section from "@/components/layout/Section";
+import Row from "@/components/_layout/Row";
+import Section from "@/components/_layout/Section";
 
 function Section2() {
   return (

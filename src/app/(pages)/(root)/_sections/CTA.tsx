@@ -1,5 +1,5 @@
-import Container from "@/components/layout/Container";
-import Section from "@/components/layout/Section";
+import Container from "@/components/_layout/Container";
+import Section from "@/components/_layout/Section";
 // import Link from "next/link";
 
 function SectionCTA() {

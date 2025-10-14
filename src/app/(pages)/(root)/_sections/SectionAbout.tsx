@@ -1,11 +1,11 @@
 import Link from "next/link";
 
 import { ButtonWrap } from "@/components/atoms/Button/ButtonWrap";
-import Container from "@/components/layout/Container";
+import Container from "@/components/_layout/Container";
 import Image from "@/components/atoms/Image";
-import Row from "@/components/layout/Row";
-import Section from "@/components/layout/Section";
-import StatCard from "@/components/CardStat";
+import Row from "@/components/_layout/Row";
+import Section from "@/components/_layout/Section";
+import StatCard from "@/components/molecules/CardStat";
 
 function SectionAbout() {
   return (

@@ -1,11 +1,11 @@
 import Link from "next/link";
 
-import Container from "@/components/layout/Container";
-import Row from "@/components/layout/Row";
-import Section from "@/components/layout/Section";
+import Container from "@/components/_layout/Container";
+import Row from "@/components/_layout/Row";
+import Section from "@/components/_layout/Section";
 
 import { ButtonWrap } from "@/components/atoms/Button/ButtonWrap";
-import CardBase from "@/components/CardBase";
+import CardBase from "@/components/molecules/CardBase";
 
 function SectionServicesTeaser() {
   return (

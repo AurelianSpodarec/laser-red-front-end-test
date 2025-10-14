@@ -3,7 +3,7 @@
 
 import React from "react";
 
-type IImageProps = React.ImgHTMLAttributes<HTMLImageElement> & {
+export type IImageProps = React.ImgHTMLAttributes<HTMLImageElement> & {
   src: string;
   alt?: string;
   rounded?: boolean;
