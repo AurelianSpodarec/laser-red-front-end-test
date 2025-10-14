@@ -1,36 +1,21 @@
 import type { Metadata } from "next";
 
 import "./../styles/globals.css";
+import { dmSans, onset } from "@/styles/1-variables/fonts";
 
 import WebHeader from "./(pages)/_components/Header";
 import WebFooter from "./(pages)/_components/Footer";
-
-import { DM_Sans, Onest } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "Vega",
   description: "",
 };
 
-export const dmSans = DM_Sans({
-  weight: ['400', '500', '700', '900'],
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-dm-sans'
-})
-
-export const onset = Onest({
-  weight: ['400', '500', '700', '900'],
-  subsets: ['latin'],
-  display: 'swap',
-  variable: '--font-onset'
-})
-
 function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
       <body className={`antialiased font-dm-sans text-white ${dmSans.variable} ${onset.variable}`}>
-        {/* <WebHeader /> */}
+        <WebHeader />
         <main>
           {children}
         </main>
