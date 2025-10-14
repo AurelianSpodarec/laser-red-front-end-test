@@ -1,18 +1,18 @@
 import React, { ReactNode } from 'react';
 import Image from './atoms/Image';
 
-type OverlayPosition = 'center' | 'top-left' | 'bottom-right';
+type IOverlayPosition = 'center' | 'top-left' | 'bottom-right';
 
-interface ImageContainerProps {
+interface IImageContainerProps {
   src: string;
   alt?: string;
   overlay?: boolean;
-  overlayPosition?: OverlayPosition;
+  overlayPosition?: IOverlayPosition;
   className?: string;
   children?: ReactNode;
 }
 
-const positionClasses: Record<OverlayPosition, string> = {
+const positionClasses: Record<IOverlayPosition, string> = {
   center: 'items-center justify-center text-center',
   'top-left': 'items-start justify-start',
   'bottom-right': 'items-end justify-end',
@@ -25,7 +25,7 @@ function ImageContainer({
   overlayPosition = 'center',
   className = '',
   children,
-}: ImageContainerProps) {
+}: IImageContainerProps) {
   return (
     <div className={`relative ${className}`}>
       {src && (

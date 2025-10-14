@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-type ParallaxOptions = {
+type IParallaxOptions = {
   speed?: number;
   inheritParentTransform?: boolean;
 };
@@ -10,7 +10,7 @@ type ParallaxOptions = {
 export function useParallax<T extends HTMLElement = HTMLDivElement>({
   speed = 0.2,
   inheritParentTransform = false,
-}: ParallaxOptions = {}) {
+}: IParallaxOptions = {}) {
   const ref = useRef<T>(null);
 
   useEffect(() => {

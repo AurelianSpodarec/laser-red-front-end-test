@@ -2,8 +2,6 @@
 
 import { useParallax } from "@/hooks/useParallax";
 
-
-
 interface IHeroProps {
   title: string
   desc: string

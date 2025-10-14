@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
-type SpacingSize = "none" | "sm" | "md" | "lg" | "xl" | "2xl";
-type SpacingProp = SpacingSize | { top?: SpacingSize; bottom?: SpacingSize };
+type ISpacingSize = "none" | "sm" | "md" | "lg" | "xl" | "2xl";
+type ISpacingProp = ISpacingSize | { top?: ISpacingSize; bottom?: ISpacingSize };
 
 interface ISectionProps extends React.HTMLAttributes<HTMLElement> {
   id?: string;
@@ -12,7 +12,7 @@ interface ISectionProps extends React.HTMLAttributes<HTMLElement> {
   background?: "primary" | "secondary";
   layeredBackground?: "primary";
   tag?: "section" | "footer";
-  spacing?: SpacingProp;
+  spacing?: ISpacingProp;
 }
 
 function Section({
@@ -36,7 +36,7 @@ function Section({
   };
 
   const spacingClassMap: Record<
-    Exclude<SpacingSize, "none">,
+    Exclude<ISpacingSize, "none">,
     { py: string; pt: string; pb: string }
   > = {
     sm: {
@@ -66,7 +66,7 @@ function Section({
     },
   };
 
-  function getSpacingClasses(spacing?: SpacingProp): string {
+  function getSpacingClasses(spacing?: ISpacingProp): string {
     if (!spacing) return "";
     if (spacing === "none") return "py-0";
 

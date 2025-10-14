@@ -3,12 +3,12 @@
 
 import React from "react";
 
-type ImageProps = React.ImgHTMLAttributes<HTMLImageElement> & {
+type IImageProps = React.ImgHTMLAttributes<HTMLImageElement> & {
   src: string;
   alt?: string;
 };
 
-function Image({ src, alt = "", className = "", ...props }: ImageProps) {
+function Image({ src, alt = "", className = "", ...props }: IImageProps) {
   return (
     <img
       src={src}

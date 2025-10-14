@@ -1,6 +1,6 @@
 import React, { ReactNode } from 'react';
 
-interface RowProps {
+interface IRowProps {
   children: ReactNode;
   gap?: number;
   direction?: 'row' | 'column';
@@ -11,10 +11,9 @@ interface RowProps {
 function Row({
   children,
   gap = 0,
-  direction = 'row',
   alignItems = 'start',
   className = '',
-}: RowProps) {
+}: IRowProps) {
   // const flexDirection = direction === 'row' ? 'flex-row' : 'flex-col';
   return (
     <div className={`flex  items-${alignItems} gap-[${gap}px] ${className}`}>

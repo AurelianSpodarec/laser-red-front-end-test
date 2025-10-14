@@ -2,23 +2,23 @@
 
 import { useSyncExternalStore } from 'react';
 
-type Snapshot = {
+type ISnapshot = {
   isScrolled: boolean;
   hidden: boolean
 };
 
-const DEFAULT_SNAPSHOT: Snapshot = { isScrolled: false, hidden: false };
+const DEFAULT_SNAPSHOT: ISnapshot = { isScrolled: false, hidden: false };
 const STORES = new Map<number, ReturnType<typeof createScrollStore>>();
 
 function createScrollStore(headerHeight: number) {
   let lastY = 0;
-  let lastSnapshot: Snapshot = DEFAULT_SNAPSHOT;
+  let lastSnapshot: ISnapshot = DEFAULT_SNAPSHOT;
   let hasScrolledOnce = false;
   let rafId: number | null = null;
   const listeners = new Set<() => void>();
   const TOLERANCE = 4;
 
-  const compute = (y: number): Snapshot => {
+  const compute = (y: number): ISnapshot => {
     const isScrolled = y > headerHeight;
     const isScrollingDown = y - lastY > TOLERANCE;
     const isScrollingUp = lastY - y > TOLERANCE;
@@ -84,7 +84,7 @@ function getStore(headerHeight: number) {
   return store;
 }
 
-export function useScrollHeader(headerHeight: number = 60): Snapshot {
+export function useScrollHeader(headerHeight: number = 60): ISnapshot {
   const store = getStore(headerHeight);
   return useSyncExternalStore(
     store.subscribe,

@@ -1,11 +1,11 @@
 import React, { ReactNode } from 'react';
 
-interface GridProps {
+interface IGridProps {
   children: ReactNode;
   className?: string;
 }
 
-function Grid({ children, className = '' }: GridProps) {
+function Grid({ children, className = '' }: IGridProps) {
   return (
     <div className={`grid ${className}`}>
       {children}

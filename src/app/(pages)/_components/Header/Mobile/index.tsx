@@ -8,7 +8,12 @@ import MenuItem from "../MenuItem";
 
 import { ButtonWrap } from "@/components/atoms/Button/ButtonWrap";
 
-function MobileDrawer({ open, onClick }: { open: boolean, onClick: () => void }) {
+interface IMobileDrawerProps {
+  open: boolean
+  onClick: () => void
+}
+
+function MobileDrawer({ open, onClick }: IMobileDrawerProps) {
 
   useEffect(() => {
     const handleResize = () => {
