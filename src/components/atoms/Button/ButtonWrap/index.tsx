@@ -2,15 +2,16 @@
 
 import React from "react";
 import Link from "next/link";
-import { buttonTypes } from "./register";
-import { Button, ButtonProps } from "../";
 
-export type ButtonWrapProps = ButtonProps & {
+import { buttonTypes } from "./register";
+import { Button, IButtonProps } from "../";
+
+export type IButtonWrapProps = IButtonProps & {
   variantType?: keyof typeof buttonTypes;
   href?: string;
 };
 
-export function ButtonWrap({ variantType = "arrow", href, children, ...props }: ButtonWrapProps) {
+export function ButtonWrap({ variantType = "arrow", href, children, ...props }: IButtonWrapProps) {
   const ButtonComponent = buttonTypes[variantType];
 
   if (!ButtonComponent) {

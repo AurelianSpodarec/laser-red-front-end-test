@@ -1,15 +1,13 @@
 import React from "react"
 import Image from "../atoms/Image"
 import { ButtonWrap } from "../atoms/Button/ButtonWrap"
+import { IButton } from "../atoms/Button/IButton"
 
 export interface ICardItem {
   icon: string
   title: string
   desc?: string
-  button: {
-    label: string;
-    url: string;
-  }
+  button: IButton
 }
 
 function CardBase({ item }: { item: ICardItem }) {

@@ -5,9 +5,9 @@ import { VariantProps } from "class-variance-authority";
 import { cn } from "@/lib/utils"
 import { buttonVariants } from "./buttonVariants";
 
-type ButtonBaseProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
+type IButtonBaseProps = React.ButtonHTMLAttributes<HTMLButtonElement>;
 
-export type ButtonProps = ButtonBaseProps &
+export type IButtonProps = IButtonBaseProps &
   VariantProps<typeof buttonVariants> & {
     label?: string;
     children?: React.ReactNode;
@@ -24,7 +24,7 @@ export type ButtonProps = ButtonBaseProps &
     rightElement?: React.ReactNode;
   };
 
-const Button = forwardRef<HTMLElement, ButtonProps>(
+const Button = forwardRef<HTMLElement, IButtonProps>(
   (
     {
       label,
