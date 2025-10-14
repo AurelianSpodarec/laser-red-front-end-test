@@ -1,4 +1,4 @@
-import { WebsiteRoutes } from "@/routes";
+import { WebsiteRoutes } from "@/config/routes";
 
 export interface IMenuItem {
   name: string;

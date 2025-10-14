@@ -1,5 +1,8 @@
 import Link from "next/link";
 
+import { WebsiteRoutes } from "@/config/routes";
+import { configBrand } from "@/config/brand";
+
 import Section from "@/components/Section";
 import Container from "@/components/Container";
 import { ButtonWrap } from "@/components/Button/ButtonWrap";
@@ -17,8 +20,8 @@ function WebFooter() {
 
           <div>
             <div className="mb-8">
-              <a className="text-h2-lg font-semibold block" href="tel:">01234 123456</a>
-              <a className="text-h2-lg font-semibold block" href="mailto:">hello@vega.co.uk</a>
+              <Link className="text-h2-lg font-semibold block" href={`tel:${configBrand.phone.raw}`}>{configBrand.phone.display}</Link>
+              <Link className="text-h2-lg font-semibold block" href={`mailto:${configBrand.email.main}`}>{configBrand.email.main}</Link>
             </div>
             <p className="text-[#DADAE2] text-[26px] mb-12">Solution Way, Lincoln, Lincolnshire, LN1 VGA</p>
             <ButtonWrap>
@@ -27,24 +30,24 @@ function WebFooter() {
           </div>
 
           <nav className="flex flex-col">
-            <Link href="">Solutions</Link>
-            <Link href="">Industries</Link>
-            <Link href="">Technology</Link>
-            <Link href="">Resources</Link>
-            <Link href="">Company</Link>
-            <Link href="">Careers</Link>
-            <Link href="">Resoruces</Link>
+            <Link href={WebsiteRoutes.SOLUTIONS}>Solutions</Link>
+            <Link href={WebsiteRoutes.INDUSTRIES}>Industries</Link>
+            <Link href={WebsiteRoutes.TECHNOLOGY}>Technology</Link>
+            <Link href={WebsiteRoutes.RESOURCES}>Resources</Link>
+            <Link href={WebsiteRoutes.COMPANY}>Company</Link>
+            <Link href={WebsiteRoutes.CAREERS}>Careers</Link>
+            <Link href={WebsiteRoutes.RESOURCES}>Resoruces</Link>
           </nav>
         </div>
 
         <div className="flex flex-col lg:flex-row justify-between">
           <div className="text-sm">
-            <span className="block">&copy; {new Date().getFullYear()} Vega Limited</span>
-            <span className="hidden lg:inline">-</span><span className="block">Registered in England: Company Reg. No. 1234567</span>
-            <span className="hidden lg:inline">-</span><Link href="">Privacy Notice</Link> - <Link href="">Cookie Notice</Link> - <Link href="">Terms of Service</Link>
+            <span className="block">&copy; {new Date().getFullYear()} {configBrand.name} Limited</span>
+            <span className="hidden lg:inline"> - </span><span className="block">Registered in {configBrand.company.registeredCountry}: Company Reg. No. {configBrand.company.registrationNumber}</span>
+            <span className="hidden lg:inline"> - </span><Link href={WebsiteRoutes.PRIVACY}>Privacy Notice</Link> - <Link href={WebsiteRoutes.COOKIES}>Cookie Notice</Link> - <Link href={WebsiteRoutes.TOS}>Terms of Service</Link>
           </div>
           <div>
-            <img src="/icons/logo-laser.svg" alt="Website by Laser Red" />
+            <img src="/icons/logo-laser.svg" title="Website by Laser Red" alt="" />
           </div>
         </div>
       </Container>

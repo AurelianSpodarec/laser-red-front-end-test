@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 
-import { WebsiteRoutes } from "@/routes";
+import { WebsiteRoutes } from "@/config/routes";
 
 import Drawer from "./_components/Drawer";
 import Overlay from "./_components/Overlay";

@@ -1,7 +1,7 @@
 'use client'
 
 import Link from "next/link";
-import { WebsiteRoutes } from "@/routes";
+import { WebsiteRoutes } from "@/config/routes";
 import dataMenu, { IMenuItem } from "../dataMenu";
 
 function MenuItem({ name, link }: IMenuItem) {
