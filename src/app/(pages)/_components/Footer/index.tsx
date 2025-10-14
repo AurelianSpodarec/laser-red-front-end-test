@@ -3,8 +3,8 @@ import Link from "next/link";
 import { WebsiteRoutes } from "@/config/routes";
 import { configBrand } from "@/config/brand";
 
-import Section from "@/components/Section";
-import Container from "@/components/Container";
+import Section from "@/components/layout/Section";
+import Container from "@/components/layout/Container";
 import { ButtonWrap } from "@/components/Button/ButtonWrap";
 
 function WebFooter() {

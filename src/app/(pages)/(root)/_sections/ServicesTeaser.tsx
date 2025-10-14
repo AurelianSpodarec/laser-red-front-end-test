@@ -1,8 +1,8 @@
 import { ButtonWrap } from "@/components/Button/ButtonWrap";
 import CardBase from "@/components/CardBase";
-import Container from "@/components/Container";
-import Row from "@/components/Row";
-import Section from "@/components/Section";
+import Container from "@/components/layout/Container";
+import Row from "@/components/layout/Row";
+import Section from "@/components/layout/Section";
 import Link from "next/link";
 
 function SectionServicesTeaser() {

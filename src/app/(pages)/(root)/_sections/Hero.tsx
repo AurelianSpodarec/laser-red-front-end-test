@@ -1,7 +1,7 @@
 import Link from "next/link";
 
-import Row from "@/components/Row";
-import Section from "@/components/Section";
+import Row from "@/components/layout/Row";
+import Section from "@/components/layout/Section";
 import Image from "@/components/Image";
 import { ButtonWrap } from "@/components/Button/ButtonWrap";
 

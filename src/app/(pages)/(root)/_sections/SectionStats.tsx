@@ -1,7 +1,7 @@
-import Container from "@/components/Container";
+import Container from "@/components/layout/Container";
 import Image from "@/components/Image";
-import Row from "@/components/Row";
-import Section from "@/components/Section";
+import Row from "@/components/layout/Row";
+import Section from "@/components/layout/Section";
 import StatCard from "@/components/StatCard";
 
 function SectionStats() {

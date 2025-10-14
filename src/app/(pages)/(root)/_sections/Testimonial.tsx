@@ -1,6 +1,6 @@
-import Container from "@/components/Container";
+import Container from "@/components/layout/Container";
 import Image from "@/components/Image";
-import Section from "@/components/Section";
+import Section from "@/components/layout/Section";
 
 function SectionTestimonial() {
   return (

@@ -1,7 +1,7 @@
 import CardBase, { ICardItem } from "@/components/CardBase";
-import Container from "@/components/Container";
-import Grid from "@/components/Grid";
-import Section from "@/components/Section";
+import Container from "@/components/layout/Container";
+import Grid from "@/components/layout/Grid";
+import Section from "@/components/layout/Section";
 
 export const dataCards: ICardItem[] = [
   {
