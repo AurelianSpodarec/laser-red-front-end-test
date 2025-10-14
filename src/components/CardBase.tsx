@@ -1,6 +1,6 @@
 import React from "react"
 import Link from "next/link"
-import Image from "./Image"
+import Image from "./atoms/Image"
 import { ButtonWrap } from "./Button/ButtonWrap"
 
 export interface ICardItem {

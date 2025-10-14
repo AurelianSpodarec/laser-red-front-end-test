@@ -2,7 +2,7 @@ import Link from "next/link";
 
 import Row from "@/components/layout/Row";
 import Section from "@/components/layout/Section";
-import Image from "@/components/Image";
+import Image from "@/components/atoms/Image";
 import { ButtonWrap } from "@/components/Button/ButtonWrap";
 
 function SectionHero() {

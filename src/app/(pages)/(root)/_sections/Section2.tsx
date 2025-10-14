@@ -1,5 +1,5 @@
 import Container from "@/components/layout/Container";
-import Image from "@/components/Image";
+import Image from "@/components/atoms/Image";
 import Row from "@/components/layout/Row";
 import Section from "@/components/layout/Section";
 
