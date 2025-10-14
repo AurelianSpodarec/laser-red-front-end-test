@@ -1,3 +1,6 @@
+/* eslint-disable @typescript-eslint/no-duplicate-enum-values */
+// Temporary placeholder routes — update these when real URLs are ready
+
 export enum WebsiteRoutes {
   ROOT = "/",
 
