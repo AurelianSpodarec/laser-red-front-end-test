@@ -17,21 +17,20 @@ export function useParallax<T extends HTMLElement = HTMLDivElement>({
     const node = ref.current;
     if (!node) return;
 
-    function setTranslate(x: number, y: number, el: HTMLElement) {
+    const setTranslate = (x: number, y: number, el: T) => {
       el.style.transform = `translate3d(${x}px, ${y}px, 0)`;
-    }
+    };
 
-    function scrollLoop() {
+    const scrollLoop = () => {
       const yScroll = window.scrollY;
 
       if (inheritParentTransform) {
         const parentY = node.parentElement?.getBoundingClientRect().top ?? 0;
         setTranslate(0, (yScroll - parentY) * -speed, node);
       } else {
-        // independent mode
         setTranslate(0, yScroll * -speed, node);
       }
-    }
+    };
 
     window.addEventListener("scroll", scrollLoop, { passive: true });
     return () => window.removeEventListener("scroll", scrollLoop);
