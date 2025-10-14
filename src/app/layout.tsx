@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 
-import "./../styles/globals.css";
-import { dmSans, onset } from "@/styles/1-variables/fonts";
+import "@/styles/globals.css";
+import { dmSans, onset } from "@/styles/1-tokens/fonts";
 
 import WebHeader from "./(pages)/_components/Header";
 import WebFooter from "./(pages)/_components/Footer";
 
 export const metadata: Metadata = {
-  title: "Vega",
-  description: "",
+  title: "Vega Front-end Test – For Laser Red",
+  description: "A modular, scalable Next.js front-end project developed as a technical test for Laser Red, designed for seamless integration into Gutenberg WordPress blocks.",
 };
 
 function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
