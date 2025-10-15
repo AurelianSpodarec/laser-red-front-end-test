@@ -1,8 +1,11 @@
+
+
 import CardBase, { ICardItem } from "@/components/molecules/CardBase";
 import Container from "@/components/_layout/Container";
 import Grid from "@/components/_layout/Grid";
 import Section from "@/components/_layout/Section";
 
+// TODO: Fix the Button object once the Button Component has been refactored
 export const dataCards: ICardItem[] = [
   {
     icon: "/icons/icon-4.svg",
@@ -11,7 +14,7 @@ export const dataCards: ICardItem[] = [
     button: {
       label: "Learn more",
       kind: "text",
-      href: "#",
+      url: "#",
       size: "none"
     }
   },
@@ -22,7 +25,7 @@ export const dataCards: ICardItem[] = [
     button: {
       label: "Learn more",
       kind: "text",
-      href: "#",
+      url: "#",
       size: "none"
     }
   },
@@ -33,7 +36,7 @@ export const dataCards: ICardItem[] = [
     button: {
       label: "Learn more",
       kind: "text",
-      href: "#",
+      url: "#",
       size: "none"
     }
   },
@@ -44,7 +47,7 @@ export const dataCards: ICardItem[] = [
     button: {
       label: "Learn more",
       kind: "text",
-      href: "#",
+      url: "#",
       size: "none"
     }
   }
@@ -57,7 +60,7 @@ function Section3() {
 
         <Grid className="grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">
           {dataCards.map((item, index) => (
-            <CardBase key={index} item={item} />
+            <CardBase className="w-full xl:max-w-[440px]" key={index} item={item} />
           ))}
         </Grid>
 

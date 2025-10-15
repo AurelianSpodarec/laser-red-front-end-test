@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en">
-      <body className={`antialiased font-dm-sans text-white ${dmSans.variable} ${onset.variable}`}>
+      <body className={`${dmSans.variable} ${onset.variable}`}>
         <WebHeader />
         <main>
           {children}

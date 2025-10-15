@@ -10,28 +10,21 @@ export interface ICardItem {
   button: IButton
 }
 
-function CardBase({ item }: { item: ICardItem }) {
+// TODO: Add more variants for different cases; hence the commented out mb-120
+function CardBase({ item, className }: { item: ICardItem, className: string }) {
   return (
-    <div className="border-2 border-white rounded-lg p-8 flex flex-col bg-[#062C34] max-w-[440px]">
-      <div className="mb-[40px] md:mb-[80px]">
+    <div className={`flex flex-col border-2 border-white rounded-lg p-lg bg-[#062C34] ${className}`}>
+      <div className="mb-10 md:mb-20">
         {/* mb-120 */}
         <Image src={item.icon} alt="" />
       </div>
       <div className="flex flex-col flex-1">
         <div>
-          {item.title &&
-            <h3 className="text-[26px] mb-[16px] tracking-[-1.20] font-bold font-heading">{item.title}</h3>
-          }
-
-          {item.desc &&
-            <p className="text-[16px] tracking-[0.16px] mb-[50px]">{item.desc}</p>
-          }
+          {item.title && <h3 className="text-[26px] mb-sm tracking-[-1.20] font-bold font-heading">{item.title}</h3>}
+          {item.desc && <p className="text-[16px] tracking-[0.16px] mb-xl">{item.desc}</p>}
         </div>
-
         <div className="mt-auto">
-          {item.button &&
-            <ButtonWrap {...item.button} />
-          }
+          {item.button && <ButtonWrap {...item.button} />}
         </div>
       </div>
     </div>

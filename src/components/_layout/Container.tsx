@@ -9,11 +9,7 @@ interface IContainerProps {
 
 function Container({ id, style, className, children }: IContainerProps) {
   return (
-    <div
-      id={id}
-      style={style}
-      className={`container mx-auto max-w-[1400px] ${className}`}
-    >
+    <div id={id} style={style} className={`container mx-auto max-w-[1400px] ${className}`}>
       {children}
     </div>
   );

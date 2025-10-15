@@ -13,7 +13,7 @@ function Section4() {
   return (
     <Section id="section4" spacing={{ top: "sm", bottom: "2xl" }}>
       <Container>
-        <Row className="gap-12 md:gap-24 lg:gap-44 flex-col lg:flex-row items-center" alignItems="center">
+        <Row className="flex-col lg:flex-row gap-12 md:gap-24 lg:gap-44 items-center" alignItems="center">
 
           <div className="w-full lg:w-1/2">
             <ImageContainer
@@ -22,6 +22,7 @@ function Section4() {
               overlayPosition="center"
             >
               <StatCard
+                className="max-w-[300px] m-sm"
                 item={{
                   metric: "175%",
                   title: "Proin pulvinar metus.",
@@ -32,7 +33,7 @@ function Section4() {
           </div>
 
           <div className="w-full lg:w-1/2">
-            <div className="px-4.5">
+            <div className="px-sm">
 
               <h2 className="text-h2-md">Ut nec nunc tincidunt, mattis leo nec.</h2>
               <p>Etiam facilisis tortor nec porttitor vestibulum. Donec nec urna ac est suscipit mattis. Nam pharetra felis libero, eget consequat dui faucibus in.</p>

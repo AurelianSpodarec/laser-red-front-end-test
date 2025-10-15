@@ -26,7 +26,7 @@ function SectionAbout() {
                 />
               </div>
 
-              <div className="flex lg:flex-col gap-8">
+              <div className="flex lg:flex-col gap-lg">
                 <div className="flex-1">
                   <Image
                     src="/images/it-specialist-data-center_20251014.jpg"
@@ -38,7 +38,7 @@ function SectionAbout() {
                 </div>
                 <div className="flex-1">
                   <StatCard
-                    className="h-full"
+                    className="h-full w-full lg:max-w-[300px]"
                     item={{
                       metric: "30+",
                       title: "Duis fringilla congue",

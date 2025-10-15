@@ -11,11 +11,12 @@ function SectionServicesTeaser() {
   return (
     <Section id="section-services-teaser" background="secondary" spacing="lg">
       <Container>
-        <Row alignItems="center" className="flex-col lg:flex-row gap-12 lg:gap-36">
+        <Row alignItems="center" className="flex-col xl:flex-row gap-12 xl:gap-36">
 
-          <div className="w-full lg:w-1/2">
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          <div className="w-full xl:w-1/2">
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-lg">
               <CardBase
+                className="w-full xl:max-w-[440px]"
                 item={{
                   icon: "/icons/icon-1.svg",
                   title: "Duis fringilla congue turpis",
@@ -26,6 +27,7 @@ function SectionServicesTeaser() {
                 }}
               />
               <CardBase
+                className="w-full xl:max-w-[440px]"
                 item={{
                   icon: "/icons/icon-7.svg",
                   title: "Nunc scelerisque elementum",
@@ -38,8 +40,8 @@ function SectionServicesTeaser() {
             </div>
           </div>
 
-          <div className="w-full lg:w-1/2">
-            <div className="p-4">
+          <div className="w-full xl:w-1/2">
+            <div className="p-sm">
               <h2 className="text-h2-lg">Ut enim leo, hendrerit sit amet tempor nec</h2>
               <p>Vestibulum quam felis, bibendum sed tempor vel, cursus eu dolor. Aliquam luctus velit in aliquam tempus. Suspendisse vitae dignissim mi. Mauris luctus quam ut tellus facilisis feugiat.</p>
               <ButtonWrap variant="secondary">

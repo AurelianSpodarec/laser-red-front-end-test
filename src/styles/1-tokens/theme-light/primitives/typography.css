@@ -12,7 +12,7 @@
   --h0-weight: 700;
   --h0-fluid-factor: 8vw;
 
-  --h1-min-size: 50px;
+  --h1-min-size: 40px;
   --h1-max-size: 78px;
   --h1-min-line-height: 50px;
   --h1-max-line-height: 78px;
@@ -39,8 +39,6 @@
   --h2-medium-weight: 600;
   --h2-medium-fluid-factor: 5vw;
 
-  
-
   /* # Text
  * ------------------------------------------------------------------------*/
   --text-h1: clamp(40px, 5vw + 1rem, 78px);
@@ -48,6 +46,4 @@
   --text-h3: clamp(20px, 3vw + 0.6rem, 32px);
   --text-body: clamp(12px, 2.5vw, 16px);
   --text-ui: clamp(14px, 2.5vw, 18px);
-
-
 }

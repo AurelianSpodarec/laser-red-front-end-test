@@ -164,3 +164,42 @@ pnpm run dev
 The project will be available at `http://localhost:3000` (or the port specified by your setup).
 
 ## Future Work
+
+### Button Component
+
+The current Button component using asChild does not correctly replace the native <button> DOM element with the nested element. As a result, accessibility and keyboard navigation (e.g., tabbing twice) are affected.
+The component should be refactored into a hook-based system, separating logic from presentation. This will allow building custom button variations more cleanly and make the component both accessible and scalable.
+
+### sSection Component
+
+Add support for custom spacing per breakpoint (e.g., sm, md, lg, xl).
+This will improve flexibility when designing responsive layouts and integrate more naturally with Gutenberg’s responsive controls, enabling precise section spacing control across all viewports.
+
+### Text Component
+
+Not implemented however, with futher testing it might or might not be a viable component to have for Gutenberg - need to experiment.
+
+### Design Tokens
+
+- Typography Tokens: Require refinement to ensure consistency and reusability across all sections.
+- Spacing Tokens: Should be standardized for all sections to improve maintainability and predictability.
+
+### Responsive System with Clamp
+
+A potential long-term improvement is to introduce a clamp()-based responsive system for spacing and typography.
+
+This approach would make layouts fluid and responsive by default, eliminating the need for multiple breakpoint-specific values (sm, md, lg, etc.). While it would require thorough planning, testing and synchronisation with the design team and see their tooling limitations as well - it could dramatically simplify the codebase.
+
+This is something I've noticed the industry heading towards. I think the possiblities here are untapped just because most people have no experience creating such systems, so if the theory is correct, this could revolutionise how we size things up. And clamp is something that you definitelly need to get used to.
+
+## Edge Cases with Gutenberg
+
+There might be some edge cases with Gutenberg.
+
+For example custom css and media breakpoints with tailwindcss values might not work if they are entered via the Editor - although there could be some workarounds this is something that needs to be double checked. 
+
+## Final
+
+While the website isn’t yet a perfect 1:1 match to the design, every time a block is refined, the pieces start to come together, and the overall structure begins to fall into place.
+
+Moreover, this system is highly reusable for other sites. By simply updating the design tokens, you can create a completely new themed UI with different colors, spacing, typography, and even new components if needed. Existing components like Section, Container, Button, etc., are already built to be easily extended.

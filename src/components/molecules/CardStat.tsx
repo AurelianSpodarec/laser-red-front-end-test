@@ -13,11 +13,11 @@ interface ICardStatProps {
 
 function CardStat({ item, className }: ICardStatProps) {
   return (
-    <div className={`flex flex-col bg-[#00CBEC] rounded-lg p-4 lg:p-8 text-left w-full text-[#111] max-w-[300px] ${className}`}>
-      <span className="text-[60px] lg:text-[83px] text-[#11111] tracking-[-4.15] leading-none block mb mb-8 lg:mb-[70px]">
+    <div className={`flex flex-col bg-[#00CBEC] rounded-lg p-sm lg:p-lg text-left w-full text-[#111] ${className}`}>
+      <span className="text-[60px] lg:text-[80px] text-[#11111] tracking-[-4.15] leading-none block mb-lg md:mb-xxl">
         {item.metric}
       </span>
-      <div className="mt-auto flex flex-col">
+      <div className="flex flex-col mt-auto">
         <span className="font-onset tracking-[-0.4px] font-bold">{item.title}</span>
         <span className="font-onset tracking-[-0.4px]">{item.desc}</span>
       </div>

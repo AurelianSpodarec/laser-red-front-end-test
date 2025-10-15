@@ -2,6 +2,7 @@ import Container from "@/components/_layout/Container";
 import Section from "@/components/_layout/Section";
 // import Link from "next/link";
 
+// TODO: Finish responsivnes
 function SectionCTA() {
   return (
     <Section id="cta" spacing={{ bottom: "none" }}>

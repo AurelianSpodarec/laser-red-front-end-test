@@ -1,7 +1,7 @@
-import { Button, ButtonProps } from "..";
+import { Button, IButtonProps } from "..";
 import { buttonTypes } from "./register";
 
-export type ButtonWrapProps = ButtonProps & {
+export type ButtonWrapProps = IButtonProps & {
   variantType?: keyof typeof buttonTypes;
 };
 

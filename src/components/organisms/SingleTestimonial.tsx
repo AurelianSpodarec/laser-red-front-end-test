@@ -8,13 +8,7 @@ type ISingleTestimonialProps = {
   className?: string;
 };
 
-function SingleTestimonial({
-  quote,
-  author,
-  role,
-  image,
-  className = "",
-}: ISingleTestimonialProps) {
+function SingleTestimonial({ quote, author, role, image, className = "" }: ISingleTestimonialProps) {
   return (
     <figure className={`relative gradient-primary gradient-size gradient-animated rounded-lg lg:h-[510px] ${className}`}>
       <div style={{ backgroundImage: "url('/graphics/pattern.png')" }} className="bg-center bg-size-[200%] flex flex-col lg:flex-row lg:gap-16 h-full">
@@ -36,7 +30,7 @@ function SingleTestimonial({
             alt={image.alt || `Portrait of ${author}`}
           />
         </div>
-        
+
       </div>
     </figure>
   );

@@ -1,5 +1,5 @@
 import { cn } from "@/lib/utils";
-import { Button, ButtonProps } from "..";
+import { Button, IButtonProps } from "..";
 import { JSX } from "react";
 
 function IconArrow() {
@@ -31,7 +31,7 @@ function IconArrow() {
 }
 
 
-function VariantButtonArrow(props: ButtonProps) {
+function VariantButtonArrow(props: IButtonProps) {
   return (
     <Button
       {...props}
@@ -45,6 +45,6 @@ function VariantButtonArrow(props: ButtonProps) {
   );
 }
 
-export const buttonTypes: Record<string, (props: ButtonProps) => JSX.Element> = {
+export const buttonTypes: Record<string, (props: IButtonProps) => JSX.Element> = {
   arrow: VariantButtonArrow,
 };

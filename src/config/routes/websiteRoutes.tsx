@@ -16,6 +16,7 @@ export enum WebsiteRoutes {
   SOFTWARE = "#",
   SERVICES = "#",
 
+  // TODO: Add this in a "legal" object. Could also think of a "utility" object as well.
   PRIVACY = "#",
   COOKIES = "#",
   TOS = "#",
