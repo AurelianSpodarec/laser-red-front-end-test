@@ -1,5 +1,7 @@
 # Laser Red - Vega Front-end Test
 
+[Visit Live Site](https://laser-red-front-end-test.vercel.app/)
+
 ![App Screenshot](./screenshot.png)
 
 ## About The Project
@@ -168,7 +170,8 @@ The project will be available at `http://localhost:3000` (or the port specified 
 ### Button Component
 
 The current Button component using asChild does not correctly replace the native <button> DOM element with the nested element. As a result, accessibility and keyboard navigation (e.g., tabbing twice) are affected.
-The component should be refactored into a hook-based system, separating logic from presentation. This will allow building custom button variations more cleanly and make the component both accessible and scalable.
+
+The component should be refactored into a hook-based system, separating logic from presentation. This will allow building custom button variations more cleanly and make the component both accessible and scalable. Most button components keep things in one file, but I always found it difficult to create custom buttons while retaining the functionality and 100% fluidity. useHook seems to be a good solution to this, allowing the user to create abstractions that they want with full customisability and modularity.
 
 ### sSection Component
 
@@ -197,6 +200,14 @@ This is something I've noticed the industry heading towards. I think the possibl
 There might be some edge cases with Gutenberg.
 
 For example custom css and media breakpoints with tailwindcss values might not work if they are entered via the Editor - although there could be some workarounds this is something that needs to be double checked. 
+
+## Usage of this system
+
+Ideally, much of the system can be separated and controlled entirely through variables. Core elements like Row, Container, and Columns should be fully configurable via tokens.
+
+Components that are reused across multiple sites can also benefit from a unified component-class architecture. This applies to typography, sizing, and colors—allowing you to adjust every aspect of a component without ever touching its implementation.
+
+With control over tokens, it’s even possible to synchronize them with tools like Figma. A plugin could enable designers to push updates directly to GitHub, removing the need for developers to handle trivial token changes - it would automate color changes requests, spacing etc... It’s easier said than done, but entirely achievable.
 
 ## Final
 
