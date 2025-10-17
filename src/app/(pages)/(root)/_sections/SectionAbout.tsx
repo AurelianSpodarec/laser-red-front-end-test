@@ -11,7 +11,7 @@ import StatCard from "@/components/molecules/CardStat";
 
 function SectionAbout() {
   return (
-    <Section id="section-about" className="pt-section-xs pb-section-lg md:pb-section-xl">
+    <Section id="section-about" className="pt-section-sm pb-section-lg md:pb-section-xl">
       <Container>
         <Row alignItems="center" className="flex-col grid-cols-2 lg:flex-row lg:gap-28 lg:h-[500px]">
 

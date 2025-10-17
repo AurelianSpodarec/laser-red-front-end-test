@@ -5,7 +5,7 @@ import SingleTestimonial from "@/components/organisms/SingleTestimonial";
 
 function SectionTestimonial() {
   return (
-    <Section id="section-testimonial" className="pt-section-0">
+    <Section id="section-testimonial">
       <Container>
 
         <SingleTestimonial

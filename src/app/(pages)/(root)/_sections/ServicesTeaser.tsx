@@ -16,7 +16,7 @@ function SectionServicesTeaser() {
           <div className="w-full xl:w-1/2">
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 xl:gap-lg">
               <CardBase
-                className="w-full xl:max-w-[440px]"
+                className="border-none w-full xl:max-w-[440px]"
                 item={{
                   icon: "/icons/icon-1.svg",
                   title: "Duis fringilla congue turpis",
@@ -27,7 +27,7 @@ function SectionServicesTeaser() {
                 }}
               />
               <CardBase
-                className="w-full xl:max-w-[440px]"
+                className="border-none w-full xl:max-w-[440px]"
                 item={{
                   icon: "/icons/icon-7.svg",
                   title: "Nunc scelerisque elementum",

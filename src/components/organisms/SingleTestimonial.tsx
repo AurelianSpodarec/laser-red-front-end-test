@@ -13,7 +13,7 @@ function SingleTestimonial({ quote, author, role, image, className = "" }: ISing
     <figure className={`relative gradient-primary gradient-size gradient-animated rounded-lg lg:h-[510px] ${className}`}>
       <div style={{ backgroundImage: "url('/graphics/pattern.png')" }} className="bg-center bg-size-[200%] flex flex-col lg:flex-row lg:gap-16 h-full">
 
-        <div className="flex flex-col h-full p-12 gap-28 lg:gap-0">
+        <div className="flex flex-col h-full p-12 pb-10 gap-28 lg:gap-0">
           <blockquote>
             <p className="text-h2-lg text-[#02252C]">{quote}</p>
           </blockquote>
