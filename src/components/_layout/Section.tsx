@@ -13,12 +13,12 @@ interface ISectionProps extends React.HTMLAttributes<HTMLElement> {
 
 function Section({ id, className = "", layeredClassName = "", style, children, background = "primary", layeredBackground, tag = "section" }: ISectionProps) {
   const backgroundVariants: Record<string, string> = {
-    primary: "bg-[#07272E]",
-    secondary: "bg-[#02252C]",
+    primary: "bg-section-primary",
+    secondary: "bg-section-secondary",
   };
 
   const layeredBackgroundVariants: Record<string, string> = {
-    primary: "bg-[#062329]",
+    primary: "bg-section-layered-primary",
   };
 
   const Tag = tag;

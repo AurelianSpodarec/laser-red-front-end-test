@@ -5,6 +5,11 @@
 @theme {
   --radius: var(--radius-lg);
 
+  --color-section-layered-primary: var(--color-deep-teal-925);
+  
+  --color-section-primary: var(--color-deep-teal-900);
+  --color-section-secondary: var(--color-deep-teal-950);
+
   --color-primary: var(--color-scooter-500);
   --color-secondary: var(--color-caribbean-green-500);
 
