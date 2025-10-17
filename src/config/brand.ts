@@ -8,7 +8,7 @@ export const configBrand = {
   },
   phone: {
     raw: "01234 123456",
-    display: ""
+    display: "01234 12345"
   },
   logo: {
     light: "/icons/logo-vega.svg",
