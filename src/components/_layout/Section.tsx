@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import clsx from "clsx";
 interface ISectionProps extends React.HTMLAttributes<HTMLElement> {
   id?: string;
   className?: string;
@@ -10,16 +11,7 @@ interface ISectionProps extends React.HTMLAttributes<HTMLElement> {
   tag?: "section" | "footer";
 }
 
-function Section({
-  id,
-  className = "",
-  layeredClassName = "",
-  style,
-  children,
-  background = "primary",
-  layeredBackground,
-  tag = "section",
-}: ISectionProps) {
+function Section({ id, className = "", layeredClassName = "", style, children, background = "primary", layeredBackground, tag = "section" }: ISectionProps) {
   const backgroundVariants: Record<string, string> = {
     primary: "bg-[#07272E]",
     secondary: "bg-[#02252C]",
@@ -35,10 +27,11 @@ function Section({
     <Tag
       id={id}
       style={style}
-      className={`
-        ${className} ${backgroundVariants[background]} 
-        ${layeredBackground ? "p-sm lg:p-xs" : "px-sm lg:px-xs"}
-      `}
+      className={clsx(
+        className,
+        backgroundVariants[background],
+        layeredBackground ? "p-sm lg:p-xs" : "px-sm lg:px-xs"
+      )}
     >
       {layeredBackground ? (
         <div className={`${layeredClassName} ${layeredBackgroundVariants[layeredBackground]} rounded`}>
