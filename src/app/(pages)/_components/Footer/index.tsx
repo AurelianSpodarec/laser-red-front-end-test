@@ -13,11 +13,10 @@ function WebFooter() {
     <Section
       tag="footer"
       layeredBackground="primary"
-      layeredClassName="py-[100px]"
-      spacing="none"
+      layeredClassName="py-section-xs lg:py-section-lg"
     >
-      <Container>
-        <div className="flex flex-col lg:flex-row justify-between mb-[190px]">
+      <Container className="px-lg">
+        <div className="flex flex-col lg:flex-row justify-between mb-10 lg:mb-[190px]">
 
           <div>
             <div className="mb-8">
@@ -30,24 +29,29 @@ function WebFooter() {
             </ButtonWrap>
           </div>
 
-          <nav className="flex flex-col">
+          <nav className="flex-col space-y-2 hidden lg:flex p-0 lg:pr-20">
             <Link href={WebsiteRoutes.SOLUTIONS}>Solutions</Link>
             <Link href={WebsiteRoutes.INDUSTRIES}>Industries</Link>
             <Link href={WebsiteRoutes.TECHNOLOGY}>Technology</Link>
             <Link href={WebsiteRoutes.RESOURCES}>Resources</Link>
             <Link href={WebsiteRoutes.COMPANY}>Company</Link>
             <Link href={WebsiteRoutes.CAREERS}>Careers</Link>
-            <Link href={WebsiteRoutes.RESOURCES}>Resoruces</Link>
           </nav>
         </div>
 
         <div className="flex flex-col lg:flex-row justify-between">
-          <div className="text-sm">
-            <span className="block">&copy; {new Date().getFullYear()} {configBrand.name} Limited</span>
-            <span className="hidden lg:inline"> - </span><span className="block">Registered in {configBrand.company.registeredCountry}: Company Reg. No. {configBrand.company.registrationNumber}</span>
-            <span className="hidden lg:inline"> - </span><Link href={WebsiteRoutes.PRIVACY}>Privacy Notice</Link> - <Link href={WebsiteRoutes.COOKIES}>Cookie Notice</Link> - <Link href={WebsiteRoutes.TOS}>Terms of Service</Link>
+          <div className="text-sm lg:flex flex-wrap text-[#DADAE2] space-x-1 pr-0 lg:pr-4 mb-8 lg:mb-0">
+            <span className="block mb-10 lg:mb-0">&copy; {new Date().getFullYear()} {configBrand.name} Limited - Registered in {configBrand.company.registeredCountry}: Company Reg. No. {configBrand.company.registrationNumber}</span>
+            <span className="hidden lg:inline">-</span>
+            <div className="flex flex-row flex-wrap mb-4 lg:mb-0 space-x-1">
+              <Link className="underline whitespace-nowrap" href={WebsiteRoutes.PRIVACY}>Privacy Notice</Link>
+              <span>-</span>
+              <Link className="underline whitespace-nowrap" href={WebsiteRoutes.COOKIES}>Cookie Notice</Link>
+              <span>-</span>
+              <Link className="underline whitespace-nowrap" href={WebsiteRoutes.TOS}>Terms of Service</Link>
+            </div>
           </div>
-          <div>
+          <div className="p-0 lg:pr-20">
             <Image src="/icons/logo-laser.svg" title="Website by Laser Red" alt="" rounded={false} />
           </div>
         </div>
