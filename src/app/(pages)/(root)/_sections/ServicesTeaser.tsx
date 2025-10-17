@@ -9,7 +9,7 @@ import CardBase from "@/components/molecules/CardBase";
 
 function SectionServicesTeaser() {
   return (
-    <Section id="section-services-teaser" background="secondary" spacing="lg">
+    <Section id="section-services-teaser" background="secondary" className="py-section-xs md:py-section-lg">
       <Container>
         <Row alignItems="center" className="flex-col xl:flex-row gap-12 xl:gap-36">
 

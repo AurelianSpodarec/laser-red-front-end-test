@@ -4,8 +4,8 @@ import CardBase from "@/components/molecules/CardBase";
 
 function SectionCTA2() {
   return (
-    <Section id="cta2" spacing="none">
-      <div style={{ backgroundImage: 'url("/images/it-technician-server-maintenance_20251014.jpg")' }} className="rounded-bl-lg rounded-br-lg">
+    <Section id="cta2">
+      <div style={{ backgroundImage: 'url("/images/it-technician-server-maintenance_20251014.jpg")' }} className="rounded-lg md:rounded-tl-none md:rounded-tr-none">
         <Container>
 
           <div className="flex flex-col md:block h-[900px] md:h-auto md:py-section-2xl">

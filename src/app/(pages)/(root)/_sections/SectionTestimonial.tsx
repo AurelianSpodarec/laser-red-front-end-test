@@ -5,7 +5,7 @@ import SingleTestimonial from "@/components/organisms/SingleTestimonial";
 
 function SectionTestimonial() {
   return (
-    <Section id="section-testimonial" spacing={{ top: "sm", bottom: "none" }}>
+    <Section id="section-testimonial" className="pt-section-0">
       <Container>
 
         <SingleTestimonial

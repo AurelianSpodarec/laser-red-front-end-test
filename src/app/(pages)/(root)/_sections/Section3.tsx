@@ -55,7 +55,7 @@ export const dataCards: ICardItem[] = [
 
 function Section3() {
   return (
-    <Section id="section3" spacing="none">
+    <Section id="section3" className="py-0 md:py-section-md">
       <Container>
 
         <Grid className="grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-8">

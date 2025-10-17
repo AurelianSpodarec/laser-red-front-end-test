@@ -5,8 +5,8 @@ import Section from "@/components/_layout/Section";
 // TODO: Finish responsivnes
 function SectionCTA() {
   return (
-    <Section id="cta" spacing={{ bottom: "none" }}>
-      <div className="gradient-primary gradient-size gradient-animated py-10 lg:py-[110px] rounded-tl-lg rounded-tr-lg">
+    <Section id="cta" className="pb-section-xs md:pb-0">
+      <div className="gradient-primary gradient-size gradient-animated py-10 lg:py-[110px] rounded-lg md:rounded-bl-none md:rounded-br-none">
         <Container>
           <div className="px-10">
             <h2 className="text-h0 inline-block text-[#062C34]">Experience the Vega advantage</h2>

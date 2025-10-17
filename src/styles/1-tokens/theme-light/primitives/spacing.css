@@ -3,6 +3,7 @@
   * =========================================================================== */
 
 @theme {
+  --spacing-section-xs: clamp(24px, 8vw, 54px);
   --spacing-section-sm: clamp(30px, 8vw, 60px);
   --spacing-section-md: clamp(60px, 12vw, 90px);
   --spacing-section-lg: clamp(60px, 12vw, 110px);

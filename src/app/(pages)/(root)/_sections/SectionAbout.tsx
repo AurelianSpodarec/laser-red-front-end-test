@@ -1,15 +1,17 @@
 import Link from "next/link";
 
-import { ButtonWrap } from "@/components/atoms/Button/ButtonWrap";
-import Container from "@/components/_layout/Container";
-import Image from "@/components/atoms/Image";
-import Row from "@/components/_layout/Row";
 import Section from "@/components/_layout/Section";
+import Container from "@/components/_layout/Container";
+import Row from "@/components/_layout/Row";
+
+import Image from "@/components/atoms/Image";
+import { ButtonWrap } from "@/components/atoms/Button/ButtonWrap";
+
 import StatCard from "@/components/molecules/CardStat";
 
 function SectionAbout() {
   return (
-    <Section id="section-about" spacing={{ top: "none", bottom: "xl" }}>
+    <Section id="section-about" className="pt-section-xs pb-section-lg md:pb-section-xl">
       <Container>
         <Row alignItems="center" className="flex-col grid-cols-2 lg:flex-row lg:gap-28 lg:h-[500px]">
 

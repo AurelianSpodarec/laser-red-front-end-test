@@ -8,7 +8,7 @@ import { ButtonWrap } from "@/components/atoms/Button/ButtonWrap";
 
 function SectionHero() {
   return (
-    <Section id="hero" layeredBackground="primary" spacing="none">
+    <Section id="hero" layeredBackground="primary">
       <Row className="flex-col lg:flex-row" alignItems="end">
 
         <div className="w-full lg:w-1/2 mt-[150px]">

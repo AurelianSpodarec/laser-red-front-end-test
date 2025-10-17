@@ -1,8 +1,4 @@
 import { ReactNode } from "react";
-
-type ISpacingSize = "none" | "sm" | "md" | "lg" | "xl" | "2xl";
-type ISpacingProp = ISpacingSize | { top?: ISpacingSize; bottom?: ISpacingSize };
-
 interface ISectionProps extends React.HTMLAttributes<HTMLElement> {
   id?: string;
   className?: string;
@@ -12,7 +8,6 @@ interface ISectionProps extends React.HTMLAttributes<HTMLElement> {
   background?: "primary" | "secondary";
   layeredBackground?: "primary";
   tag?: "section" | "footer";
-  spacing?: ISpacingProp;
 }
 
 function Section({
@@ -24,7 +19,6 @@ function Section({
   background = "primary",
   layeredBackground,
   tag = "section",
-  spacing = "md",
 }: ISectionProps) {
   const backgroundVariants: Record<string, string> = {
     primary: "bg-[#07272E]",
@@ -35,68 +29,16 @@ function Section({
     primary: "bg-[#062329]",
   };
 
-  const spacingClassMap: Record<
-    Exclude<ISpacingSize, "none">,
-    { py: string; pt: string; pb: string }
-  > = {
-    sm: {
-      py: "py-section-sm",
-      pt: "pt-section-sm",
-      pb: "pb-section-sm",
-    },
-    md: {
-      py: "py-section-md",
-      pt: "pt-section-md",
-      pb: "pb-section-md",
-    },
-    lg: {
-      py: "py-section-lg",
-      pt: "pt-section-lg",
-      pb: "pb-section-lg",
-    },
-    xl: {
-      py: "py-section-xl",
-      pt: "pt-section-xl",
-      pb: "pb-section-xl",
-    },
-    "2xl": {
-      py: "py-section-2xl",
-      pt: "pt-section-2xl",
-      pb: "pb-section-2xl",
-    },
-  };
-
-  function getSpacingClasses(spacing?: ISpacingProp): string {
-    if (!spacing) return "";
-    if (spacing === "none") return "py-0";
-
-    if (typeof spacing === "string") {
-      return spacingClassMap[spacing]?.py ?? "";
-    }
-
-    return [
-      spacing.top
-        ? spacing.top === "none"
-          ? "pt-0"
-          : spacingClassMap[spacing.top]?.pt
-        : "",
-      spacing.bottom
-        ? spacing.bottom === "none"
-          ? "pb-0"
-          : spacingClassMap[spacing.bottom]?.pb
-        : "",
-    ]
-      .filter(Boolean)
-      .join(" ");
-  }
-
   const Tag = tag;
 
   return (
     <Tag
       id={id}
-      className={`${className} ${backgroundVariants[background]} ${getSpacingClasses(spacing)} ${layeredBackground ? "p-sm lg:p-xs" : "px-sm lg:px-xs"}`}
       style={style}
+      className={`
+        ${className} ${backgroundVariants[background]} 
+        ${layeredBackground ? "p-sm lg:p-xs" : "px-sm lg:px-xs"}
+      `}
     >
       {layeredBackground ? (
         <div className={`${layeredClassName} ${layeredBackgroundVariants[layeredBackground]} rounded`}>

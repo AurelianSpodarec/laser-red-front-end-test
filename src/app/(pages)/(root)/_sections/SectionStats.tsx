@@ -6,7 +6,7 @@ import StatCard from "@/components/molecules/CardStat";
 
 function SectionStats() {
   return (
-    <Section id="section-stats" spacing="lg">
+    <Section id="section-stats" className="py-section-xs md:py-section-lg">
       <Container>
         <Row className="flex-col-reverse xl:flex-row gap-12 lg:gap-44" alignItems="center">
 
@@ -15,7 +15,7 @@ function SectionStats() {
             <p>Sed at nulla nulla. Duis et ultricies felis. Nulla non tortor nec tellus fermentum fringilla. Pellentesque aliquam sed elit ac commodo.</p>
             <div className="grid grid-cols-2 gap-4 md:gap-6">
               <StatCard
-              
+
                 item={{
                   metric: "99%",
                   title: "Etiam ut dignissim nunc.",
@@ -23,7 +23,7 @@ function SectionStats() {
                 }}
               />
               <StatCard
-              
+
                 item={{
                   metric: "30%",
                   title: "Vivamus laoreet",
