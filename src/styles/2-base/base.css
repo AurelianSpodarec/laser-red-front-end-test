@@ -1,7 +1,7 @@
 /* ============================================================================
  * # Base
  * ============================================================================ */
- 
+
 body {
   font-family: var(--font-dm-sans);
   color: white;
@@ -10,6 +10,11 @@ body {
 }
 
 p {
-  margin-bottom: 32px;
   font-size: 18px;
+  &:not(:last-child) {
+    margin-bottom: var(--spacing-md);
+    @variant md {
+      margin-bottom: var(--spacing-lg);
+    }
+  }
 }
