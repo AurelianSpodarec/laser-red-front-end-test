@@ -42,7 +42,7 @@ function SectionServicesTeaser() {
 
           <div className="w-full xl:w-1/2">
             <div className="p-sm">
-              <h2>Ut enim leo, hendrerit sit amet tempor nec</h2>
+              <h2 className="headline-lg mb-6 lg:mb-10">Ut enim leo, hendrerit sit amet tempor nec</h2>
               <p>Vestibulum quam felis, bibendum sed tempor vel, cursus eu dolor. Aliquam luctus velit in aliquam tempus. Suspendisse vitae dignissim mi. Mauris luctus quam ut tellus facilisis feugiat.</p>
               <ButtonWrap variant="secondary">
                 <Link href="#">View Our Services</Link>

@@ -11,7 +11,7 @@ function SectionHero() {
 
         <div className="w-full lg:w-1/2 mt-[150px]">
           <div className="mt-auto p-md lg:p-xl">
-            <h1 className="mb-6 lg:mb-10">A <span className="gradient-primary gradient-size gradient-animated gradient-text">new world</span> of solutions.</h1>
+            <h1 className="headline-xl mb-6 lg:mb-10">A <span className="gradient-primary gradient-size gradient-animated gradient-text">new world</span> of solutions.</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
             <ButtonWrap asChild>
               <Link href="/about">Book a demo</Link>
