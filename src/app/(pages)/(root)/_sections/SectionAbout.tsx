@@ -54,7 +54,7 @@ function SectionAbout() {
           </div>
 
           <div className="w-full">
-            <h2 className="text-h2-md">Aliquam luctus velit?</h2>
+            <h2>Aliquam luctus velit?</h2>
             <p>Suspendisse vitae dignissim mi. Mauris luctus quam ut tellus facilisis feugiat. Nullam pulvinar ante nec eros euismod egestas. Nunc non massa sit amet metus condimentum varius ac eget libero. Vestibulum nec semper nulla. Aliquam at interdum lacus.</p>
             <ButtonWrap>
               <Link href="#">Learn more</Link>

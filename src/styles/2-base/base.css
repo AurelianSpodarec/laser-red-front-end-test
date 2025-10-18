@@ -10,9 +10,18 @@ body {
 }
 
 p {
-  font-size: 18px;
+  font-family: var(--font-secondary);
+  font-weight: var(--text-body-lg-font-weight);
+  font-size: clamp(var(--text-body-lg-min),
+      calc(var(--text-body-lg-min) + var(--text-body-lg-fluid)),
+      var(--text-body-lg-max));
+  line-height: var(--text-body-lg-line-height);
+  letter-spacing: var(--text-body-lg-letter-spacing);
+  text-transform: var(--text-body-lg-text-transform);
+
   &:not(:last-child) {
     margin-bottom: var(--spacing-md);
+
     @variant md {
       margin-bottom: var(--spacing-lg);
     }

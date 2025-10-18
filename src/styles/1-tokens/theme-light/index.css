@@ -13,8 +13,8 @@
 -------------------------------------------------------------------------------*/
 @import "./semantics/colors.css";
 @import "./semantics/gradient.css";
-@import "./semantics/fonts.css";
 @import "./semantics/radius.css";
+@import "./semantics/typography.css";
 
 /* Components
 -------------------------------------------------------------------------------*/

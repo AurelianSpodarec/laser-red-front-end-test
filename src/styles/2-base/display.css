@@ -1,0 +1,20 @@
+.text-display {
+  font-family: var(--text-display-font-family);
+  font-weight: var(--text-display-font-weight);
+  font-size: clamp(
+    var(--text-display-min),
+    var(--text-display-fluid),
+    var(--text-display-max)
+  );
+  line-height: clamp(
+    var(--text-display-line-height-min),
+    var(--text-display-line-height-fluid),
+    var(--text-display-line-height-max)
+  );
+  letter-spacing: var(--text-display-letter-spacing-mobile);
+  text-transform: var(--text-display-text-transform);
+
+  @variant md {
+    letter-spacing: var(--text-display-letter-spacing-desktop);
+  }
+}

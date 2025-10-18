@@ -11,7 +11,7 @@ function SectionStats() {
         <Row className="flex-col-reverse xl:flex-row gap-12 lg:gap-44" alignItems="center">
 
           <div className="w-full xl:w-1/2">
-            <h2 className="text-h2-md">Nunc scelerisque elementum dui efficitur</h2>
+            <h2>Nunc scelerisque elementum dui efficitur</h2>
             <p>Sed at nulla nulla. Duis et ultricies felis. Nulla non tortor nec tellus fermentum fringilla. Pellentesque aliquam sed elit ac commodo.</p>
             <div className="grid grid-cols-2 gap-4 md:gap-6">
               <StatCard

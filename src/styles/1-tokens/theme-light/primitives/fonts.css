@@ -1,10 +1,14 @@
-/* ============================================================================ 
-  * # Primitives: Fonts
-  * =========================================================================== */
+/* ============================================================================
+ * # Primitives: Fonts
+ * ----------------------------------------------------------------------------
+ * 
+ * NOTE:
+ *   Additional custom fonts are imported from the `1-token/fonts.ts` file.
+ *   Make sure to update that file if you add new font variables from 3rd-party sources.
+ *   Do NOT import them here — this is due to limitations with Next.js and Tailwind CSS.
+ * ========================================================================== */
 
 @theme {
   --font-sans-serif: sans-serif;
   --font-serif: serif;
-  --font-onset: "Onset";
-  --font-dm-sans: "DM Sans", serif;
 }

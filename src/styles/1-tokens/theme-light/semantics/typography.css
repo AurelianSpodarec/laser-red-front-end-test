@@ -1,0 +1,216 @@
+/* ============================================================================
+ * # Semantics: Typography
+ * ----------------------------------------------------------------------------
+ * These are semantic font variables used throughout the design system.
+ * They map generic font primitives to their intended usage contexts.
+ * ========================================================================== */
+
+@theme {
+  /* --------------------------------------------------------------------------
+   * Base Fonts
+   * ------------------------------------------------------------------------ */
+  --font-primary: var(--font-onset);
+  --font-secondary: var(--font-dm-sans);
+
+  /* --------------------------------------------------------------------------
+   * Semantic Fonts
+   * ------------------------------------------------------------------------ */
+  /* --font-display: var(--font-primary);
+  --font-heading: var(--font-primary);
+  --font-body: var(--font-secondary);
+  --font-ui: var(--font-secondary); */
+
+  /* Strategy */
+
+  /* headline: 2xs, xs, md, lg, xl, 2xl */
+  /* Have desktop and mobile for clamp values */
+
+  /* DISPLAY */
+  --text-display-min: 45px;               
+  --text-display-max: 120px;                
+  --text-display-fluid: 8vw;
+  --text-display-font-family: var(--font-primary);
+  --text-display-font-weight: 700;
+  --text-display-line-height-min: 50px;
+  --text-display-line-height-max: 115px;
+  --text-display-line-height-fluid: calc(8vw * 0.958);
+  --text-display-letter-spacing-mobile: -1.25px;
+  --text-display-letter-spacing-desktop: -4.2px;
+  --text-display-text-transform: uppercase;
+
+
+/* ============================================================================ 
+  * # Body Text
+  * ------------------------------------------------------------------------ */
+
+--text-body-xl-font-family: var(--font-secondary);
+--text-body-xl-font-size: 1.25rem; /* 20px */
+--text-body-xl-font-weight: normal;
+--text-body-xl-line-height: normal;
+--text-body-xl-letter-spacing: normal;
+--text-body-xl-text-transform: none;
+
+/* --text-body-lg-font-family: var(--font-secondary);
+--text-body-lg-font-size: 1.125rem; 
+--text-body-lg-font-weight: normal;
+--text-body-lg-line-height: normal;
+--text-body-lg-letter-spacing: normal;
+--text-body-lg-text-transform: none; */
+
+ --text-body-lg-min: 1.125rem;      /* 18px */
+  --text-body-lg-max: 1.5rem;        /* max cap */
+  --text-body-lg-fluid: 1vw;         /* scales with viewport */
+  --text-body-lg-font-family: var(--font-secondary);
+  --text-body-lg-font-weight: normal;
+  --text-body-lg-line-height: 1.4;
+  --text-body-lg-letter-spacing: normal;
+  --text-body-lg-text-transform: none;
+
+
+--text-body-font-family: var(--font-secondary);
+--text-body-font-size: 1rem; /* 16px */
+--text-body-font-weight: normal;
+--text-body-line-height: 1.4;
+--text-body-letter-spacing: normal;
+--text-body-text-transform: none;
+
+--text-body-sm-font-family: var(--font-secondary);
+--text-body-sm-font-size: 0.875rem; /* 14px */
+--text-body-sm-font-weight: normal;
+--text-body-sm-line-height: normal;
+--text-body-sm-letter-spacing: normal;
+--text-body-sm-text-transform: none;
+
+--text-body-xs-font-family: var(--font-secondary);
+--text-body-xs-font-size: 0.75rem; /* 12px */
+--text-body-xs-font-weight: normal;
+--text-body-xs-line-height: normal;
+--text-body-xs-letter-spacing: normal;
+--text-body-xs-text-transform: none;
+
+
+
+
+
+
+
+--text-nav-desktop-font-family: var(--font-primary);
+--text-nav-desktop-font-size: 1.125rem; /* 18px */
+--text-nav-desktop-font-weight: 600; /* semi-bold */
+--text-nav-desktop-line-height: 1.55rem; /* 28px */
+--text-nav-desktop-letter-spacing: 0.27px;
+
+
+
+   /* --------------------------------------------------------------------------
+   * Headlines / Display Tokens
+  -------------------------------------------------------------------------- */
+  /* --text-display-font-family: var(--font-primary);
+  --text-display-font-size: var(--font-size-112);
+  --text-display-font-weight: var(--font-weight-bold);
+  --text-display-line-height: normal;
+  --text-display-letter-spacing: normal;
+  --text-display-text-transform: uppercase;
+  --text-display-mobile-font-family: var(--font-primary);
+  --text-display-mobile-font-size: var(--font-size-48);
+  --text-display-mobile-font-weight: var(--font-weight-bold);
+  --text-display-mobile-line-height: normal;
+  --text-display-mobile-letter-spacing: normal;
+  --text-display-mobile-text-transform: uppercase;
+
+  --text-headline-lg-font-family: var(--font-primary);
+  --text-headline-lg-font-size: var(--font-size-64);
+  --text-headline-lg-font-weight: var(--font-weight-bold);
+  --text-headline-lg-line-height: normal;
+  --text-headline-lg-letter-spacing: normal;
+  --text-headline-lg-text-transform: uppercase;
+  --text-headline-lg-mobile-font-family: var(--font-primary);
+  --text-headline-lg-mobile-font-size: var(--font-size-40);
+  --text-headline-lg-mobile-font-weight: var(--font-weight-bold);
+  --text-headline-lg-mobile-line-height: normal;
+  --text-headline-lg-mobile-letter-spacing: normal;
+  --text-headline-lg-mobile-text-transform: uppercase;
+
+  --text-headline-font-family: var(--font-primary);
+  --text-headline-font-size: var(--font-size-48);
+  --text-headline-font-weight: var(--font-weight-bold);
+  --text-headline-line-height: normal;
+  --text-headline-letter-spacing: normal;
+  --text-headline-text-transform: uppercase;
+  --text-headline-mobile-font-family: var(--font-primary);
+  --text-headline-mobile-font-size: var(--font-size-40);
+  --text-headline-mobile-font-weight: var(--font-weight-bold);
+  --text-headline-mobile-line-height: normal;
+  --text-headline-mobile-letter-spacing: normal;
+  --text-headline-mobile-text-transform: uppercase;
+
+  --text-headline-sm-font-family: var(--font-primary);
+  --text-headline-sm-font-size: var(--font-size-40);
+  --text-headline-sm-font-weight: var(--font-weight-bold);
+  --text-headline-sm-line-height: normal;
+  --text-headline-sm-letter-spacing: normal;
+  --text-headline-sm-text-transform: uppercase;
+  --text-headline-sm-mobile-font-family: var(--font-primary);
+  --text-headline-sm-mobile-font-size: var(--font-size-32);
+  --text-headline-sm-mobile-font-weight: var(--font-weight-bold);
+  --text-headline-sm-mobile-line-height: normal;
+  --text-headline-sm-mobile-letter-spacing: normal;
+  --text-headline-sm-mobile-text-transform: uppercase;
+
+  --text-title-lg-font-family: var(--font-primary);
+  --text-title-lg-font-size: var(--font-size-32);
+  --text-title-lg-font-weight: var(--font-weight-bold);
+  --text-title-lg-line-height: normal;
+  --text-title-lg-letter-spacing: normal;
+  --text-title-lg-text-transform: uppercase;
+  --text-title-lg-mobile-font-family: var(--font-primary);
+  --text-title-lg-mobile-font-size: var(--font-size-24);
+  --text-title-lg-mobile-font-weight: var(--font-weight-bold);
+  --text-title-lg-mobile-line-height: normal;
+  --text-title-lg-mobile-letter-spacing: normal;
+  --text-title-lg-mobile-text-transform: uppercase;
+
+  --text-title-font-family: var(--font-primary);
+  --text-title-font-size: var(--font-size-24);
+  --text-title-font-weight: var(--font-weight-bold);
+  --text-title-line-height: normal;
+  --text-title-letter-spacing: normal;
+  --text-title-text-transform: uppercase;
+  --text-title-mobile-font-family: var(--font-primary);
+  --text-title-mobile-font-size: var(--font-size-20);
+  --text-title-mobile-font-weight: var(--font-weight-bold);
+  --text-title-mobile-line-height: normal;
+  --text-title-mobile-letter-spacing: normal;
+  --text-title-mobile-text-transform: uppercase; */
+
+  /* --------------------------------------------------------------------------
+   * Body / UI Text
+  -------------------------------------------------------------------------- */
+  /* --text-body-lg-font-family: var(--font-secondary);
+  --text-body-lg-font-size: var(--font-size-20);
+  --text-body-lg-font-weight: var(--font-weight-normal);
+  --text-body-lg-line-height: normal;
+  --text-body-lg-letter-spacing: normal;
+  --text-body-lg-text-transform: none;
+
+  --text-body-font-family: var(--font-secondary);
+  --text-body-font-size: var(--font-size-16);
+  --text-body-font-weight: var(--font-weight-normal);
+  --text-body-line-height: 1.4;
+  --text-body-letter-spacing: normal;
+  --text-body-text-transform: none;
+
+  --text-body-sm-font-family: var(--font-secondary);
+  --text-body-sm-font-size: var(--font-size-14);
+  --text-body-sm-font-weight: var(--font-weight-normal);
+  --text-body-sm-line-height: normal;
+  --text-body-sm-letter-spacing: normal;
+  --text-body-sm-text-transform: none;
+
+  --text-body-xs-font-family: var(--font-secondary);
+  --text-body-xs-font-size: var(--font-size-12);
+  --text-body-xs-font-weight: var(--font-weight-normal);
+  --text-body-xs-line-height: normal;
+  --text-body-xs-letter-spacing: normal;
+  --text-body-xs-text-transform: none; */
+}
