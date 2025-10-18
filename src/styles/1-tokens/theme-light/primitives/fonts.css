@@ -3,6 +3,8 @@
   * =========================================================================== */
 
 @theme {
-  --font-onset: "Onset", sans-serif;
+  --font-sans-serif: sans-serif;
+  --font-serif: serif;
+  --font-onset: "Onset";
   --font-dm-sans: "DM Sans", serif;
 }

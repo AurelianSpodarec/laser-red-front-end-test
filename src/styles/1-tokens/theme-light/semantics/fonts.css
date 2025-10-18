@@ -1,0 +1,15 @@
+/* ============================================================================ 
+  * # Semantics: Fonts
+  * =========================================================================== */
+
+@theme {
+
+  /* Fonts */
+  --font-primary: var(--font-onset);
+  --font-secondary: var(--font-dm-sans);
+
+  --font-display: var(--font-primary);
+  --font-heading: var(--font-primary);
+  --font-body: var(--font-secondary);
+  --font-ui: var(--font-secondary);
+}

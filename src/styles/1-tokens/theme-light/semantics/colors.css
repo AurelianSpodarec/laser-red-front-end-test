@@ -1,22 +1,13 @@
 /* ============================================================================ 
-* # Semantics 
-* ============================================================================ */
+  * # Semantics: Colors
+  * =========================================================================== */
 
 @theme {
-  --radius: var(--radius-lg);
-
   --color-section-layered-primary: var(--color-deep-teal-925);
-  
+
   --color-section-primary: var(--color-deep-teal-900);
   --color-section-secondary: var(--color-deep-teal-950);
 
   --color-primary: var(--color-scooter-500);
   --color-secondary: var(--color-caribbean-green-500);
-
-  --font-display: var(--font-onset);
-  --font-heading: var(--font-onset);
-  --font-body: var(--font-dm-sans);
-  --font-ui: var(--font-dm-sans);
-
-  --gradient-primary: linear-gradient(90deg, #00c48d 0%, #00c4e9 50%, #9c7dde 100%);
 }
