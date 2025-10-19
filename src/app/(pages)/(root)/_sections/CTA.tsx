@@ -1,4 +1,4 @@
-import Link from "next/link";
+// import Link from "next/link";
 
 import Container from "@/components/_layout/Container";
 import Section from "@/components/_layout/Section";
@@ -11,7 +11,7 @@ function SectionCTA() {
         <Container>
           <div className="flex flex-col">
             <h2 className="text-display inline-block text-[#062C34]">Experience the Vega advantage</h2>
-            <Link href="#" className="inline-block text-[#062C34] text-[42px] font-bold">Book a demonstration</Link>
+            {/* <Link href="#" className="inline-block text-[#062C34] text-[42px] font-bold">Book a demonstration</Link> */}
           </div>
         </Container>
       </div>

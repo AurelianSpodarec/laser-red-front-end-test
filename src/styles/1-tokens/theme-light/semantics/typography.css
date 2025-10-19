@@ -4,7 +4,7 @@
 
 @theme {
   /* --------------------------------------------------------------------------
-   * Base Fonts
+   * # Base Fonts
    * ------------------------------------------------------------------------ */
   --font-primary: var(--font-onset);
   --font-secondary: var(--font-dm-sans);
@@ -133,40 +133,40 @@
   --text-headline-md-mobile-text-transform: 0;
 
   /* SM */
-  --text-headline-sm-font-size-min: 2rem; 
-  --text-headline-sm-font-size-max: 37;
+  --text-headline-sm-font-size-min: 28px; 
+  --text-headline-sm-font-size-max: 37px;
   --text-headline-sm-font-size-fluid: 5vw;
 
-  --text-headline-sm-line-height: 0;
-  --text-headline-sm-line-height: 0;
-  --text-headline-sm-line-height-fluid: 0
+  --text-headline-sm-line-height-min: 34px;
+  --text-headline-sm-line-height-max: 41px;
+  --text-headline-sm-line-height-fluid: 5vw;
 
   --text-headline-sm-font-family: 0;
-  --text-headline-sm-font-weight: 0;
-  --text-headline-sm-letter-spacing: 0;
+  --text-headline-sm-font-weight: 700;
+  --text-headline-sm-letter-spacing: -1.85px;
   --text-headline-sm-text-transform: 0;
 
   --text-headline-sm-mobile-font-family: 0;
-  --text-headline-sm-mobile-font-weight: 0;
-  --text-headline-sm-mobile-letter-spacing: 0;
+  --text-headline-sm-mobile-font-weight: 700;
+  --text-headline-sm-mobile-letter-spacing: -1.4px;
   --text-headline-sm-mobile-text-transform: 0;
 
   /* XS */
-  /* --text-headline-sm-font-size-min:; 
-  --text-headline-sm-font-size-max: ;
-  --text-headline-sm-font-size-fluid: 5vw;
+  --text-headline-xs-font-size-min: 26px;
+  --text-headline-xs-font-size-max: 26px;
+  --text-headline-xs-font-size-fluid: 5vw;
 
-  --text-headline-sm-line-height: 0;
-  --text-headline-sm-line-height: 0;
-  --text-headline-sm-line-height-fluid: 0
+  --text-headline-xs-line-height-min: 28px;
+  --text-headline-xs-line-height-max: 28px;
+  --text-headline-xs-line-height-fluid: 5vw;
 
-  --text-headline-sm-font-family: 0;
-  --text-headline-sm-font-weight: 0;
-  --text-headline-sm-letter-spacing: 0;
-  --text-headline-sm-text-transform: 0;
+  --text-headline-xs-font-family: 0;
+  --text-headline-xs-font-weight: 700;
+  --text-headline-xs-letter-spacing: -1.25px;
+  --text-headline-xs-text-transform: 0;
 
-  --text-headline-sm-mobile-font-family: 0;
-  --text-headline-sm-mobile-font-weight: 0;
-  --text-headline-sm-mobile-letter-spacing: 0;
-  --text-headline-sm-mobile-text-transform: 0; */
+  --text-headline-xs-mobile-font-family: 0;
+  --text-headline-xs-mobile-font-weight: 600;
+  --text-headline-xs-mobile-letter-spacing: -1.25px;
+  --text-headline-xs-mobile-text-transform: 0;
 }

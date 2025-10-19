@@ -20,7 +20,7 @@ function CardBase({ item, className }: { item: ICardItem, className: string }) {
       </div>
       <div className="flex flex-col flex-1">
         <div>
-          {item.title && <h3 className="text-[26px] mb-sm tracking-[-1.20] font-bold font-heading">{item.title}</h3>}
+          {item.title && <h3 className="headline-xs mb-sm">{item.title}</h3>}
           {item.desc && <p className="text-[16px] tracking-[0.16px] mb-xl">{item.desc}</p>}
         </div>
         <div className="mt-auto">
