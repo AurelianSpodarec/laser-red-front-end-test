@@ -20,7 +20,7 @@ function WebFooter() {
         <div className="flex flex-col lg:flex-row justify-between mb-10 lg:mb-[190px]">
 
           <div>
-            <div className="mb-8">
+            <div className="headline-lg mb-8">
               <Link className="text-h2-lg font-semibold block" href={`tel:${configBrand.phone.raw}`}>{configBrand.phone.display}</Link>
               <Link className="text-h2-lg font-semibold block" href={`mailto:${configBrand.email.main}`}>{configBrand.email.main}</Link>
             </div>

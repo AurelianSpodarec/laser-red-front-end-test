@@ -5,7 +5,7 @@ import Section from "@/components/_layout/Section";
 
 function Section2() {
   return (
-    <Section id="section2" className="pb-section-xs md:pt-section-xl md:pb-0">
+    <Section id="section-2" className="pb-section-xs md:pt-section-xl md:pb-0">
       <Container>
         <Row alignItems="center" className="flex-col lg:flex-row gap-sm md:gap-24 lg:gap-28">
 
@@ -14,7 +14,7 @@ function Section2() {
           </div>
 
           <div className="w-full lg:w-2/5">
-            <h2 className="mb-6">Sed ut nisi quis felis varius molestie.</h2>
+            <h2 className="headline-md mb-6">Sed ut nisi quis felis varius molestie.</h2>
             <p>Cras fermentum risus ac interdum euismod. Aliquam dui neque, convallis eu pharetra porta, condimentum in quam. Donec dictum lacus ac lectus cursus eleifend. Aliquam vulputate ipsum eu tincidunt dictum. Aliquam pretium sollicitudin quam, convallis porttitor risus vehicula sed.</p>
             <p>Sed finibus dui sit amet turpis vehicula, at tincidunt urna sollicitudin. Integer justo quam, faucibus nec metus a, bibendum venenatis arcu. Integer interdum sapien tellus, vel imperdiet elit gravida non. Sed et placerat neque, at pellentesque eros.</p>
           </div>

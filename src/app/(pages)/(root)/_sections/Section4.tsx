@@ -11,7 +11,7 @@ import ImageContainer from "@/components/molecules/ImageContainer";
 
 function Section4() {
   return (
-    <Section id="section4" className="pt-section-xs pb-section-lg md:pt-section-sm md:pb-section-2xl">
+    <Section id="section-4" className="pt-section-xs pb-section-lg md:pt-section-sm md:pb-section-2xl">
       <Container>
         <Row className="flex-col lg:flex-row gap-12 md:gap-24 lg:gap-44 items-center" alignItems="center">
 
@@ -35,7 +35,7 @@ function Section4() {
           <div className="w-full lg:w-1/2">
             <div className="px-sm">
 
-              <h2>Ut nec nunc tincidunt, mattis leo nec.</h2>
+              <h2 className="headline-md mb-4 lg:mb-6">Ut nec nunc tincidunt, mattis leo nec.</h2>
               <p>Etiam facilisis tortor nec porttitor vestibulum. Donec nec urna ac est suscipit mattis. Nam pharetra felis libero, eget consequat dui faucibus in.</p>
               <p>Vivamus laoreet eget dolor sed sodales. Etiam molestie laoreet augue, vitae molestie quam pretium at. Donec maximus diam in dolor convallis cursus. Donec imperdiet vulputate nunc, et viverra metus sagittis ut. Aenean imperdiet convallis sodales. Ut enim leo, hendrerit sit amet tempor nec, auctor eget eros. Proin vitae tellus diam. In laoreet, tellus quis lacinia interdum, ligula mauris aliquet massa, et rhoncus mi dui eget velit.</p>
               <ButtonWrap variant="primary">

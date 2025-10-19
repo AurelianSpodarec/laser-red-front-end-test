@@ -57,14 +57,19 @@
   --text-display-min: 45px;
   --text-display-max: 120px;
   --text-display-fluid: 8vw;
-  --text-display-font-family: var(--font-primary);
-  --text-display-font-weight: 700;
+
   --text-display-line-height-min: 50px;
   --text-display-line-height-max: 115px;
-  --text-display-line-height-fluid: calc(8vw * 0.958);
-  --text-display-letter-spacing-mobile: -1.25px;
-  --text-display-letter-spacing-desktop: -4.2px;
-  --text-display-text-transform: uppercase;
+  --text-display-line-height-fluid: 8vw;
+
+  --text-display-font-family: var(--font-primary);
+  --text-display-font-weight: 700;
+  --text-display-letter-spacing: -4.2px;
+  --text-display-text-transform: none;
+
+  --text-display-mobile-font-family: var(--font-primary);
+  --text-display-mobile-font-weight: 700;
+  --text-display-mobile-letter-spacing: -1.25px;
 
   /* --------------------------------------------------------------------------
    * # Headlines
@@ -73,64 +78,95 @@
    /* XL */
   --text-headline-xl-font-size-min: 50px; 
   --text-headline-xl-font-size-max: 78px;
-  --text-headling-xl-font-size-fluid: 5vw;
+  --text-headline-xl-font-size-fluid: 5vw;
+  
+  --text-headline-xl-line-height-min: 50px;
+  --text-headline-xl-line-height-max: 78px;
+  --text-headline-xl-line-height-fluid: 5vw;
+
   --text-headline-xl-font-family: var(--font-primary);
   --text-headline-xl-font-weight: 700;
-  --text-headline-xl-line-height: 78px;
   --text-headline-xl-letter-spacing: -3.9px;
   --text-headline-xl-text-transform: none;
 
   --text-headline-xl-mobile-font-family: var(--font-primary);
   --text-headline-xl-mobile-font-weight: 700;
-  --text-headline-xl-mobile-line-height: 50px;
   --text-headline-xl-mobile-letter-spacing: -1.25px;
   --text-headline-xl-mobile-text-transform: none;
 
   /* LG */
   --text-headline-lg-font-size-min: 32px; 
   --text-headline-lg-font-size-max: 50px;
-  --text-headling-lg-font-size-fluid: 4vw;
+  --text-headline-lg-font-size-fluid: 4vw;
+
+  --text-headline-lg-line-height-min: 36px;
+  --text-headline-lg-line-height-max: 54rem;
+  --text-headline-lg-line-height-fluid: 5vw;
+
   --text-headline-lg-font-family: var(--font-primary);
   --text-headline-lg-font-weight: 600;
-  --text-headline-lg-line-height: 54rem;
   --text-headline-lg-letter-spacing: -2.5px;
   --text-headline-lg-text-transform: 0;
 
   --text-headline-lg-mobile-font-family: var(--font-primary);
   --text-headline-lg-mobile-font-weight: 600;
-  --text-headline-lg-mobile-line-height: 36px;
   --text-headline-lg-mobile-letter-spacing: 0;
   --text-headline-lg-mobile-text-transform: 0;
 
   /* MD */
-  --text-headline-font-size-min: 2rem; 
-  --text-headline-font-size-max: 4rem;
-  --text-headling-font-size-fluid: 5vw;
-  --text-headline-font-family: 0;
-  --text-headline-font-weight: 0;
-  --text-headline-line-height: 0;
-  --text-headline-letter-spacing: 0;
-  --text-headline-text-transform: 0;
+  --text-headline-md-font-size-min: 28px; 
+  --text-headline-md-font-size-max: 42px;
+  --text-headline-md-font-size-fluid: 4vw;
 
-  --text-headline-mobile-font-family: 0;
-  --text-headline-mobile-font-weight: 0;
-  --text-headline-mobile-line-height: 0;
-  --text-headline-mobile-letter-spacing: 0;
-  --text-headline-mobile-text-transform: 0;
+  --text-headline-md-line-height-min: 34px;
+  --text-headline-md-line-height-max: 46px;
+  --text-headline-md-line-height-fluid: 4vw;
+  
+  --text-headline-md-font-family: var(--font-primary);
+  --text-headline-md-font-weight: 700;
+  --text-headline-md-letter-spacing: -2.1px;
+  --text-headline-md-text-transform: 0;
+  
+  --text-headline-md-mobile-font-family: 0;
+  --text-headline-md-mobile-font-weight: 600;
+  --text-headline-md-mobile-letter-spacing: 0;
+  --text-headline-md-mobile-text-transform: 0;
 
   /* SM */
   --text-headline-sm-font-size-min: 2rem; 
-  --text-headline-sm-font-size-max: 4rem;
-  --text-headling-sm-font-size-fluid: 5vw;
+  --text-headline-sm-font-size-max: 37;
+  --text-headline-sm-font-size-fluid: 5vw;
+
+  --text-headline-sm-line-height: 0;
+  --text-headline-sm-line-height: 0;
+  --text-headline-sm-line-height-fluid: 0
+
   --text-headline-sm-font-family: 0;
   --text-headline-sm-font-weight: 0;
-  --text-headline-sm-line-height: 0;
   --text-headline-sm-letter-spacing: 0;
   --text-headline-sm-text-transform: 0;
 
   --text-headline-sm-mobile-font-family: 0;
   --text-headline-sm-mobile-font-weight: 0;
-  --text-headline-sm-mobile-line-height: 0;
   --text-headline-sm-mobile-letter-spacing: 0;
   --text-headline-sm-mobile-text-transform: 0;
+
+  /* XS */
+  /* --text-headline-sm-font-size-min:; 
+  --text-headline-sm-font-size-max: ;
+  --text-headline-sm-font-size-fluid: 5vw;
+
+  --text-headline-sm-line-height: 0;
+  --text-headline-sm-line-height: 0;
+  --text-headline-sm-line-height-fluid: 0
+
+  --text-headline-sm-font-family: 0;
+  --text-headline-sm-font-weight: 0;
+  --text-headline-sm-letter-spacing: 0;
+  --text-headline-sm-text-transform: 0;
+
+  --text-headline-sm-mobile-font-family: 0;
+  --text-headline-sm-mobile-font-weight: 0;
+  --text-headline-sm-mobile-letter-spacing: 0;
+  --text-headline-sm-mobile-text-transform: 0; */
 }

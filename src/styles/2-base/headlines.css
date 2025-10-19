@@ -3,73 +3,46 @@
  * ========================================================================== */
 
 .headline-xl {
-  font-size: clamp(
-    var(--text-headline-xl-font-size-min),
-    var(--text-headling-xl-font-size-fluid),
-    var(--text-headline-xl-font-size-max)
-  );
-
   font-family: var(--font-primary);
-  font-weight: var(--text-headline-xl-font-weight);
-  line-height: var(--text-headline-xl-line-height);
-  letter-spacing: var(--text-headline-xl-letter-spacing);
-  text-transform: var(--text-headline-xl-text-transform);
-}
+  font-size: clamp(var(--text-headline-xl-font-size-min), var(--text-headline-xl-font-size-fluid), var(--text-headline-xl-font-size-max));
+  line-height: clamp(var(--text-headline-xl-line-height-min), var(--text-headline-xl-line-height-fluid), var(--text-headline-xl-line-height-max));
 
-@variant md {
-  .headline-xl {
-    font-family: var(--font-primary);
-    font-weight: var(--text-headline-xl-mobile-font-weight);
-    line-height: var(--text-headline-xl-mobile-line-height);
-    letter-spacing: var(--text-headline-xl-mobile-letter-spacing);
-    text-transform: var(--text-headline-xl-mobile-text-transform);
+  font-weight: var(--text-headline-xl-mobile-font-weight);
+  letter-spacing: var(--text-headline-xl-mobile-letter-spacing);
+  text-transform: var(--text-headline-xl-mobile-text-transform);
+  @variant md {
+    font-weight: var(--text-headline-xl-font-weight);
+    letter-spacing: var(--text-headline-xl-letter-spacing);
+    text-transform: var(--text-headline-xl-text-transform);
   }
 }
 
 .headline-lg {
-  font-size: clamp(
-    var(--text-headline-lg-font-size-min),
-    var(--text-headling-lg-font-size-fluid),
-    var(--text-headline-lg-font-size-max)
-  );
-
   font-family: var(--font-primary);
-  font-weight: var(--text-headline-lg-font-weight);
-  line-height: var(--text-headline-lg-line-height);
-  letter-spacing: var(--text-headline-lg-letter-spacing);
-  text-transform: var(--text-headline-lg-text-transform);
-}
+  font-size: clamp(var(--text-headline-lg-font-size-min), var(--text-headline-lg-font-size-fluid), var(--text-headline-lg-font-size-max));
+  line-height: clamp(var(--text-headline-lg-line-height-min), var(--text-headline-lg-line-height-fluid), var(--text-headline-lg-line-height-max));
 
-@variant md {
-  .headline-lg {
-    font-family: var(--font-primary);
-    font-weight: var(--text-headline-lg-mobile-font-weight);
-    line-height: var(--text-headline-lg-mobile-line-height);
-    letter-spacing: var(--text-headline-lg-mobile-letter-spacing);
-    text-transform: var(--text-headline-lg-mobile-text-transform);
+  font-weight: var(--text-headline-lg-mobile-font-weight);
+  letter-spacing: var(--text-headline-lg-mobile-letter-spacing);
+  text-transform: var(--text-headline-lg-mobile-text-transform);
+  @variant md {
+    font-weight: var(--text-headline-lg-font-weight);
+    letter-spacing: var(--text-headline-lg-letter-spacing);
+    text-transform: var(--text-headline-lg-text-transform);
   }
 }
 
-.headline {
-  font-size: clamp(
-    var(--text-headline-font-size-min),
-    var(--text-headling-font-size-fluid),
-    var(--text-headline-font-size-max)
-  );
-
+.headline-md {
   font-family: var(--font-primary);
-  font-weight: var(--text-headline-font-weight);
-  line-height: var(--text-headline-line-height);
-  letter-spacing: var(--text-headline-letter-spacing);
-  text-transform: var(--text-headline-text-transform);
-}
+  font-size: clamp(var(--text-headline-md-font-size-min), var(--text-headline-md-font-size-fluid), var(--text-headline-md-font-size-max));
+  line-height: clamp(var(--text-headline-md-line-height-min), var(--text-headline-md-line-height-fluid), var(--text-headline-md-line-height-max));
 
-@variant md {
-  .headline {
-    font-family: var(--font-primary);
-    font-weight: var(--text-headline-mobile-font-weight);
-    line-height: var(--text-headline-mobile-line-height);
-    letter-spacing: var(--text-headline-mobile-letter-spacing);
-    text-transform: var(--text-headline-mobile-text-transform);
+  font-weight: var(--text-headline-md-mobile-font-weight);
+  letter-spacing: var(--text-headline-md-mobile-letter-spacing);
+  text-transform: var(--text-headline-md-mobile-text-transform);
+  @variant md {
+    font-weight: var(--text-headline-md-font-weight);
+    letter-spacing: var(--text-headline-md-letter-spacing);
+    text-transform: var(--text-headline-md-text-transform);
   }
 }
